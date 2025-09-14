@@ -3,6 +3,6 @@
   "sigma_m":0.0,
   "clip_to_tpc":true,
   "seed":12345,
-  "source_dir":"\/projects\/hep\/fs10\/shared\/nnbar\/bmeirose\/Billys_GGN\/scripts\/large_training_data\/particles_3\/pulses",
+  "source_dir":"\/projects\/hep\/fs10\/shared\/nnbar\/bmeirose\/Billys_GGN\/GGN_scripts\/large_training_data\/particles_3\/pulses",
   "dataset_tag":"particles_3"
 }
