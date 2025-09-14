@@ -15,16 +15,25 @@ log "Loading Anaconda module..."
 module load Anaconda3/2024.02-1
 source "$(conda info --base)/etc/profile.d/conda.sh"
 
+# --- Ensure expected data directories exist ---
+log "Setting up data directory symlinks..."
+mkdir -p Large_data
+ln -sfn "$PWD/large_training_data_smeared" Large_data/training_data_smeared
+ln -sfn "$PWD/large_validation_data_smeared" Large_data/validation_data_smeared
+
 # --- 2. Create environment if missing ---
-if ! conda env list | grep -qE "^${ENV_NAME}\s"; then
-    log "Creating conda environment: $ENV_NAME"
-    conda create -n "$ENV_NAME" python=3.9 -y
+ENV_PATH="$PWD/conda_envs/$ENV_NAME"  # store env inside project folder
+mkdir -p "$(dirname "$ENV_PATH")"
+
+if [ ! -d "$ENV_PATH" ]; then
+    log "Creating conda environment at $ENV_PATH"
+    conda create -p "$ENV_PATH" python=3.9 -y
 fi
 
 # --- 3. Activate environment ---
-log "Activating environment: $ENV_NAME"
+log "Activating conda environment: $ENV_PATH"
 conda deactivate 2>/dev/null || true
-conda activate "$ENV_NAME"
+conda activate "$ENV_PATH"
 
 # --- 4. Install/update core packages ---
 log "Installing/updating core packages..."
