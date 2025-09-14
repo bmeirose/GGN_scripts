@@ -1,83 +1,80 @@
 #!/usr/bin/env bash
-# Fully safe run_pipeline for HIBEAM
+# run_pipeline_safe.sh - Stable pipeline runner for HIBEAM GNN
+# To debug: bash -x ./run_pipeline.sh 2>&1 | tee debug.log
 
 TOY_SCRIPT="toy_data_generation.py"
 HIBEAM_SCRIPT="HIBEAM_GNN_v1.py"
-GPU_ID="${GPU_ID:-}"
+GPU_ID="${GPU_ID:-}"     # optional, set externally
 ENV_NAME="hibeam_env"
-ENV_PATH="$HOME/.conda/envs/$ENV_NAME"
-PIP_CACHE="$HOME/pip_cache"
 
 log() { printf "\033[1;34m[INFO]\033[0m %s\n" "$*"; }
 error() { printf "\033[1;31m[ERROR]\033[0m %s\n" "$*" >&2; }
 
-# --- 1. Load Anaconda module ---
+# --- 1. Load Anaconda module and setup ---
 log "Loading Anaconda module..."
 module load Anaconda3/2024.02-1
-source $(conda info --base)/etc/profile.d/conda.sh
+source "$(conda info --base)/etc/profile.d/conda.sh"
 
-# --- 2. Prepare pip cache ---
-mkdir -p "$PIP_CACHE"
-export PIP_CACHE_DIR="$PIP_CACHE"
-
-# --- 3. Activate or create environment ---
-if conda env list | grep -q "$ENV_NAME"; then
-    log "Reusing existing environment $ENV_NAME..."
-    conda activate "$ENV_NAME"
-else
-    log "Creating environment $ENV_NAME..."
+# --- 2. Create environment if missing ---
+if ! conda env list | grep -qE "^${ENV_NAME}\s"; then
+    log "Creating conda environment: $ENV_NAME"
     conda create -n "$ENV_NAME" python=3.9 -y
-    conda activate "$ENV_NAME"
 fi
 
-# --- 4. Install or upgrade core packages ---
+# --- 3. Activate environment ---
+log "Activating environment: $ENV_NAME"
+conda deactivate 2>/dev/null || true
+conda activate "$ENV_NAME"
+
+# --- 4. Install/update core packages ---
 log "Installing/updating core packages..."
 conda install -y -c conda-forge pyarrow pandas matplotlib pytorch-lightning
-# PyTorch core installation (CPU version)
-if ! python -c "import torch" &>/dev/null; then
-    log "Installing PyTorch CPU version..."
-    pip install --user torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# PyTorch + Torchvision (CPU by default, GPU if available)
+conda install -y -c pytorch pytorch torchvision torchaudio
+# IPython and extras (pexpect, prompt_toolkit, etc.)
+pip install --user "ipython[all]"
+
+# --- 5. Install PyTorch Geometric safely ---
+log "Installing PyTorch Geometric..."
+pip install torch-geometric -f https://data.pyg.org/whl/torch-$(python -c "import torch; print(torch.__version__.split('+')[0])").html
+
+# --- 6. Install GraphNeT ---
+log "Installing GraphNeT..."
+pip install --user git+https://github.com/graphnet-team/graphnet.git
+
+# --- 7. Check required scripts ---
+if [[ ! -f "$TOY_SCRIPT" ]]; then
+    error "Toy data generation script not found: $TOY_SCRIPT"
+    exit 1
+fi
+if [[ ! -f "$HIBEAM_SCRIPT" ]]; then
+    error "HIBEAM GNN script not found: $HIBEAM_SCRIPT"
+    exit 1
 fi
 
-# --- 5. Install PyTorch Geometric if missing ---
-if ! python -c "import torch_geometric" &>/dev/null; then
-    log "Installing PyTorch Geometric CPU wheels..."
-    pip install --user torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric --extra-index-url https://data.pyg.org/whl/torch-2.1.0+cpu.html
+# --- 8. GPU setup (optional) ---
+if [[ -n "$GPU_ID" ]]; then
+    export CUDA_VISIBLE_DEVICES="$GPU_ID"
+    log "Set CUDA_VISIBLE_DEVICES=$GPU_ID"
 fi
 
-# --- 6. Install GraphNet if missing ---
-if ! python -c "from graphnet.data import GraphNeTDataModule" &>/dev/null; then
-    log "Installing GraphNet..."
-    pip install --user git+https://github.com/graphnet-team/graphnet.git
-fi
-
-# --- 7. Test critical imports ---
-log "Testing critical imports..."
-python - <<EOF || { error "Critical imports failed"; exit 1; }
-import torch
-import pyarrow
-import pandas
-import matplotlib
-import pytorch_lightning
-import torch_geometric
-from graphnet.data import GraphNeTDataModule
-EOF
-log "All imports successful!"
-
-# --- 8. Check scripts ---
-[[ -f "$TOY_SCRIPT" ]] || { error "Toy data script not found"; exit 1; }
-[[ -f "$HIBEAM_SCRIPT" ]] || { error "HIBEAM GNN script not found"; exit 1; }
-
-# --- 9. GPU visibility ---
-[[ -n "$GPU_ID" ]] && export CUDA_VISIBLE_DEVICES="$GPU_ID" && log "Set CUDA_VISIBLE_DEVICES=$GPU_ID"
-
-# --- 10. Run toy data generation ---
+# --- 9. Run toy data generation ---
 log "Running toy data generation..."
-python "$TOY_SCRIPT" || { error "Toy data generation failed"; exit 1; }
+if python "$TOY_SCRIPT"; then
+    log "Toy data generation completed successfully"
+else
+    error "Toy data generation failed with exit code $?"
+    exit 1
+fi
 
-# --- 11. Run HIBEAM GNN ---
+# --- 10. Run HIBEAM GNN ---
 log "Running HIBEAM GNN..."
-python "$HIBEAM_SCRIPT" || { error "HIBEAM GNN failed"; exit 1; }
+if python "$HIBEAM_SCRIPT"; then
+    log "HIBEAM GNN completed successfully"
+else
+    error "HIBEAM GNN failed with exit code $?"
+    exit 1
+fi
 
 log "Pipeline finished successfully!"
 
