@@ -1,0 +1,334 @@
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_vx=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for this output (/usr/share/lmod/lmod/init/bash)
+Shell debugging restarted
++ unset __lmod_vx
++ TOY_SCRIPT=toy_data_generation.py
++ HIBEAM_SCRIPT=HIBEAM_GNN_v1.py
++ GPU_ID=
++ ENV_NAME=hibeam_env
++ ENV_FILE=environment.yml
++ log 'Loading Anaconda module...'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Loading Anaconda module...'
+[1;34m[INFO][0m Loading Anaconda module...
++ module load Anaconda3/2024.02-1
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
+++ conda info --base
+++ local cmd=info
+++ case "$cmd" in
+++ __conda_exe info --base
+++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda info --base
++ source /sw/easybuild_milan/software/Anaconda3/2024.02-1/etc/profile.d/conda.sh
+++ export CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
+++ CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
+++ CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
+++ '[' -z x ']'
++ conda env list
++ local cmd=env
++ case "$cmd" in
++ __conda_exe env list
++ grep -q '^hibeam_env '
++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda env list
++ log 'Activating conda environment: hibeam_env'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Activating conda environment: hibeam_env'
+[1;34m[INFO][0m Activating conda environment: hibeam_env
++ conda activate hibeam_env
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate hibeam_env
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate hibeam_env
+++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda shell.posix activate hibeam_env
++ ask_conda='PS1='\''(hibeam_env) '\''
+export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PREFIX='\''/home/bmeirose42/.conda/envs/hibeam_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''hibeam_env'\''
+export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
+export CONDA_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python'\''
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
++ eval 'PS1='\''(hibeam_env) '\''
+export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PREFIX='\''/home/bmeirose42/.conda/envs/hibeam_env'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''hibeam_env'\''
+export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
+export CONDA_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python'\''
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
+++ PS1='(hibeam_env) '
+++ export PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ export CONDA_PREFIX=/home/bmeirose42/.conda/envs/hibeam_env
+++ CONDA_PREFIX=/home/bmeirose42/.conda/envs/hibeam_env
+++ export CONDA_SHLVL=1
+++ CONDA_SHLVL=1
+++ export CONDA_DEFAULT_ENV=hibeam_env
+++ CONDA_DEFAULT_ENV=hibeam_env
+++ export 'CONDA_PROMPT_MODIFIER=(hibeam_env) '
+++ CONDA_PROMPT_MODIFIER='(hibeam_env) '
+++ export CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
+++ CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
+++ CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
+++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
++++ '[' -n '' ']'
++++ _la_log 'Beginning libarrow activation.'
++++ '[' '' = 1 ']'
++++ _la_gdb_prefix=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load
++++ '[' '!' -w /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load ']'
++++ _la_placeholder=replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX
++++ _la_symlink_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib
++++ _la_orig_install_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
++++ _la_log '          _la_gdb_prefix: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load'
++++ '[' '' = 1 ']'
++++ _la_log '         _la_placeholder: replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX'
++++ '[' '' = 1 ']'
++++ _la_log '         _la_symlink_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib'
++++ '[' '' = 1 ']'
++++ _la_log '    _la_orig_install_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
++++ '[' '' = 1 ']'
++++ _la_log '  content of that folder:'
++++ '[' '' = 1 ']'
+++++ ls -al /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
+++++ sed 's/^/      /'
++++ _la_log '      total 2
+      drwxr-sr-x 2 bmeirose42 mnxb01 4096 Sep 13 22:18 .
+      drwxr-sr-x 3 bmeirose42 mnxb01 4096 Sep 13 22:12 ..
+      -rw-r--r-- 1 bmeirose42 mnxb01  982 Sep 13 22:18 libarrow.so.2000.0.0-gdb.py'
++++ '[' '' = 1 ']'
++++ for _la_target in "$_la_orig_install_dir/"*.py
++++ '[' '!' -e /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ basename /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_symlink=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_log '   _la_target: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
++++ '[' '' = 1 ']'
++++ _la_log '  _la_symlink: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
++++ '[' '' = 1 ']'
++++ '[' -L /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ readlink /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ '[' /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
++++ _la_log 'symlink $_la_symlink already exists and points to $_la_target, skipping.'
++++ '[' '' = 1 ']'
++++ continue
++++ _la_log 'Libarrow activation complete.'
++++ '[' '' = 1 ']'
++++ unset _la_gdb_prefix
++++ unset _la_log
++++ unset _la_orig_install_dir
++++ unset _la_placeholder
++++ unset _la_symlink
++++ unset _la_symlink_dir
++++ unset _la_target
+++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
++++ export CONDA_MKL_INTERFACE_LAYER_BACKUP=
++++ CONDA_MKL_INTERFACE_LAYER_BACKUP=
++++ export MKL_INTERFACE_LAYER=LP64,GNU
++++ MKL_INTERFACE_LAYER=LP64,GNU
+++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ export GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
+++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
++++ test -n ''
++++ xml_catalog_files_libxml2=
++++ XML_CATALOG_FILES=
++++ conda_catalog_files=
++++ ifs_libxml2=' 	
+'
++++ IFS=' '
++++ rem=/home/bmeirose42/.conda/envs/hibeam_env
++++ for pre in ${rem}
++++ test '' = /home/bmeirose42/.conda/envs/hibeam_env
++++ conda_catalog_files=/home/bmeirose42/.conda/envs/hibeam_env
++++ rem=
++++ IFS=' 	
+'
++++ conda_catalog_files='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ export 'XML_CATALOG_FILES=file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ XML_CATALOG_FILES='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ unset conda_catalog_files ifs_libxml2 rem
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ log 'Checking/installing required packages...'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Checking/installing required packages...'
+[1;34m[INFO][0m Checking/installing required packages...
++ python -c 'import pyarrow'
++ python -c 'import pandas'
++ python -c 'import torch'
++ python -c 'import matplotlib'
++ python -c 'import graphnet'
++ [[ ! -f toy_data_generation.py ]]
++ [[ ! -f HIBEAM_GNN_v1.py ]]
++ [[ -n '' ]]
++ log 'Running toy data generation...'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Running toy data generation...'
+[1;34m[INFO][0m Running toy data generation...
++ python toy_data_generation.py
+
+=== Generating dataset for 3 particles per event ===
+  File 0 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 1 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 2 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 3 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 4 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 5 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 6 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 7 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 8 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 9 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 10 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 11 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 12 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 13 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 14 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 15 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 16 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 17 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 18 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 19 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 20 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 21 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 22 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 23 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 24 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 25 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 26 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 27 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 28 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 29 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 30 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 31 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 32 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 33 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 34 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 35 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 36 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 37 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 38 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 39 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 40 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 41 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 42 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 43 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 44 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 45 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 46 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 47 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 48 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+  File 49 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data/particles_3 (accepted 5000 events)
+
+=== Generating validation dataset for 3 particles/event ===
+  File 0 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 1 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 2 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 3 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 4 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 5 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 6 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 7 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 8 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 9 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 10 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 11 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 12 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 13 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 14 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 15 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 16 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 17 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 18 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 19 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 20 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 21 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 22 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 23 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 24 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 25 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 26 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 27 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 28 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 29 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 30 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 31 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 32 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 33 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 34 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 35 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 36 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 37 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 38 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 39 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 40 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 41 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 42 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 43 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 44 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 45 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 46 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 47 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 48 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+  File 49 written to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data/vertex_random/particles_3 (accepted 500 events)
+
+All validation datasets generated.
+
+=== Smearing dataset: particles_3 ===
+  -> Writing res_0cm to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_training_data_smeared/particles_3/res_0cm
+
+All smearing tasks complete.
+
+=== Smearing dataset: particles_3 ===
+  -> Writing res_0cm to /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/large_validation_data_smeared/vertex_random/particles_3/res_0cm
+
+All smearing tasks complete.
++ log 'Toy data generation completed successfully'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Toy data generation completed successfully'
+[1;34m[INFO][0m Toy data generation completed successfully
++ log 'Running HIBEAM GNN...'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Running HIBEAM GNN...'
+[1;34m[INFO][0m Running HIBEAM GNN...
++ python HIBEAM_GNN_v1.py
+Traceback (most recent call last):
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/scripts/HIBEAM_GNN_v1.py", line 11, in <module>
+    from graphnet.data import GraphNeTDataModule
+ModuleNotFoundError: No module named 'graphnet.data'
++ error 'HIBEAM GNN failed with exit code 1'
++ printf '\033[1;31m[ERROR]\033[0m %s\n' 'HIBEAM GNN failed with exit code 1'
+[1;31m[ERROR][0m HIBEAM GNN failed with exit code 1
++ exit 1
