@@ -1,0 +1,3620 @@
+{
+  "build": "pyh2a12c56_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "fsspec >2021.06.0",
+    "fsspec >=2022.5.0",
+    "lightning-utilities >=0.10.0",
+    "numpy >=1.17.2",
+    "packaging >=20.0",
+    "python >=3.9",
+    "pytorch >=2.1.0",
+    "pyyaml >5.4",
+    "requests",
+    "torchmetrics >0.7.0",
+    "tqdm >=4.57.0",
+    "typing-extensions >=4.4.0",
+    "typing_extensions >4.5.0"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/pytorch-lightning-2.5.3-pyh2a12c56_0",
+  "files": [
+    "lib/python3.9/site-packages/lightning_fabric/CHANGELOG.md",
+    "lib/python3.9/site-packages/lightning_fabric/__about__.py",
+    "lib/python3.9/site-packages/lightning_fabric/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/__setup__.py",
+    "lib/python3.9/site-packages/lightning_fabric/__version__.py",
+    "lib/python3.9/site-packages/lightning_fabric/_graveyard/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/_graveyard/tpu.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/accelerator.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/cpu.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/cuda.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/mps.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/registry.py",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/cli.py",
+    "lib/python3.9/site-packages/lightning_fabric/connector.py",
+    "lib/python3.9/site-packages/lightning_fabric/fabric.py",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/csv_logs.py",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/logger.py",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/tensorboard.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/collective.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/single_device.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/torch_collective.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/cluster_environment.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/kubeflow.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/lightning.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/lsf.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/mpi.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/slurm.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/torchelastic.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/checkpoint_io.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/torch_io.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/amp.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/bitsandbytes.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/deepspeed.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/double.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/fsdp.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/half.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/precision.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/transformer_engine.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/utils.py",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/py.typed",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/ddp.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/deepspeed.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/dp.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/fsdp.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/launcher.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/multiprocessing.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/subprocess_script.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/model_parallel.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/parallel.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/registry.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/single_device.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/single_xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/strategy.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/xla.py",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/xla_fsdp.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/apply_func.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/cloud_io.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/consolidate_checkpoint.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/data.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/device_dtype_mixin.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/device_parser.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/distributed.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/enums.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/exceptions.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/imports.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/init.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/load.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/logger.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/optimizer.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/rank_zero.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/registry.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/seed.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/spike.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/testing/__init__.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/testing/_runif.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/throughput.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/types.py",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/warnings.py",
+    "lib/python3.9/site-packages/lightning_fabric/version.info",
+    "lib/python3.9/site-packages/lightning_fabric/wrappers.py",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/METADATA",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/RECORD",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/WHEEL",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/licenses/LICENSE",
+    "lib/python3.9/site-packages/pytorch_lightning-2.5.3.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/pytorch_lightning/CHANGELOG.md",
+    "lib/python3.9/site-packages/pytorch_lightning/MANIFEST.in",
+    "lib/python3.9/site-packages/pytorch_lightning/README.md",
+    "lib/python3.9/site-packages/pytorch_lightning/__about__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/__setup__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/__version__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/_torchmetrics.py",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/hpu.py",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/precision.py",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/tpu.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/accelerator.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/cpu.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/cuda.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/mps.py",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/batch_size_finder.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/callback.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/checkpoint.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/device_stats_monitor.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/early_stopping.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/finetuning.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/gradient_accumulation_scheduler.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/lambda_function.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/lr_finder.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/lr_monitor.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/model_checkpoint.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/model_summary.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/on_exception_checkpoint.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/prediction_writer.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/progress_bar.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/rich_progress.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/tqdm_progress.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/pruning.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/rich_model_summary.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/spike.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/stochastic_weight_avg.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/throughput_monitor.py",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/timer.py",
+    "lib/python3.9/site-packages/pytorch_lightning/cli.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/datamodule.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/hooks.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/mixins/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/mixins/hparams_mixin.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/module.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/optimizer.py",
+    "lib/python3.9/site-packages/pytorch_lightning/core/saving.py",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/boring_classes.py",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/lstm.py",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/mnist_datamodule.py",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/transformer.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/comet.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/csv_logs.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/logger.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/mlflow.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/neptune.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/tensorboard.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/utilities.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/wandb.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/evaluation_loop.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/fetchers.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/loop.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/automatic.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/closure.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/manual.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/prediction_loop.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/progress.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/training_epoch_loop.py",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/utilities.py",
+    "lib/python3.9/site-packages/pytorch_lightning/overrides/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/overrides/distributed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/environments/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/async_plugin.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/checkpoint_plugin.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/torch_plugin.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/wrapper.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/xla_plugin.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/layer_sync.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/amp.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/bitsandbytes.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/deepspeed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/double.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/fsdp.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/half.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/precision.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/transformer_engine.py",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/advanced.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/base.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/profiler.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/pytorch.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/simple.py",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/py.typed",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/servable_module.py",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/servable_module_validator.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/ddp.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/deepspeed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/fsdp.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/launcher.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/multiprocessing.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/model_parallel.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/parallel.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/single_device.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/single_xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/xla.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/call.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/configuration_validator.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/data_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/fx_validator.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/signal_connector.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/setup.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/states.py",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/batch_size_scaling.py",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/lr_finder.py",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/tuning.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/_pytree.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/combined_loader.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/compile.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/consolidate_checkpoint.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/data.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/deepspeed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/enums.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/exceptions.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/grads.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/imports.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/memory.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/migration.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/utils.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_helpers.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_registry.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/model_summary.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/model_summary_deepspeed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/parameter_tying.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/parsing.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/rank_zero.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/seed.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/signature_utils.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/__init__.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/_runif.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/types.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/upgrade_checkpoint.py",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/warnings.py",
+    "lib/python3.9/site-packages/pytorch_lightning/version.info",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/__about__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/__setup__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/__version__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/_graveyard/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/_graveyard/__pycache__/tpu.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/accelerator.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/cpu.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/cuda.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/mps.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/cli.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/fabric.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/csv_logs.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/logger.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/tensorboard.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/collective.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/single_device.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/torch_collective.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/cluster_environment.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/kubeflow.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/lightning.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/lsf.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/mpi.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/slurm.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/torchelastic.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/checkpoint_io.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/torch_io.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/amp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/bitsandbytes.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/double.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/fsdp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/half.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/precision.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/transformer_engine.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/ddp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/dp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/fsdp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/launcher.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/multiprocessing.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/subprocess_script.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/model_parallel.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/parallel.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/single_device.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/single_xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/strategy.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/xla_fsdp.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/apply_func.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/cloud_io.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/consolidate_checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/data.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/device_dtype_mixin.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/device_parser.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/distributed.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/enums.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/imports.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/init.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/load.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/logger.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/optimizer.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/rank_zero.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/seed.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/spike.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/testing/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/testing/__pycache__/_runif.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/throughput.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/types.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/warnings.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_fabric/__pycache__/wrappers.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__about__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__setup__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__version__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/_torchmetrics.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/hpu.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/precision.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/tpu.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/accelerator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/cpu.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/cuda.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/mps.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/batch_size_finder.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/callback.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/device_stats_monitor.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/early_stopping.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/finetuning.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/gradient_accumulation_scheduler.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lambda_function.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lr_finder.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lr_monitor.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/model_checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/model_summary.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/on_exception_checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/prediction_writer.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/progress_bar.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/rich_progress.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/tqdm_progress.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/pruning.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/rich_model_summary.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/spike.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/stochastic_weight_avg.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/throughput_monitor.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/timer.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/__pycache__/cli.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/datamodule.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/hooks.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/mixins/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/mixins/__pycache__/hparams_mixin.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/module.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/optimizer.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/saving.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/boring_classes.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/lstm.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/mnist_datamodule.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/transformer.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/comet.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/csv_logs.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/logger.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/mlflow.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/neptune.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/tensorboard.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/utilities.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/wandb.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/evaluation_loop.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/fetchers.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/fit_loop.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/loop.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/automatic.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/closure.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/manual.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/prediction_loop.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/progress.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/training_epoch_loop.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/utilities.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/overrides/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/overrides/__pycache__/distributed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/environments/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/async_plugin.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/checkpoint_plugin.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/torch_plugin.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/wrapper.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/xla_plugin.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/__pycache__/layer_sync.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/amp.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/bitsandbytes.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/double.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/fsdp.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/half.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/precision.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/transformer_engine.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/advanced.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/base.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/profiler.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/pytorch.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/simple.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/servable_module.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/servable_module_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/ddp.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/fsdp.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/launcher.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/multiprocessing.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/subprocess_script.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/model_parallel.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/parallel.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/single_device.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/single_xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/strategy.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/xla.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/call.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/configuration_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/accelerator_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/callback_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/checkpoint_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/data_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/fx_validator.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/logger_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/result.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/signal_connector.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/setup.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/states.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/trainer.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/batch_size_scaling.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/lr_finder.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/tuning.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/_pytree.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/argparse.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/combined_loader.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/compile.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/consolidate_checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/data.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/enums.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/exceptions.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/grads.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/imports.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/memory.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/migration.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/model_helpers.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/model_registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/model_summary.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/model_summary_deepspeed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/parameter_tying.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/parsing.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/rank_zero.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/seed.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/signature_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/__pycache__/_runif.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/types.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/upgrade_checkpoint.cpython-39.pyc",
+    "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/warnings.cpython-39.pyc"
+  ],
+  "fn": "pytorch-lightning-2.5.3-pyh2a12c56_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/pytorch-lightning-2.5.3-pyh2a12c56_0",
+    "type": 1
+  },
+  "md5": "fae944293bf5d2abaf2abf6a7fde1c54",
+  "name": "pytorch-lightning",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/pytorch-lightning-2.5.3-pyh2a12c56_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/lightning_fabric/CHANGELOG.md",
+        "path_type": "hardlink",
+        "sha256": "9e0f96c29a563e460f36262397864cb6bac39bea946501cbf8eef6a77671d4f4",
+        "sha256_in_prefix": "9e0f96c29a563e460f36262397864cb6bac39bea946501cbf8eef6a77671d4f4",
+        "size_in_bytes": 39991
+      },
+      {
+        "_path": "site-packages/lightning_fabric/__about__.py",
+        "path_type": "hardlink",
+        "sha256": "6f84aa9c69100200e67777df281bb21c604776bd91658c47184ac0aeba3326fc",
+        "sha256_in_prefix": "6f84aa9c69100200e67777df281bb21c604776bd91658c47184ac0aeba3326fc",
+        "size_in_bytes": 479
+      },
+      {
+        "_path": "site-packages/lightning_fabric/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "548300ef35a4c4cfde13441afe22592a90caf89bee6030595bc299d267916835",
+        "sha256_in_prefix": "548300ef35a4c4cfde13441afe22592a90caf89bee6030595bc299d267916835",
+        "size_in_bytes": 1692
+      },
+      {
+        "_path": "site-packages/lightning_fabric/__setup__.py",
+        "path_type": "hardlink",
+        "sha256": "cb4af00ec28ae29d9fb3c8deb141b7f34e0c0a2123a9e8cce45a5539ee05a06d",
+        "sha256_in_prefix": "cb4af00ec28ae29d9fb3c8deb141b7f34e0c0a2123a9e8cce45a5539ee05a06d",
+        "size_in_bytes": 4914
+      },
+      {
+        "_path": "site-packages/lightning_fabric/__version__.py",
+        "path_type": "hardlink",
+        "sha256": "ffcc9e03735c1d22f20997f0781ca4b1f3f13a5ea58173d3b6030c0f39d0e3cd",
+        "sha256_in_prefix": "ffcc9e03735c1d22f20997f0781ca4b1f3f13a5ea58173d3b6030c0f39d0e3cd",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "site-packages/lightning_fabric/_graveyard/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5ac2ffec3a4dce5c0c2d3297e08ac02276cb97ada3f641e81d954a865ffea1e2",
+        "sha256_in_prefix": "5ac2ffec3a4dce5c0c2d3297e08ac02276cb97ada3f641e81d954a865ffea1e2",
+        "size_in_bytes": 634
+      },
+      {
+        "_path": "site-packages/lightning_fabric/_graveyard/tpu.py",
+        "path_type": "hardlink",
+        "sha256": "c7861608e20195cd563e5a1a1ac5deba14ccb6188b0bfbc4bcb98a1e10fd3fdc",
+        "sha256_in_prefix": "c7861608e20195cd563e5a1a1ac5deba14ccb6188b0bfbc4bcb98a1e10fd3fdc",
+        "size_in_bytes": 4355
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "427f3bb3fb18218ca94fa942aaac6fbee0125ea71fc9ef90629e04a8aee99fab",
+        "sha256_in_prefix": "427f3bb3fb18218ca94fa942aaac6fbee0125ea71fc9ef90629e04a8aee99fab",
+        "size_in_bytes": 1271
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/accelerator.py",
+        "path_type": "hardlink",
+        "sha256": "5db07dabf39d47910fac0589e453d48b012971fcc9bf28e97b2bdaefbd8d1fd2",
+        "sha256_in_prefix": "5db07dabf39d47910fac0589e453d48b012971fcc9bf28e97b2bdaefbd8d1fd2",
+        "size_in_bytes": 1883
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/cpu.py",
+        "path_type": "hardlink",
+        "sha256": "a72426adff210f4b5c3fc503ee90d53f806383864762b2e08b2347bbcf60d3a8",
+        "sha256_in_prefix": "a72426adff210f4b5c3fc503ee90d53f806383864762b2e08b2347bbcf60d3a8",
+        "size_in_bytes": 2923
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/cuda.py",
+        "path_type": "hardlink",
+        "sha256": "230a35d90ceb31704f8aa25f764e9ef35e9e21b139f3026efd45e126df247680",
+        "sha256_in_prefix": "230a35d90ceb31704f8aa25f764e9ef35e9e21b139f3026efd45e126df247680",
+        "size_in_bytes": 7174
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/mps.py",
+        "path_type": "hardlink",
+        "sha256": "837781965d0d3f8c8d9508e9fc68a8c85d52d5f05e5777b2dbbd9f53ef9d8ce5",
+        "sha256_in_prefix": "837781965d0d3f8c8d9508e9fc68a8c85d52d5f05e5777b2dbbd9f53ef9d8ce5",
+        "size_in_bytes": 2981
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/registry.py",
+        "path_type": "hardlink",
+        "sha256": "c7cba3c08b8cc17d828e8c32f6393ccf35ed964bd5455dc17ade6af699a4f7a0",
+        "sha256_in_prefix": "c7cba3c08b8cc17d828e8c32f6393ccf35ed964bd5455dc17ade6af699a4f7a0",
+        "size_in_bytes": 4486
+      },
+      {
+        "_path": "site-packages/lightning_fabric/accelerators/xla.py",
+        "path_type": "hardlink",
+        "sha256": "2cd1032e0e6520157378b7d5ab14f550df69d7e7233373d68b78f3e76d8ac6bb",
+        "sha256_in_prefix": "2cd1032e0e6520157378b7d5ab14f550df69d7e7233373d68b78f3e76d8ac6bb",
+        "size_in_bytes": 6338
+      },
+      {
+        "_path": "site-packages/lightning_fabric/cli.py",
+        "path_type": "hardlink",
+        "sha256": "1226c28c10bd1ac7dd060ee44b3de0b385579600e3c572734c52f61cd9bba217",
+        "sha256_in_prefix": "1226c28c10bd1ac7dd060ee44b3de0b385579600e3c572734c52f61cd9bba217",
+        "size_in_bytes": 8882
+      },
+      {
+        "_path": "site-packages/lightning_fabric/connector.py",
+        "path_type": "hardlink",
+        "sha256": "20029e057d725d42c0daf57ac16d7ac9c24c8a39f08cdeaa1f28a30817a6452d",
+        "sha256_in_prefix": "20029e057d725d42c0daf57ac16d7ac9c24c8a39f08cdeaa1f28a30817a6452d",
+        "size_in_bytes": 28432
+      },
+      {
+        "_path": "site-packages/lightning_fabric/fabric.py",
+        "path_type": "hardlink",
+        "sha256": "ad61238dd57b5f99c28d66834eb383858f5d6d485cc42b8489226a45d119ff7b",
+        "sha256_in_prefix": "ad61238dd57b5f99c28d66834eb383858f5d6d485cc42b8489226a45d119ff7b",
+        "size_in_bytes": 49885
+      },
+      {
+        "_path": "site-packages/lightning_fabric/loggers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ed7e8336eb7706681cf46cdde5b1ca9f726949ed86b7903e23d09bf0157a2854",
+        "sha256_in_prefix": "ed7e8336eb7706681cf46cdde5b1ca9f726949ed86b7903e23d09bf0157a2854",
+        "size_in_bytes": 795
+      },
+      {
+        "_path": "site-packages/lightning_fabric/loggers/csv_logs.py",
+        "path_type": "hardlink",
+        "sha256": "3a132b7615eea18e523cc7421f7794abddbab0c3717eee9c5faa411c3c271804",
+        "sha256_in_prefix": "3a132b7615eea18e523cc7421f7794abddbab0c3717eee9c5faa411c3c271804",
+        "size_in_bytes": 9522
+      },
+      {
+        "_path": "site-packages/lightning_fabric/loggers/logger.py",
+        "path_type": "hardlink",
+        "sha256": "e53e0717b427741fd5452f3dd2e8f30dd5655890ccd02697224f9c91af53ab47",
+        "sha256_in_prefix": "e53e0717b427741fd5452f3dd2e8f30dd5655890ccd02697224f9c91af53ab47",
+        "size_in_bytes": 4498
+      },
+      {
+        "_path": "site-packages/lightning_fabric/loggers/tensorboard.py",
+        "path_type": "hardlink",
+        "sha256": "3cd882ccfc35f91edf5fe3e01bda6c9356528898d35182cccb052d4fef6e53f3",
+        "sha256_in_prefix": "3cd882ccfc35f91edf5fe3e01bda6c9356528898d35182cccb052d4fef6e53f3",
+        "size_in_bytes": 13049
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "590f3f552eaba7daa82f3d74130a0578ff8f9aefef813dd1c917e246291b5a98",
+        "sha256_in_prefix": "590f3f552eaba7daa82f3d74130a0578ff8f9aefef813dd1c917e246291b5a98",
+        "size_in_bytes": 1836
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/collectives/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "09be69f86ec0a958f6685255470a359d31cc6f95b85137def1ddbf3546301d32",
+        "sha256_in_prefix": "09be69f86ec0a958f6685255470a359d31cc6f95b85137def1ddbf3546301d32",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/collectives/collective.py",
+        "path_type": "hardlink",
+        "sha256": "a2b7f9494d5469e412b2b59e7c0fa3f3b55218f548f18e39b43d54a46f4abeeb",
+        "sha256_in_prefix": "a2b7f9494d5469e412b2b59e7c0fa3f3b55218f548f18e39b43d54a46f4abeeb",
+        "size_in_bytes": 3532
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/collectives/single_device.py",
+        "path_type": "hardlink",
+        "sha256": "917c8e733938e0c30d5c7e3e32e0965b3fe078a48a9de40a94ef88b33275315f",
+        "sha256_in_prefix": "917c8e733938e0c30d5c7e3e32e0965b3fe078a48a9de40a94ef88b33275315f",
+        "size_in_bytes": 2615
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/collectives/torch_collective.py",
+        "path_type": "hardlink",
+        "sha256": "01d9f76b0cea7221eed8e574eec1f66eeee16072adfb240736f8cf932aaa763e",
+        "sha256_in_prefix": "01d9f76b0cea7221eed8e574eec1f66eeee16072adfb240736f8cf932aaa763e",
+        "size_in_bytes": 8839
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0d5af5cec8315d4787c53b9d219ac2cb14f3ae4880ccdaff3b4d58e11849b805",
+        "sha256_in_prefix": "0d5af5cec8315d4787c53b9d219ac2cb14f3ae4880ccdaff3b4d58e11849b805",
+        "size_in_bytes": 1309
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/cluster_environment.py",
+        "path_type": "hardlink",
+        "sha256": "e3d47aeb38cf54c54e909dfe8143e50771d5ec6771c6989ee606e0c6215a25e2",
+        "sha256_in_prefix": "e3d47aeb38cf54c54e909dfe8143e50771d5ec6771c6989ee606e0c6215a25e2",
+        "size_in_bytes": 2415
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/kubeflow.py",
+        "path_type": "hardlink",
+        "sha256": "eb46eb9160fa7d36ef0e2aa7c5ae6a823d6ca04ee86c3078e5b53060a0abcb1d",
+        "sha256_in_prefix": "eb46eb9160fa7d36ef0e2aa7c5ae6a823d6ca04ee86c3078e5b53060a0abcb1d",
+        "size_in_bytes": 2362
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/lightning.py",
+        "path_type": "hardlink",
+        "sha256": "fc32e9fe258d7e5a8efed9f5701d88e9c0f4702be8eb031c11b39472ff352fcc",
+        "sha256_in_prefix": "fc32e9fe258d7e5a8efed9f5701d88e9c0f4702be8eb031c11b39472ff352fcc",
+        "size_in_bytes": 3922
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/lsf.py",
+        "path_type": "hardlink",
+        "sha256": "cc81140d97a383985681e25089671105e569751aa0983bb3d100e13973b72361",
+        "sha256_in_prefix": "cc81140d97a383985681e25089671105e569751aa0983bb3d100e13973b72361",
+        "size_in_bytes": 7729
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/mpi.py",
+        "path_type": "hardlink",
+        "sha256": "fe7b08efb3f27e45edd7a557b62edf8eeb68748fc6e3167e14d3ba60bebd5cb3",
+        "sha256_in_prefix": "fe7b08efb3f27e45edd7a557b62edf8eeb68748fc6e3167e14d3ba60bebd5cb3",
+        "size_in_bytes": 4235
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/slurm.py",
+        "path_type": "hardlink",
+        "sha256": "0c34a4f078afb0a6297e858bf47487fb0ab0987f4354bb58d13c149c405b5056",
+        "sha256_in_prefix": "0c34a4f078afb0a6297e858bf47487fb0ab0987f4354bb58d13c149c405b5056",
+        "size_in_bytes": 8949
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/torchelastic.py",
+        "path_type": "hardlink",
+        "sha256": "ab0f00c6d5153b4afd504bec8e4c4c41da089dff21334041eb004c38985bd11c",
+        "sha256_in_prefix": "ab0f00c6d5153b4afd504bec8e4c4c41da089dff21334041eb004c38985bd11c",
+        "size_in_bytes": 3361
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/environments/xla.py",
+        "path_type": "hardlink",
+        "sha256": "1792097771b359383aa818b381ee16d2044f6410922a7f66a3eefc0c437afb9e",
+        "sha256_in_prefix": "1792097771b359383aa818b381ee16d2044f6410922a7f66a3eefc0c437afb9e",
+        "size_in_bytes": 4004
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a8de437d22779b2f7397acde0908b1841f2434e3c181071c4d9c78627917094f",
+        "sha256_in_prefix": "a8de437d22779b2f7397acde0908b1841f2434e3c181071c4d9c78627917094f",
+        "size_in_bytes": 843
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/io/checkpoint_io.py",
+        "path_type": "hardlink",
+        "sha256": "234a1e3d5fd79fe789646775e1aa5960fe5f20b3dd2d4ec50f0b769d9963a7ab",
+        "sha256_in_prefix": "234a1e3d5fd79fe789646775e1aa5960fe5f20b3dd2d4ec50f0b769d9963a7ab",
+        "size_in_bytes": 2582
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/io/torch_io.py",
+        "path_type": "hardlink",
+        "sha256": "6cb665831d8bee2db6138ccd56f5de7581a12f472f7b33dbbe873138eca9890e",
+        "sha256_in_prefix": "6cb665831d8bee2db6138ccd56f5de7581a12f472f7b33dbbe873138eca9890e",
+        "size_in_bytes": 3551
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/io/xla.py",
+        "path_type": "hardlink",
+        "sha256": "824be2bd0904f57a4d07fe5710a14fe57ec93b907b07827d9073d80cb2038413",
+        "sha256_in_prefix": "824be2bd0904f57a4d07fe5710a14fe57ec93b907b07827d9073d80cb2038413",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2652a418b8eb588a0556aaae2d51d26f848fe468592d68b74bc77313e147586d",
+        "sha256_in_prefix": "2652a418b8eb588a0556aaae2d51d26f848fe468592d68b74bc77313e147586d",
+        "size_in_bytes": 1459
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/amp.py",
+        "path_type": "hardlink",
+        "sha256": "59e17a9a9447b8e33b3cc772836e749269065115df6e302c1944cb5fa78a856a",
+        "sha256_in_prefix": "59e17a9a9447b8e33b3cc772836e749269065115df6e302c1944cb5fa78a856a",
+        "size_in_bytes": 5052
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/bitsandbytes.py",
+        "path_type": "hardlink",
+        "sha256": "fb610e5e091607ac9ff2021c56493734585d27e9d03baf8333667d1df4409786",
+        "sha256_in_prefix": "fb610e5e091607ac9ff2021c56493734585d27e9d03baf8333667d1df4409786",
+        "size_in_bytes": 21469
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "a58009712a93e6ad4b5fbc8f7c396480fb5a03c42b0c7ba15dc57388b9b5bdc3",
+        "sha256_in_prefix": "a58009712a93e6ad4b5fbc8f7c396480fb5a03c42b0c7ba15dc57388b9b5bdc3",
+        "size_in_bytes": 3587
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/double.py",
+        "path_type": "hardlink",
+        "sha256": "963bc1285003e6b1ac5ffd09ee2e7178ea9ac4613cc3380cc3d9a9370667cb46",
+        "sha256_in_prefix": "963bc1285003e6b1ac5ffd09ee2e7178ea9ac4613cc3380cc3d9a9370667cb46",
+        "size_in_bytes": 1963
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/fsdp.py",
+        "path_type": "hardlink",
+        "sha256": "bcb929dca295a651b4ee7550c78e43dea302c1ff37b6372233eb833db1fd8ea3",
+        "sha256_in_prefix": "bcb929dca295a651b4ee7550c78e43dea302c1ff37b6372233eb833db1fd8ea3",
+        "size_in_bytes": 6811
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/half.py",
+        "path_type": "hardlink",
+        "sha256": "708ab5e834f102f6a22cb51d72c6fd85ff732f67d88f90af12855cdb85920ca4",
+        "sha256_in_prefix": "708ab5e834f102f6a22cb51d72c6fd85ff732f67d88f90af12855cdb85920ca4",
+        "size_in_bytes": 2353
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/precision.py",
+        "path_type": "hardlink",
+        "sha256": "80c1b205dbdf888fa3ca6fd45dbb82f096165f91007efed8d2430651aa6897a6",
+        "sha256_in_prefix": "80c1b205dbdf888fa3ca6fd45dbb82f096165f91007efed8d2430651aa6897a6",
+        "size_in_bytes": 5592
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/transformer_engine.py",
+        "path_type": "hardlink",
+        "sha256": "d38b5da3fdb7bcfb83e0ab7e6e4998224e27f24b8bedea6b9239fc62a64c4e29",
+        "sha256_in_prefix": "d38b5da3fdb7bcfb83e0ab7e6e4998224e27f24b8bedea6b9239fc62a64c4e29",
+        "size_in_bytes": 8308
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/utils.py",
+        "path_type": "hardlink",
+        "sha256": "6141b02d980c92393beb391cac0c7db238492688fb37c5f87fe30660848ae02e",
+        "sha256_in_prefix": "6141b02d980c92393beb391cac0c7db238492688fb37c5f87fe30660848ae02e",
+        "size_in_bytes": 2553
+      },
+      {
+        "_path": "site-packages/lightning_fabric/plugins/precision/xla.py",
+        "path_type": "hardlink",
+        "sha256": "5dfa97710c1176f98961627930a04973db824ed6a86caa82f858250d2c3cf4ad",
+        "sha256_in_prefix": "5dfa97710c1176f98961627930a04973db824ed6a86caa82f858250d2c3cf4ad",
+        "size_in_bytes": 2502
+      },
+      {
+        "_path": "site-packages/lightning_fabric/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f26633c4ae3dcedce30b52cf34348d76e4f87f81dc94e71fbe1dfa87bb1c93c6",
+        "sha256_in_prefix": "f26633c4ae3dcedce30b52cf34348d76e4f87f81dc94e71fbe1dfa87bb1c93c6",
+        "size_in_bytes": 1718
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/ddp.py",
+        "path_type": "hardlink",
+        "sha256": "93e219be5d3b8870ac34b7520b427e90b4e71c1006d231fd02bc3ccab582bfef",
+        "sha256_in_prefix": "93e219be5d3b8870ac34b7520b427e90b4e71c1006d231fd02bc3ccab582bfef",
+        "size_in_bytes": 10194
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "6a89c0691988e4ad3de5815d9350e0930aacdc290849f2113b58a1f549317b5f",
+        "sha256_in_prefix": "6a89c0691988e4ad3de5815d9350e0930aacdc290849f2113b58a1f549317b5f",
+        "size_in_bytes": 41923
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/dp.py",
+        "path_type": "hardlink",
+        "sha256": "967f4e514c3475716eae71b8839dcc8d1327dfca4addccb8b7ed7db1df5ad10b",
+        "sha256_in_prefix": "967f4e514c3475716eae71b8839dcc8d1327dfca4addccb8b7ed7db1df5ad10b",
+        "size_in_bytes": 4148
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/fsdp.py",
+        "path_type": "hardlink",
+        "sha256": "165edc36c4e92f053d87b7d45214101461bb050548d1cb3d5ec64c1007c6a357",
+        "sha256_in_prefix": "165edc36c4e92f053d87b7d45214101461bb050548d1cb3d5ec64c1007c6a357",
+        "size_in_bytes": 40850
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/launchers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dfd9d16beaf4312b94d79baeb29ad0a4e89565857bdca2582fce9d3487f11fb3",
+        "sha256_in_prefix": "dfd9d16beaf4312b94d79baeb29ad0a4e89565857bdca2582fce9d3487f11fb3",
+        "size_in_bytes": 933
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/launchers/launcher.py",
+        "path_type": "hardlink",
+        "sha256": "1482c151c44d52f067424b861584be9a9b21d70849d0049a4c6ccfdebad2b715",
+        "sha256_in_prefix": "1482c151c44d52f067424b861584be9a9b21d70849d0049a4c6ccfdebad2b715",
+        "size_in_bytes": 1421
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/launchers/multiprocessing.py",
+        "path_type": "hardlink",
+        "sha256": "7ac5f6c897a7e9e134ce89c0002d5ddc1f82c654794d72bcf47cc6162e065327",
+        "sha256_in_prefix": "7ac5f6c897a7e9e134ce89c0002d5ddc1f82c654794d72bcf47cc6162e065327",
+        "size_in_bytes": 10213
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/launchers/subprocess_script.py",
+        "path_type": "hardlink",
+        "sha256": "f2a6041458d3d221d1cb48396c9b36904f1d03fb05cdf1818e4e4337bbfd0060",
+        "sha256_in_prefix": "f2a6041458d3d221d1cb48396c9b36904f1d03fb05cdf1818e4e4337bbfd0060",
+        "size_in_bytes": 10055
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/launchers/xla.py",
+        "path_type": "hardlink",
+        "sha256": "d23b65ed577c62a7ca564305537d006da09b685952dd02f55a73c1fc64468df5",
+        "sha256_in_prefix": "d23b65ed577c62a7ca564305537d006da09b685952dd02f55a73c1fc64468df5",
+        "size_in_bytes": 5002
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/model_parallel.py",
+        "path_type": "hardlink",
+        "sha256": "c2a0fd9248cbb7eb900de4a386b2f1934cda1476bfc07e31d985e1ad9b730e03",
+        "sha256_in_prefix": "c2a0fd9248cbb7eb900de4a386b2f1934cda1476bfc07e31d985e1ad9b730e03",
+        "size_in_bytes": 26321
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/parallel.py",
+        "path_type": "hardlink",
+        "sha256": "3d2992adc677f35fd264dfd717fbc517d86ad7fff43c45278af8e608d7c6f66e",
+        "sha256_in_prefix": "3d2992adc677f35fd264dfd717fbc517d86ad7fff43c45278af8e608d7c6f66e",
+        "size_in_bytes": 4515
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/registry.py",
+        "path_type": "hardlink",
+        "sha256": "5a7aa471db8c96a695740d815b5b98efa3874d60c1b82e70c855278beb398f28",
+        "sha256_in_prefix": "5a7aa471db8c96a695740d815b5b98efa3874d60c1b82e70c855278beb398f28",
+        "size_in_bytes": 3913
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/single_device.py",
+        "path_type": "hardlink",
+        "sha256": "fc9297e25186f52abe177901873ef24eac66099661cf17403dd8f8109604b49d",
+        "sha256_in_prefix": "fc9297e25186f52abe177901873ef24eac66099661cf17403dd8f8109604b49d",
+        "size_in_bytes": 2922
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/single_xla.py",
+        "path_type": "hardlink",
+        "sha256": "f686fa13645a41ad172b8922ca8562363a500c7b3810ba44118e8cec680aaa72",
+        "sha256_in_prefix": "f686fa13645a41ad172b8922ca8562363a500c7b3810ba44118e8cec680aaa72",
+        "size_in_bytes": 3250
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/strategy.py",
+        "path_type": "hardlink",
+        "sha256": "6383c8b6577c5eceb5097e3493352e78498f3bb14bea7f42dc0efe19cf8a9852",
+        "sha256_in_prefix": "6383c8b6577c5eceb5097e3493352e78498f3bb14bea7f42dc0efe19cf8a9852",
+        "size_in_bytes": 18327
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/xla.py",
+        "path_type": "hardlink",
+        "sha256": "257b8514576af67d9336761eec02f7297db9a48089a3efa05f76e385f2e0d96b",
+        "sha256_in_prefix": "257b8514576af67d9336761eec02f7297db9a48089a3efa05f76e385f2e0d96b",
+        "size_in_bytes": 11443
+      },
+      {
+        "_path": "site-packages/lightning_fabric/strategies/xla_fsdp.py",
+        "path_type": "hardlink",
+        "sha256": "00ede2abe80ab23cb4be698c93ca7fed4f0f0f27591dfcabffc6ff527789a699",
+        "sha256_in_prefix": "00ede2abe80ab23cb4be698c93ca7fed4f0f0f27591dfcabffc6ff527789a699",
+        "size_in_bytes": 29958
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e24d3103f0332e83fa01694d36f77c176ba428e53217399f82886236e165b29b",
+        "sha256_in_prefix": "e24d3103f0332e83fa01694d36f77c176ba428e53217399f82886236e165b29b",
+        "size_in_bytes": 1549
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/apply_func.py",
+        "path_type": "hardlink",
+        "sha256": "12df82ab03cca2cf1122770e16274773d5053ad3c3dd929b00c8208fb6b7cb78",
+        "sha256_in_prefix": "12df82ab03cca2cf1122770e16274773d5053ad3c3dd929b00c8208fb6b7cb78",
+        "size_in_bytes": 4775
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/cloud_io.py",
+        "path_type": "hardlink",
+        "sha256": "1fd35ba5b907fe530b6e12c276d876e8ef909080c2203ca071936b1827005809",
+        "sha256_in_prefix": "1fd35ba5b907fe530b6e12c276d876e8ef909080c2203ca071936b1827005809",
+        "size_in_bytes": 5622
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/consolidate_checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "be4d46dc5ece1ec678745b97d3dd06637479dbcad6af9607ed5dfb10df14b3fb",
+        "sha256_in_prefix": "be4d46dc5ece1ec678745b97d3dd06637479dbcad6af9607ed5dfb10df14b3fb",
+        "size_in_bytes": 2901
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/data.py",
+        "path_type": "hardlink",
+        "sha256": "7cb74d78e5ea1ae3753ce7d78f88a833d743dc67c5230f93a5c91753905ffcb9",
+        "sha256_in_prefix": "7cb74d78e5ea1ae3753ce7d78f88a833d743dc67c5230f93a5c91753905ffcb9",
+        "size_in_bytes": 23181
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/device_dtype_mixin.py",
+        "path_type": "hardlink",
+        "sha256": "e34c9eaec14b7b0b5b61b20bfe3a6447d91e27f17c7adefbc23952d5d8cc34ab",
+        "sha256_in_prefix": "e34c9eaec14b7b0b5b61b20bfe3a6447d91e27f17c7adefbc23952d5d8cc34ab",
+        "size_in_bytes": 4300
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/device_parser.py",
+        "path_type": "hardlink",
+        "sha256": "456000e433aaac1ab3ce895d09a80385362bdf4dcea2721644313e2f8ed23d5e",
+        "sha256_in_prefix": "456000e433aaac1ab3ce895d09a80385362bdf4dcea2721644313e2f8ed23d5e",
+        "size_in_bytes": 7859
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/distributed.py",
+        "path_type": "hardlink",
+        "sha256": "244c27485cc710f1fc869c6a92a0d2ad6819a793563a74f5af428edd14d017d7",
+        "sha256_in_prefix": "244c27485cc710f1fc869c6a92a0d2ad6819a793563a74f5af428edd14d017d7",
+        "size_in_bytes": 17644
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/enums.py",
+        "path_type": "hardlink",
+        "sha256": "eb5ef79768098f1dd2f6d6656e90b0d0794f4759affdb477ccafbc2f36cb7bf5",
+        "sha256_in_prefix": "eb5ef79768098f1dd2f6d6656e90b0d0794f4759affdb477ccafbc2f36cb7bf5",
+        "size_in_bytes": 692
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "88ccfc9abdfa05cd7ba874c8fd29053ca80f5b30ae24a7bc8278642f229d881d",
+        "sha256_in_prefix": "88ccfc9abdfa05cd7ba874c8fd29053ca80f5b30ae24a7bc8278642f229d881d",
+        "size_in_bytes": 694
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/imports.py",
+        "path_type": "hardlink",
+        "sha256": "12dcc66d43d3ac5ac1dcd8bb39de19f9c151e71e45d1dae831086a01dd468973",
+        "sha256_in_prefix": "12dcc66d43d3ac5ac1dcd8bb39de19f9c151e71e45d1dae831086a01dd468973",
+        "size_in_bytes": 1796
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/init.py",
+        "path_type": "hardlink",
+        "sha256": "f170f7f342f8f79dde9ba80eef27cf2578cf264e7843e887e83c0390007887df",
+        "sha256_in_prefix": "f170f7f342f8f79dde9ba80eef27cf2578cf264e7843e887e83c0390007887df",
+        "size_in_bytes": 4589
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/load.py",
+        "path_type": "hardlink",
+        "sha256": "04da2f735304cca29e74ee40dd9dea1c0907782840a1a51bf0838bd035385e62",
+        "sha256_in_prefix": "04da2f735304cca29e74ee40dd9dea1c0907782840a1a51bf0838bd035385e62",
+        "size_in_bytes": 9758
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/logger.py",
+        "path_type": "hardlink",
+        "sha256": "5460a3fc61a863610979c2330979e7b6118e8fec7575c65a6422c8c2039939b3",
+        "sha256_in_prefix": "5460a3fc61a863610979c2330979e7b6118e8fec7575c65a6422c8c2039939b3",
+        "size_in_bytes": 6194
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/optimizer.py",
+        "path_type": "hardlink",
+        "sha256": "2b26a8f8551b9caf78f013067e8a10ca8ae93395306e5f45922e7df8dc39690c",
+        "sha256_in_prefix": "2b26a8f8551b9caf78f013067e8a10ca8ae93395306e5f45922e7df8dc39690c",
+        "size_in_bytes": 1789
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/rank_zero.py",
+        "path_type": "hardlink",
+        "sha256": "a3ca653a3a7adb34ee9263007581c5c248203d0fd3b80cbb3967ec7aa16d4154",
+        "sha256_in_prefix": "a3ca653a3a7adb34ee9263007581c5c248203d0fd3b80cbb3967ec7aa16d4154",
+        "size_in_bytes": 1976
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/registry.py",
+        "path_type": "hardlink",
+        "sha256": "5a69d2f5084c4a022a5cf1f6752f7881116564868b860db70e1c4b9c40a4e477",
+        "sha256_in_prefix": "5a69d2f5084c4a022a5cf1f6752f7881116564868b860db70e1c4b9c40a4e477",
+        "size_in_bytes": 2334
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/seed.py",
+        "path_type": "hardlink",
+        "sha256": "d2c99f52e881846578ae3ef3229fcee9cf9731d3da03b3b8f163223237c73360",
+        "sha256_in_prefix": "d2c99f52e881846578ae3ef3229fcee9cf9731d3da03b3b8f163223237c73360",
+        "size_in_bytes": 6280
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/spike.py",
+        "path_type": "hardlink",
+        "sha256": "ffcc90e21cde82a58f40a860b981ef49d31d4af42dcf901dd2df4d0e6866e0cd",
+        "sha256_in_prefix": "ffcc90e21cde82a58f40a860b981ef49d31d4af42dcf901dd2df4d0e6866e0cd",
+        "size_in_bytes": 7547
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/testing/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d0d130caa279f2cc6599f8f6167f277ecb2d46e65d1f8825cc780f8511267eae",
+        "sha256_in_prefix": "d0d130caa279f2cc6599f8f6167f277ecb2d46e65d1f8825cc780f8511267eae",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/testing/_runif.py",
+        "path_type": "hardlink",
+        "sha256": "038bc0031c2efa4d91893252c40d22840bc6507efef477a4eb551b974d1f0fa5",
+        "sha256_in_prefix": "038bc0031c2efa4d91893252c40d22840bc6507efef477a4eb551b974d1f0fa5",
+        "size_in_bytes": 4997
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/throughput.py",
+        "path_type": "hardlink",
+        "sha256": "0f1604c84da2751e68d67aaf05364b08ad4ff88808b8ab9ae29ba6c646ffa775",
+        "sha256_in_prefix": "0f1604c84da2751e68d67aaf05364b08ad4ff88808b8ab9ae29ba6c646ffa775",
+        "size_in_bytes": 27525
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/types.py",
+        "path_type": "hardlink",
+        "sha256": "4c8bda0001efbaf516bc303fe2e692bf6b63204ee691abc7e22d79c6e08a37b6",
+        "sha256_in_prefix": "4c8bda0001efbaf516bc303fe2e692bf6b63204ee691abc7e22d79c6e08a37b6",
+        "size_in_bytes": 2771
+      },
+      {
+        "_path": "site-packages/lightning_fabric/utilities/warnings.py",
+        "path_type": "hardlink",
+        "sha256": "cdb4f6a9dfafc67538b6b9498963a703966e6416f0cb006281be159b5e3e469b",
+        "sha256_in_prefix": "cdb4f6a9dfafc67538b6b9498963a703966e6416f0cb006281be159b5e3e469b",
+        "size_in_bytes": 2270
+      },
+      {
+        "_path": "site-packages/lightning_fabric/version.info",
+        "path_type": "hardlink",
+        "sha256": "8a81c718d7e78b74b27f8ec3313bbcec2a7acd1df926e6e72c71561996726595",
+        "sha256_in_prefix": "8a81c718d7e78b74b27f8ec3313bbcec2a7acd1df926e6e72c71561996726595",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "site-packages/lightning_fabric/wrappers.py",
+        "path_type": "hardlink",
+        "sha256": "12fe810d938b54c03f9fdfcb3b89f37d6595a5e30953eb27dca83b30c0f8c88e",
+        "sha256_in_prefix": "12fe810d938b54c03f9fdfcb3b89f37d6595a5e30953eb27dca83b30c0f8c88e",
+        "size_in_bytes": 17568
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "bac11277cf45f4793ad4859916b27bf386b209b74679df56bba58d2afca3a268",
+        "sha256_in_prefix": "bac11277cf45f4793ad4859916b27bf386b209b74679df56bba58d2afca3a268",
+        "size_in_bytes": 20986
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "18c93be0ba61157bc82e87d571f480dba0e5c763bd61fdefb83678b8d8ffd368",
+        "sha256_in_prefix": "18c93be0ba61157bc82e87d571f480dba0e5c763bd61fdefb83678b8d8ffd368",
+        "size_in_bytes": 46484
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "sha256_in_prefix": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "18e540ba236082579b8c31e92fef45d276de5377baef8d0f32d68261cfed37dd",
+        "sha256_in_prefix": "18e540ba236082579b8c31e92fef45d276de5377baef8d0f32d68261cfed37dd",
+        "size_in_bytes": 113
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9",
+        "sha256_in_prefix": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9",
+        "size_in_bytes": 11349
+      },
+      {
+        "_path": "site-packages/pytorch_lightning-2.5.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0920444818a19ea727aa546ceffa0fb45ae204968bb00e12054d0d0896157d6e",
+        "sha256_in_prefix": "0920444818a19ea727aa546ceffa0fb45ae204968bb00e12054d0d0896157d6e",
+        "size_in_bytes": 35
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/CHANGELOG.md",
+        "path_type": "hardlink",
+        "sha256": "03b8565c80d1b156c6a9bb7a3d027c82604af2474520fe3e30c9a0fb79af6df4",
+        "sha256_in_prefix": "03b8565c80d1b156c6a9bb7a3d027c82604af2474520fe3e30c9a0fb79af6df4",
+        "size_in_bytes": 496282
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/MANIFEST.in",
+        "path_type": "hardlink",
+        "sha256": "104139851a36da6fc35eb1769e412076112f351a63f235322d79c6402f10d96e",
+        "sha256_in_prefix": "104139851a36da6fc35eb1769e412076112f351a63f235322d79c6402f10d96e",
+        "size_in_bytes": 495
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/README.md",
+        "path_type": "hardlink",
+        "sha256": "7f4f6cd6f3c657a03588ad1d6c7650e2169b0eeadbe4bbdbcfa68eb15c63acae",
+        "sha256_in_prefix": "7f4f6cd6f3c657a03588ad1d6c7650e2169b0eeadbe4bbdbcfa68eb15c63acae",
+        "size_in_bytes": 15664
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/__about__.py",
+        "path_type": "hardlink",
+        "sha256": "94c8032e32e0bdd6a1efb74b2b36fa25a3e80df68a1dcb6867dc4ad5fcdb767a",
+        "sha256_in_prefix": "94c8032e32e0bdd6a1efb74b2b36fa25a3e80df68a1dcb6867dc4ad5fcdb767a",
+        "size_in_bytes": 2173
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b9f6301e15fd3f2cde624d62df6634b76a6aab76e2f64687d7878723f9360bac",
+        "sha256_in_prefix": "b9f6301e15fd3f2cde624d62df6634b76a6aab76e2f64687d7878723f9360bac",
+        "size_in_bytes": 2600
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/__setup__.py",
+        "path_type": "hardlink",
+        "sha256": "33006de01af75e44630e8aa8a2e238e19ef9f7a7b2d04e6fd5b63cb026c58aaf",
+        "sha256_in_prefix": "33006de01af75e44630e8aa8a2e238e19ef9f7a7b2d04e6fd5b63cb026c58aaf",
+        "size_in_bytes": 5078
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/__version__.py",
+        "path_type": "hardlink",
+        "sha256": "ffcc9e03735c1d22f20997f0781ca4b1f3f13a5ea58173d3b6030c0f39d0e3cd",
+        "sha256_in_prefix": "ffcc9e03735c1d22f20997f0781ca4b1f3f13a5ea58173d3b6030c0f39d0e3cd",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/_graveyard/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1b87ccb0e3f314ff57c5a9c849da9a00633e1b26445ebef5b46a702cdf0c0856",
+        "sha256_in_prefix": "1b87ccb0e3f314ff57c5a9c849da9a00633e1b26445ebef5b46a702cdf0c0856",
+        "size_in_bytes": 771
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/_graveyard/_torchmetrics.py",
+        "path_type": "hardlink",
+        "sha256": "0c873e99bb460aeee24acd08f5d2655490bf90d40121c3570808e2002cdf9ff3",
+        "sha256_in_prefix": "0c873e99bb460aeee24acd08f5d2655490bf90d40121c3570808e2002cdf9ff3",
+        "size_in_bytes": 967
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/_graveyard/hpu.py",
+        "path_type": "hardlink",
+        "sha256": "a7bc6ec1f82697c4b52651509b51c29ead9d51aff7ef9e48fb1cca5f6e52a4df",
+        "sha256_in_prefix": "a7bc6ec1f82697c4b52651509b51c29ead9d51aff7ef9e48fb1cca5f6e52a4df",
+        "size_in_bytes": 3627
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/_graveyard/precision.py",
+        "path_type": "hardlink",
+        "sha256": "367c9d9c703890f2c02738caa4d6bc1f68ab1d76bf7912fa51d34a3c25a37baa",
+        "sha256_in_prefix": "367c9d9c703890f2c02738caa4d6bc1f68ab1d76bf7912fa51d34a3c25a37baa",
+        "size_in_bytes": 3310
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/_graveyard/tpu.py",
+        "path_type": "hardlink",
+        "sha256": "f0669dd75457b70f468440b36b03fb3fcc469dc3cc18fedfbe9c8371c5d0d165",
+        "sha256_in_prefix": "f0669dd75457b70f468440b36b03fb3fcc469dc3cc18fedfbe9c8371c5d0d165",
+        "size_in_bytes": 4527
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4fbed7feb94469b542ee473c680df724b5f54dcd2ef4d724675ae2eb9950b9a5",
+        "sha256_in_prefix": "4fbed7feb94469b542ee473c680df724b5f54dcd2ef4d724675ae2eb9950b9a5",
+        "size_in_bytes": 1415
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/accelerator.py",
+        "path_type": "hardlink",
+        "sha256": "254664b5044cef0c276da4ec9ed037f3445b0dcf402e8d1517e68fb57998b88f",
+        "sha256_in_prefix": "254664b5044cef0c276da4ec9ed037f3445b0dcf402e8d1517e68fb57998b88f",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/cpu.py",
+        "path_type": "hardlink",
+        "sha256": "b9b73d0b345c6ffd1b96c435da20d81938b4032f7d9e7cbb5d5787e1db1f0031",
+        "sha256_in_prefix": "b9b73d0b345c6ffd1b96c435da20d81938b4032f7d9e7cbb5d5787e1db1f0031",
+        "size_in_bytes": 3222
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/cuda.py",
+        "path_type": "hardlink",
+        "sha256": "32a9fcf0b9206d1733ed779411dae36219ed1bb9e0d4e9eae98f99fd7b492dde",
+        "sha256_in_prefix": "32a9fcf0b9206d1733ed779411dae36219ed1bb9e0d4e9eae98f99fd7b492dde",
+        "size_in_bytes": 5660
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/mps.py",
+        "path_type": "hardlink",
+        "sha256": "06b772fd9a4ce8ee16ee04ba47f261fbc78c9cf734cc4f9b8339338070d1878a",
+        "sha256_in_prefix": "06b772fd9a4ce8ee16ee04ba47f261fbc78c9cf734cc4f9b8339338070d1878a",
+        "size_in_bytes": 3588
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/accelerators/xla.py",
+        "path_type": "hardlink",
+        "sha256": "ccfe2ddb069fff3737e60374cf973878fff75ca586532750e4b9bcd5f13482ea",
+        "sha256_in_prefix": "ccfe2ddb069fff3737e60374cf973878fff75ca586532750e4b9bcd5f13482ea",
+        "size_in_bytes": 1970
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "475378c0427d082ccb79d97c15e5bde94855063afb544d7cecf1afe419d44a82",
+        "sha256_in_prefix": "475378c0427d082ccb79d97c15e5bde94855063afb544d7cecf1afe419d44a82",
+        "size_in_bytes": 2719
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/batch_size_finder.py",
+        "path_type": "hardlink",
+        "sha256": "b47f913ee78a4c7c57b136bcce41dbf327dd7d55656784c9ea19147c9f535db2",
+        "sha256_in_prefix": "b47f913ee78a4c7c57b136bcce41dbf327dd7d55656784c9ea19147c9f535db2",
+        "size_in_bytes": 8198
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/callback.py",
+        "path_type": "hardlink",
+        "sha256": "993649adee3afe829323069633f668ac191991321b94a2aa9fa3209773cfc7c1",
+        "sha256_in_prefix": "993649adee3afe829323069633f668ac191991321b94a2aa9fa3209773cfc7c1",
+        "size_in_bytes": 11010
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "b537ac7cf02b1edaace86432320754517d664a65f4ba4393528e3350898aaa73",
+        "sha256_in_prefix": "b537ac7cf02b1edaace86432320754517d664a65f4ba4393528e3350898aaa73",
+        "size_in_bytes": 361
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/device_stats_monitor.py",
+        "path_type": "hardlink",
+        "sha256": "15a64123053d0167a8dc64a1312240cce82089f7022e118c9a045e6db3fa9025",
+        "sha256_in_prefix": "15a64123053d0167a8dc64a1312240cce82089f7022e118c9a045e6db3fa9025",
+        "size_in_bytes": 5637
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/early_stopping.py",
+        "path_type": "hardlink",
+        "sha256": "d9db40c4c01b82470f99c5a364c27db1074cf5fcec9e60d1163b09957660551f",
+        "sha256_in_prefix": "d9db40c4c01b82470f99c5a364c27db1074cf5fcec9e60d1163b09957660551f",
+        "size_in_bytes": 11674
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/finetuning.py",
+        "path_type": "hardlink",
+        "sha256": "9e2f39e8bab4da9aa51fd868b9a1db46949716608f2cf2ccb4475d34d26bbf58",
+        "sha256_in_prefix": "9e2f39e8bab4da9aa51fd868b9a1db46949716608f2cf2ccb4475d34d26bbf58",
+        "size_in_bytes": 19082
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/gradient_accumulation_scheduler.py",
+        "path_type": "hardlink",
+        "sha256": "5bf66845a86a27cb2902884d260c4f07da01cfc889ceb5ad1049179ba3c2d504",
+        "sha256_in_prefix": "5bf66845a86a27cb2902884d260c4f07da01cfc889ceb5ad1049179ba3c2d504",
+        "size_in_bytes": 6114
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/lambda_function.py",
+        "path_type": "hardlink",
+        "sha256": "dba3be6cfe40b40d12cb378c2aca53e4ee2146c59e6708d33894879d92a246e0",
+        "sha256_in_prefix": "dba3be6cfe40b40d12cb378c2aca53e4ee2146c59e6708d33894879d92a246e0",
+        "size_in_bytes": 3435
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/lr_finder.py",
+        "path_type": "hardlink",
+        "sha256": "ab5881d3ab97f69d60fb2c606ef6ce2078ef63adabce9c65afa74c31a443a99e",
+        "sha256_in_prefix": "ab5881d3ab97f69d60fb2c606ef6ce2078ef63adabce9c65afa74c31a443a99e",
+        "size_in_bytes": 4850
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/lr_monitor.py",
+        "path_type": "hardlink",
+        "sha256": "05f0c90a3a9d05d971d4d2b147d72d24233975b74ea597cb08855328e52ddc2a",
+        "sha256_in_prefix": "05f0c90a3a9d05d971d4d2b147d72d24233975b74ea597cb08855328e52ddc2a",
+        "size_in_bytes": 15237
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/model_checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "60037edc3238135deb8b431a645e83c3370ff05a05285a2854f8c45d2afc0c17",
+        "sha256_in_prefix": "60037edc3238135deb8b431a645e83c3370ff05a05285a2854f8c45d2afc0c17",
+        "size_in_bytes": 41465
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/model_summary.py",
+        "path_type": "hardlink",
+        "sha256": "608c23fa7c3370aa63742a50a7bea6727e774d9082567fd179aa310d6d263996",
+        "sha256_in_prefix": "608c23fa7c3370aa63742a50a7bea6727e774d9082567fd179aa310d6d263996",
+        "size_in_bytes": 3809
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/on_exception_checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "4b9241605d923efdee08e43021998a410be976a85c0f9b2a70bc4cfa4cad5f3e",
+        "sha256_in_prefix": "4b9241605d923efdee08e43021998a410be976a85c0f9b2a70bc4cfa4cad5f3e",
+        "size_in_bytes": 2271
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/prediction_writer.py",
+        "path_type": "hardlink",
+        "sha256": "9adbc518d9982f152633e94c38ca7d976f6b07484fdc50b44e73186cc6212823",
+        "sha256_in_prefix": "9adbc518d9982f152633e94c38ca7d976f6b07484fdc50b44e73186cc6212823",
+        "size_in_bytes": 6087
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/progress/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "400546fe9970906675f82973162360af0199b5c9b52bdf5389a4b01f9a9add4c",
+        "sha256_in_prefix": "400546fe9970906675f82973162360af0199b5c9b52bdf5389a4b01f9a9add4c",
+        "size_in_bytes": 945
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/progress/progress_bar.py",
+        "path_type": "hardlink",
+        "sha256": "7db1909bd99b751cc0f0068f36977ba9d1ec6a695ed6a65d40b235e8894ae7d6",
+        "sha256_in_prefix": "7db1909bd99b751cc0f0068f36977ba9d1ec6a695ed6a65d40b235e8894ae7d6",
+        "size_in_bytes": 9220
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/progress/rich_progress.py",
+        "path_type": "hardlink",
+        "sha256": "aa6a1a2f8ef51ae6b4d3c8be7c90bdb78628250a4265e1e79fad030d823450e5",
+        "sha256_in_prefix": "aa6a1a2f8ef51ae6b4d3c8be7c90bdb78628250a4265e1e79fad030d823450e5",
+        "size_in_bytes": 26226
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/progress/tqdm_progress.py",
+        "path_type": "hardlink",
+        "sha256": "db384dd503a16459439c456e5c824d8aa4e9fe32c66782a38bb761fa0a675a9a",
+        "sha256_in_prefix": "db384dd503a16459439c456e5c824d8aa4e9fe32c66782a38bb761fa0a675a9a",
+        "size_in_bytes": 17083
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/pruning.py",
+        "path_type": "hardlink",
+        "sha256": "0d345cb8da4db51d4a967a305699c2869d1dfbc2b49debb5cd82ff55c6d1aed4",
+        "sha256_in_prefix": "0d345cb8da4db51d4a967a305699c2869d1dfbc2b49debb5cd82ff55c6d1aed4",
+        "size_in_bytes": 23063
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/rich_model_summary.py",
+        "path_type": "hardlink",
+        "sha256": "5811a09552c4bc05566092ef5fd9ae73fe7e538f8c9f158059a7cf6f20a673df",
+        "sha256_in_prefix": "5811a09552c4bc05566092ef5fd9ae73fe7e538f8c9f158059a7cf6f20a673df",
+        "size_in_bytes": 4286
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/spike.py",
+        "path_type": "hardlink",
+        "sha256": "b170c8e85bbca6290c672326be1cc58d9626be1bc6da20c72fcbdc6ccdabc1f8",
+        "sha256_in_prefix": "b170c8e85bbca6290c672326be1cc58d9626be1bc6da20c72fcbdc6ccdabc1f8",
+        "size_in_bytes": 1154
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/stochastic_weight_avg.py",
+        "path_type": "hardlink",
+        "sha256": "a84d1a5849bc7829f83b44e885ce75ca0a350a12dcaab5db80610847254a3587",
+        "sha256_in_prefix": "a84d1a5849bc7829f83b44e885ce75ca0a350a12dcaab5db80610847254a3587",
+        "size_in_bytes": 17882
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/throughput_monitor.py",
+        "path_type": "hardlink",
+        "sha256": "bfe333518f1300e0c4d155620415d17136cd833b0c2e46703f7db61fc219ee59",
+        "sha256_in_prefix": "bfe333518f1300e0c4d155620415d17136cd833b0c2e46703f7db61fc219ee59",
+        "size_in_bytes": 10440
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/callbacks/timer.py",
+        "path_type": "hardlink",
+        "sha256": "30a93713c188f0886e3f0390079f7592f79eccc97065b91cdb735fa1d9f5b5ee",
+        "sha256_in_prefix": "30a93713c188f0886e3f0390079f7592f79eccc97065b91cdb735fa1d9f5b5ee",
+        "size_in_bytes": 8283
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/cli.py",
+        "path_type": "hardlink",
+        "sha256": "cb503ac4591a732ca7ee06fcfb106382e0dd1d53dc79b33170726a5876da5543",
+        "sha256_in_prefix": "cb503ac4591a732ca7ee06fcfb106382e0dd1d53dc79b33170726a5876da5543",
+        "size_in_bytes": 40849
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8d1bf585a2cc4231ffcb9335e6d2389613974238f0f9e822104cad2e8405c42d",
+        "sha256_in_prefix": "8d1bf585a2cc4231ffcb9335e6d2389613974238f0f9e822104cad2e8405c42d",
+        "size_in_bytes": 760
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/datamodule.py",
+        "path_type": "hardlink",
+        "sha256": "12f9f80a9aba7210b5b3636e03f7b62b4c821f6e5d3de2bb4713127097246dc5",
+        "sha256_in_prefix": "12f9f80a9aba7210b5b3636e03f7b62b4c821f6e5d3de2bb4713127097246dc5",
+        "size_in_bytes": 13926
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/hooks.py",
+        "path_type": "hardlink",
+        "sha256": "a3736e8344be104eb1a1c26d60b1485530227db4e8db89a27f6ee9f6a4439853",
+        "sha256_in_prefix": "a3736e8344be104eb1a1c26d60b1485530227db4e8db89a27f6ee9f6a4439853",
+        "size_in_bytes": 26787
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/mixins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "771214831757e430e62dc4b53d3cfe24d1c75942469ab7b1173e192f2a71e9cc",
+        "sha256_in_prefix": "771214831757e430e62dc4b53d3cfe24d1c75942469ab7b1173e192f2a71e9cc",
+        "size_in_bytes": 672
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/mixins/hparams_mixin.py",
+        "path_type": "hardlink",
+        "sha256": "4373e6f30207cbb8b375f53ccb05471c0f7c7faec1bdd0f3f81740abbb287b99",
+        "sha256_in_prefix": "4373e6f30207cbb8b375f53ccb05471c0f7c7faec1bdd0f3f81740abbb287b99",
+        "size_in_bytes": 6980
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/module.py",
+        "path_type": "hardlink",
+        "sha256": "451ec77ca432cf1ac114d865016b66be5066fc6190202f4cf05be94797bcd24b",
+        "sha256_in_prefix": "451ec77ca432cf1ac114d865016b66be5066fc6190202f4cf05be94797bcd24b",
+        "size_in_bytes": 73684
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/optimizer.py",
+        "path_type": "hardlink",
+        "sha256": "e6d40f6c9e9a26aedb877f279bbcf57df08ecb267c83cd1034ebc9146ef5e227",
+        "sha256_in_prefix": "e6d40f6c9e9a26aedb877f279bbcf57df08ecb267c83cd1034ebc9146ef5e227",
+        "size_in_bytes": 18382
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/core/saving.py",
+        "path_type": "hardlink",
+        "sha256": "f4f1e6feba7c8b097cb6c02e35d70627e9161f8c6f67b456befeed6065e94fd9",
+        "sha256_in_prefix": "f4f1e6feba7c8b097cb6c02e35d70627e9161f8c6f67b456befeed6065e94fd9",
+        "size_in_bytes": 14616
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/demos/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1bded8b23a8928d51283b5cfb5829b8a5298b131a666d5b666b33c4a618f61ce",
+        "sha256_in_prefix": "1bded8b23a8928d51283b5cfb5829b8a5298b131a666d5b666b33c4a618f61ce",
+        "size_in_bytes": 470
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/demos/boring_classes.py",
+        "path_type": "hardlink",
+        "sha256": "5622ba17e0eae4c6f95c410163b837c509917e7a2cf20bd510d84fa3be759e83",
+        "sha256_in_prefix": "5622ba17e0eae4c6f95c410163b837c509917e7a2cf20bd510d84fa3be759e83",
+        "size_in_bytes": 10394
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/demos/lstm.py",
+        "path_type": "hardlink",
+        "sha256": "c8f9da43a2c4315a0147331f31ed157ec9dec621d75c130073912387df85e515",
+        "sha256_in_prefix": "c8f9da43a2c4315a0147331f31ed157ec9dec621d75c130073912387df85e515",
+        "size_in_bytes": 3508
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/demos/mnist_datamodule.py",
+        "path_type": "hardlink",
+        "sha256": "dfd58fc15c601a578a373f96bcd39bc2e083dc22f43e411d95f58c2195d00ef7",
+        "sha256_in_prefix": "dfd58fc15c601a578a373f96bcd39bc2e083dc22f43e411d95f58c2195d00ef7",
+        "size_in_bytes": 9271
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/demos/transformer.py",
+        "path_type": "hardlink",
+        "sha256": "448a1074d856adaff3e27c69d144b3efe8d767f72a5fbcea4d2685021759ef3f",
+        "sha256_in_prefix": "448a1074d856adaff3e27c69d144b3efe8d767f72a5fbcea4d2685021759ef3f",
+        "size_in_bytes": 7500
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ddaae3dacd053560036846feac8e2d668d1a09f4b3735e2197dc27db738d5b81",
+        "sha256_in_prefix": "ddaae3dacd053560036846feac8e2d668d1a09f4b3735e2197dc27db738d5b81",
+        "size_in_bytes": 1107
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/comet.py",
+        "path_type": "hardlink",
+        "sha256": "a9cd159d81527d8f50880117168d1e24c6e641e5a5acfa1e47df35cad1868670",
+        "sha256_in_prefix": "a9cd159d81527d8f50880117168d1e24c6e641e5a5acfa1e47df35cad1868670",
+        "size_in_bytes": 15244
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/csv_logs.py",
+        "path_type": "hardlink",
+        "sha256": "952fa482273b0d97040417ef55983147ec4399b1afc979a10dc3465d4a9fcfc5",
+        "sha256_in_prefix": "952fa482273b0d97040417ef55983147ec4399b1afc979a10dc3465d4a9fcfc5",
+        "size_in_bytes": 5547
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/logger.py",
+        "path_type": "hardlink",
+        "sha256": "4589e063e8e73c75be51b754e5710a7809508ff933e75b9dcab2128e00fb42ae",
+        "sha256_in_prefix": "4589e063e8e73c75be51b754e5710a7809508ff933e75b9dcab2128e00fb42ae",
+        "size_in_bytes": 5120
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/mlflow.py",
+        "path_type": "hardlink",
+        "sha256": "2abd365f1167158425b46be81fdeef97bf5c450bf691a289b0bb89f67ac99e08",
+        "sha256_in_prefix": "2abd365f1167158425b46be81fdeef97bf5c450bf691a289b0bb89f67ac99e08",
+        "size_in_bytes": 15147
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/neptune.py",
+        "path_type": "hardlink",
+        "sha256": "e292851c30b5f5da4fbae2b5e78f7107ec1ae869068e62b3aa1c8a97d9815369",
+        "sha256_in_prefix": "e292851c30b5f5da4fbae2b5e78f7107ec1ae869068e62b3aa1c8a97d9815369",
+        "size_in_bytes": 23131
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/tensorboard.py",
+        "path_type": "hardlink",
+        "sha256": "1ad54af5e4712afb726b3abdb1d728ab1a12e653bf23d11409f17f0d9af52fec",
+        "sha256_in_prefix": "1ad54af5e4712afb726b3abdb1d728ab1a12e653bf23d11409f17f0d9af52fec",
+        "size_in_bytes": 10417
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "bfc57b5c229bdee6aea3fe2adcd6294c3ba3be1cfd381c51f3a15b2fc18e2f09",
+        "sha256_in_prefix": "bfc57b5c229bdee6aea3fe2adcd6294c3ba3be1cfd381c51f3a15b2fc18e2f09",
+        "size_in_bytes": 4266
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loggers/wandb.py",
+        "path_type": "hardlink",
+        "sha256": "1f49638e704ce70e91c06d964a0ad27100b0f74cddd70aa926281e87c2679729",
+        "sha256_in_prefix": "1f49638e704ce70e91c06d964a0ad27100b0f74cddd70aa926281e87c2679729",
+        "size_in_bytes": 25278
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "22f0129bef7b4e6dd17395353c08501dbcb170e23c02637e8807e3514ea446e9",
+        "sha256_in_prefix": "22f0129bef7b4e6dd17395353c08501dbcb170e23c02637e8807e3514ea446e9",
+        "size_in_bytes": 1108
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/evaluation_loop.py",
+        "path_type": "hardlink",
+        "sha256": "9ad42a6df65a91dd36f7f251bfd1308c47dbdcd272de6cc300ad4882fcb554e4",
+        "sha256_in_prefix": "9ad42a6df65a91dd36f7f251bfd1308c47dbdcd272de6cc300ad4882fcb554e4",
+        "size_in_bytes": 26820
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/fetchers.py",
+        "path_type": "hardlink",
+        "sha256": "c13c5a42d564fde68d08c45105112fb03c9366304c3111c446a9b5c9fc4be781",
+        "sha256_in_prefix": "c13c5a42d564fde68d08c45105112fb03c9366304c3111c446a9b5c9fc4be781",
+        "size_in_bytes": 7350
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/fit_loop.py",
+        "path_type": "hardlink",
+        "sha256": "650e7fdf4f56649913603528e164f59f5eef00cbde3f2e97b482e87dfcec63d6",
+        "sha256_in_prefix": "650e7fdf4f56649913603528e164f59f5eef00cbde3f2e97b482e87dfcec63d6",
+        "size_in_bytes": 22980
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/loop.py",
+        "path_type": "hardlink",
+        "sha256": "fa36f66f7d8ce5ddf52fd659217d4b5f0ba0239dfa1b80961e66755825c22182",
+        "sha256_in_prefix": "fa36f66f7d8ce5ddf52fd659217d4b5f0ba0239dfa1b80961e66755825c22182",
+        "size_in_bytes": 4079
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/optimization/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9787441923fc84ddb7a77e05891f1123139b951fa7667cfff3f3f64321128afe",
+        "sha256_in_prefix": "9787441923fc84ddb7a77e05891f1123139b951fa7667cfff3f3f64321128afe",
+        "size_in_bytes": 768
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/optimization/automatic.py",
+        "path_type": "hardlink",
+        "sha256": "fcd2cf0569af834d86a2ef00771087722a5b02b850e92a38e70b628438828d1e",
+        "sha256_in_prefix": "fcd2cf0569af834d86a2ef00771087722a5b02b850e92a38e70b628438828d1e",
+        "size_in_bytes": 13051
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/optimization/closure.py",
+        "path_type": "hardlink",
+        "sha256": "a9ee937d0b5915199467bbabf5b390dab50556bef5e99d968433b5c1310e0b48",
+        "sha256_in_prefix": "a9ee937d0b5915199467bbabf5b390dab50556bef5e99d968433b5c1310e0b48",
+        "size_in_bytes": 2618
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/optimization/manual.py",
+        "path_type": "hardlink",
+        "sha256": "3ca07b0ec571ac225034e1d56d71c04e2b29baeb75de1d5784b8fa63edeed1a5",
+        "sha256_in_prefix": "3ca07b0ec571ac225034e1d56d71c04e2b29baeb75de1d5784b8fa63edeed1a5",
+        "size_in_bytes": 5490
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/prediction_loop.py",
+        "path_type": "hardlink",
+        "sha256": "ae69d4532001498adeae84ae9aa4d4d1669cafed9f8600e5eaaa243b9c0b7252",
+        "sha256_in_prefix": "ae69d4532001498adeae84ae9aa4d4d1669cafed9f8600e5eaaa243b9c0b7252",
+        "size_in_bytes": 18725
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/progress.py",
+        "path_type": "hardlink",
+        "sha256": "bd9064d12d0f044758ff041c20f223b59489879bf842dbe80f7bb68dc7fe0ac7",
+        "sha256_in_prefix": "bd9064d12d0f044758ff041c20f223b59489879bf842dbe80f7bb68dc7fe0ac7",
+        "size_in_bytes": 9250
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/training_epoch_loop.py",
+        "path_type": "hardlink",
+        "sha256": "0f4d90d48e5dc49a5f675f5820bd2ff293a0b234e16061bc97403fe9b7095a43",
+        "sha256_in_prefix": "0f4d90d48e5dc49a5f675f5820bd2ff293a0b234e16061bc97403fe9b7095a43",
+        "size_in_bytes": 27479
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/loops/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "aa253cd83506e3cd2664f066caf0c68d0bc527ee768af395aa9bc89c1276af3d",
+        "sha256_in_prefix": "aa253cd83506e3cd2664f066caf0c68d0bc527ee768af395aa9bc89c1276af3d",
+        "size_in_bytes": 8330
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/overrides/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/overrides/distributed.py",
+        "path_type": "hardlink",
+        "sha256": "aeb658e1696a9984b4365b1b9c2c291f09465c66ca7198fb967125ca5ed67d9f",
+        "sha256_in_prefix": "aeb658e1696a9984b4365b1b9c2c291f09465c66ca7198fb967125ca5ed67d9f",
+        "size_in_bytes": 11150
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "9254e7032ef26e7b3e45163023247aeaa158c38da946c889f02bb9ada790ea64",
+        "sha256_in_prefix": "9254e7032ef26e7b3e45163023247aeaa158c38da946c889f02bb9ada790ea64",
+        "size_in_bytes": 1385
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/environments/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5bfd9d2d967dcb46918ce4b88ed5b580864e4a458716c6826ad88a526e2afe1d",
+        "sha256_in_prefix": "5bfd9d2d967dcb46918ce4b88ed5b580864e4a458716c6826ad88a526e2afe1d",
+        "size_in_bytes": 881
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "557c176698026dcf90f1da2815e08f532d965102da7f01135c2dcb42a3fc6d0b",
+        "sha256_in_prefix": "557c176698026dcf90f1da2815e08f532d965102da7f01135c2dcb42a3fc6d0b",
+        "size_in_bytes": 847
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/async_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "399fc691da7d1bade20cca498b589007ee9bf22bc35fe7ba4bde0626e013d821",
+        "sha256_in_prefix": "399fc691da7d1bade20cca498b589007ee9bf22bc35fe7ba4bde0626e013d821",
+        "size_in_bytes": 2420
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/checkpoint_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "d725609878bc4d2e3f1fe59a5319203353da00eafa85a7b890fa431d2599ac58",
+        "sha256_in_prefix": "d725609878bc4d2e3f1fe59a5319203353da00eafa85a7b890fa431d2599ac58",
+        "size_in_bytes": 675
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/torch_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "155257f5cde1d81e790e45685f48e2d907b1c4650aadf18f0491741f7a389d1e",
+        "sha256_in_prefix": "155257f5cde1d81e790e45685f48e2d907b1c4650aadf18f0491741f7a389d1e",
+        "size_in_bytes": 680
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/wrapper.py",
+        "path_type": "hardlink",
+        "sha256": "8ec23880096116d1d2e1795e89eaa7fe2e701fae739c6ed93f17b99e6298ceda",
+        "sha256_in_prefix": "8ec23880096116d1d2e1795e89eaa7fe2e701fae739c6ed93f17b99e6298ceda",
+        "size_in_bytes": 2888
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/io/xla_plugin.py",
+        "path_type": "hardlink",
+        "sha256": "4a0eb6f5d0dd418c3b199f1219e61251c7f12dc36a0297de786acd91cc76a6b5",
+        "sha256_in_prefix": "4a0eb6f5d0dd418c3b199f1219e61251c7f12dc36a0297de786acd91cc76a6b5",
+        "size_in_bytes": 678
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/layer_sync.py",
+        "path_type": "hardlink",
+        "sha256": "b0e11e745e65017498b38c85d2db214ef3fe0ce6ff3f1f31a6129091d76123e6",
+        "sha256_in_prefix": "b0e11e745e65017498b38c85d2db214ef3fe0ce6ff3f1f31a6129091d76123e6",
+        "size_in_bytes": 3948
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a61825e0587d7f6b7cb1e31b0310f46f24770f4899593753eeca98bf187f99c9",
+        "sha256_in_prefix": "a61825e0587d7f6b7cb1e31b0310f46f24770f4899593753eeca98bf187f99c9",
+        "size_in_bytes": 1468
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/amp.py",
+        "path_type": "hardlink",
+        "sha256": "0127306cb7670c274ecbbad9beda37d79ab5930acb98e29fde11cd8d9d33888a",
+        "sha256_in_prefix": "0127306cb7670c274ecbbad9beda37d79ab5930acb98e29fde11cd8d9d33888a",
+        "size_in_bytes": 5815
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/bitsandbytes.py",
+        "path_type": "hardlink",
+        "sha256": "b835a072c028fd6a1bed60856d864eb48aaaeccc6d840069ebf328d97c717c8e",
+        "sha256_in_prefix": "b835a072c028fd6a1bed60856d864eb48aaaeccc6d840069ebf328d97c717c8e",
+        "size_in_bytes": 1592
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "cb73db30c716e9f877f77213cf7c605579a51aa82c7bf19f6e9d2e1f99e8d79f",
+        "sha256_in_prefix": "cb73db30c716e9f877f77213cf7c605579a51aa82c7bf19f6e9d2e1f99e8d79f",
+        "size_in_bytes": 5727
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/double.py",
+        "path_type": "hardlink",
+        "sha256": "68b7b14453951d904e0f7afe82c322e13ce4ff95eb350702ad926936fdbabb6a",
+        "sha256_in_prefix": "68b7b14453951d904e0f7afe82c322e13ce4ff95eb350702ad926936fdbabb6a",
+        "size_in_bytes": 4854
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/fsdp.py",
+        "path_type": "hardlink",
+        "sha256": "016a6ce946302003fdf35339ae6082a349e24554daf63c52ac892c44706666c8",
+        "sha256_in_prefix": "016a6ce946302003fdf35339ae6082a349e24554daf63c52ac892c44706666c8",
+        "size_in_bytes": 8060
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/half.py",
+        "path_type": "hardlink",
+        "sha256": "96bd5a00aa19965e5969a52fae01d1e778661c0721ec3e07cac4b0f1448b19b3",
+        "sha256_in_prefix": "96bd5a00aa19965e5969a52fae01d1e778661c0721ec3e07cac4b0f1448b19b3",
+        "size_in_bytes": 2582
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/precision.py",
+        "path_type": "hardlink",
+        "sha256": "9651372ff90383370474c5d0a8c3d0cbff7c19c7fb50608126e71da2cb731c70",
+        "sha256_in_prefix": "9651372ff90383370474c5d0a8c3d0cbff7c19c7fb50608126e71da2cb731c70",
+        "size_in_bytes": 7399
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/transformer_engine.py",
+        "path_type": "hardlink",
+        "sha256": "3ecafc9a7662c14f881ad71607cc20fd997adc38d2b247fdf9a99b27d2247616",
+        "sha256_in_prefix": "3ecafc9a7662c14f881ad71607cc20fd997adc38d2b247fdf9a99b27d2247616",
+        "size_in_bytes": 1940
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/plugins/precision/xla.py",
+        "path_type": "hardlink",
+        "sha256": "511ec60972a870df84a5258097b8b67caef4fd0cde59381de1558abeee57f4ed",
+        "sha256_in_prefix": "511ec60972a870df84a5258097b8b67caef4fd0cde59381de1558abeee57f4ed",
+        "size_in_bytes": 3659
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ce452ae1503ffefc910eaf06e0ad7d111fcdc6d086acc31f659f548e877fee11",
+        "sha256_in_prefix": "ce452ae1503ffefc910eaf06e0ad7d111fcdc6d086acc31f659f548e877fee11",
+        "size_in_bytes": 1098
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/advanced.py",
+        "path_type": "hardlink",
+        "sha256": "9e33a67ceb9c631c6450081cc42ef7b72383001d64c01dd25bfca398ad78590f",
+        "sha256_in_prefix": "9e33a67ceb9c631c6450081cc42ef7b72383001d64c01dd25bfca398ad78590f",
+        "size_in_bytes": 5170
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/base.py",
+        "path_type": "hardlink",
+        "sha256": "5a4416717e176da27f4e9573c920c6a26667be642fc3353a73cdb1cf1cce7e2e",
+        "sha256_in_prefix": "5a4416717e176da27f4e9573c920c6a26667be642fc3353a73cdb1cf1cce7e2e",
+        "size_in_bytes": 1077
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/profiler.py",
+        "path_type": "hardlink",
+        "sha256": "9ad4791dc2c28030de1155905acc57773ab790d1b9e8f80b411944919a27b144",
+        "sha256_in_prefix": "9ad4791dc2c28030de1155905acc57773ab790d1b9e8f80b411944919a27b144",
+        "size_in_bytes": 5492
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/pytorch.py",
+        "path_type": "hardlink",
+        "sha256": "f95b431117a7f93bcad813293e4a747babfe215a46ed67718afb85e6cceda451",
+        "sha256_in_prefix": "f95b431117a7f93bcad813293e4a747babfe215a46ed67718afb85e6cceda451",
+        "size_in_bytes": 24510
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/simple.py",
+        "path_type": "hardlink",
+        "sha256": "0a5c8f1e05cd8aac7dad01cf578ae175f6302f45a5318a9005d43772f030de47",
+        "sha256_in_prefix": "0a5c8f1e05cd8aac7dad01cf578ae175f6302f45a5318a9005d43772f030de47",
+        "size_in_bytes": 6831
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/profilers/xla.py",
+        "path_type": "hardlink",
+        "sha256": "1a66398124815561cf46d669b99218a6ab92784c24b9694a1b207661e5c7af50",
+        "sha256_in_prefix": "1a66398124815561cf46d669b99218a6ab92784c24b9694a1b207661e5c7af50",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/serve/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "38f93c9c14428de24c558cd6e0c23ab89900356ae63494d54da3eeb4b48fb2a1",
+        "sha256_in_prefix": "38f93c9c14428de24c558cd6e0c23ab89900356ae63494d54da3eeb4b48fb2a1",
+        "size_in_bytes": 210
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/serve/servable_module.py",
+        "path_type": "hardlink",
+        "sha256": "58ef0fc13a5fde4bb7efc6cd4666753dbb321d2595fa35e4e18257a6e5538f73",
+        "sha256_in_prefix": "58ef0fc13a5fde4bb7efc6cd4666753dbb321d2595fa35e4e18257a6e5538f73",
+        "size_in_bytes": 3288
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/serve/servable_module_validator.py",
+        "path_type": "hardlink",
+        "sha256": "2d0e2795faae352d25c2e6053dbd71fb032acdfd51ecc31ab59de8925725c435",
+        "sha256_in_prefix": "2d0e2795faae352d25c2e6053dbd71fb032acdfd51ecc31ab59de8925725c435",
+        "size_in_bytes": 7264
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d18e7f2b0e299d91aced02558460aa15ec4009dc58870ff521a161067be8dd89",
+        "sha256_in_prefix": "d18e7f2b0e299d91aced02558460aa15ec4009dc58870ff521a161067be8dd89",
+        "size_in_bytes": 1660
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/ddp.py",
+        "path_type": "hardlink",
+        "sha256": "73adca2cdcc0d43f786ae0e7f35334a2620502820809cca98e2bf7542609f837",
+        "sha256_in_prefix": "73adca2cdcc0d43f786ae0e7f35334a2620502820809cca98e2bf7542609f837",
+        "size_in_bytes": 19049
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "be3b1f2a8aae5eceef13caebd892166f335b1c5c834ee750d30504736780bc06",
+        "sha256_in_prefix": "be3b1f2a8aae5eceef13caebd892166f335b1c5c834ee750d30504736780bc06",
+        "size_in_bytes": 41061
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/fsdp.py",
+        "path_type": "hardlink",
+        "sha256": "8e42f2e637b73fd1a094f9adac526f0e073320049bde527b3c5d53879e276f12",
+        "sha256_in_prefix": "8e42f2e637b73fd1a094f9adac526f0e073320049bde527b3c5d53879e276f12",
+        "size_in_bytes": 30567
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/launchers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6ec389fceb9bd8f693c2c5f56ac729b4b4b58d3e5d496d724e37e671429373f5",
+        "sha256_in_prefix": "6ec389fceb9bd8f693c2c5f56ac729b4b4b58d3e5d496d724e37e671429373f5",
+        "size_in_bytes": 936
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/launchers/launcher.py",
+        "path_type": "hardlink",
+        "sha256": "78e96dd428ee1e6b60302a01ecf70ba962cef53f06747f4e6e896cc913a91125",
+        "sha256_in_prefix": "78e96dd428ee1e6b60302a01ecf70ba962cef53f06747f4e6e896cc913a91125",
+        "size_in_bytes": 931
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/launchers/multiprocessing.py",
+        "path_type": "hardlink",
+        "sha256": "fcbaea8630fc2f6b48d0e5197cd2b9c5f1cc31e50ff2dc0353cfa2803ee6c230",
+        "sha256_in_prefix": "fcbaea8630fc2f6b48d0e5197cd2b9c5f1cc31e50ff2dc0353cfa2803ee6c230",
+        "size_in_bytes": 14371
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/launchers/subprocess_script.py",
+        "path_type": "hardlink",
+        "sha256": "b7959c52ee3a745b849ebcdf53bb9f00d3c2493029cc87bfd75ba7051d2d41b4",
+        "sha256_in_prefix": "b7959c52ee3a745b849ebcdf53bb9f00d3c2493029cc87bfd75ba7051d2d41b4",
+        "size_in_bytes": 7015
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/launchers/xla.py",
+        "path_type": "hardlink",
+        "sha256": "be6e4231c684669013d993415982f35ac35741bff28c275e40c0fe2e94c6834b",
+        "sha256_in_prefix": "be6e4231c684669013d993415982f35ac35741bff28c275e40c0fe2e94c6834b",
+        "size_in_bytes": 7510
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/model_parallel.py",
+        "path_type": "hardlink",
+        "sha256": "a595114baac926b8964624f24e9d544ca5219af10753a10b1f27dff6824b3c6d",
+        "sha256_in_prefix": "a595114baac926b8964624f24e9d544ca5219af10753a10b1f27dff6824b3c6d",
+        "size_in_bytes": 15791
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/parallel.py",
+        "path_type": "hardlink",
+        "sha256": "e566c3d47cb2d7be33dd9bd8ba10ea89be67e27798ae3b42a14e5a941211f54d",
+        "sha256_in_prefix": "e566c3d47cb2d7be33dd9bd8ba10ea89be67e27798ae3b42a14e5a941211f54d",
+        "size_in_bytes": 5093
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/single_device.py",
+        "path_type": "hardlink",
+        "sha256": "c5448852fb1f7db40b100f295cf55d7b9dbc4f2cfb445d1629f4d44a4be57c48",
+        "sha256_in_prefix": "c5448852fb1f7db40b100f295cf55d7b9dbc4f2cfb445d1629f4d44a4be57c48",
+        "size_in_bytes": 3316
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/single_xla.py",
+        "path_type": "hardlink",
+        "sha256": "cd68031bddda6628fda8f3df3671252c57c1a0692b5d8e221baa70c23e36f721",
+        "sha256_in_prefix": "cd68031bddda6628fda8f3df3671252c57c1a0692b5d8e221baa70c23e36f721",
+        "size_in_bytes": 4690
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/strategy.py",
+        "path_type": "hardlink",
+        "sha256": "2ba577bccb46f98457f1283729f07f8980351c374a21ed978cf3ff403c53185b",
+        "sha256_in_prefix": "2ba577bccb46f98457f1283729f07f8980351c374a21ed978cf3ff403c53185b",
+        "size_in_bytes": 25545
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/strategies/xla.py",
+        "path_type": "hardlink",
+        "sha256": "630ff760657996316a64d7705676ef7c70d1cb9c9ad5f89b6f0c7fe8d9369d84",
+        "sha256_in_prefix": "630ff760657996316a64d7705676ef7c70d1cb9c9ad5f89b6f0c7fe8d9369d84",
+        "size_in_bytes": 13209
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "afa39dca24a194485c1255c0f13c78a2451e887c498741d6062f84e9b5a7a34d",
+        "sha256_in_prefix": "afa39dca24a194485c1255c0f13c78a2451e887c498741d6062f84e9b5a7a34d",
+        "size_in_bytes": 738
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/call.py",
+        "path_type": "hardlink",
+        "sha256": "2e2506113cc547277899e3ae47340a88f3cd6e202ea7e1e44435468382eab3ae",
+        "sha256_in_prefix": "2e2506113cc547277899e3ae47340a88f3cd6e202ea7e1e44435468382eab3ae",
+        "size_in_bytes": 12879
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/configuration_validator.py",
+        "path_type": "hardlink",
+        "sha256": "493e5f0585d4e4da4070311fedf7f13f334058c56be8c1d27da7f71cfbd6b20b",
+        "sha256_in_prefix": "493e5f0585d4e4da4070311fedf7f13f334058c56be8c1d27da7f71cfbd6b20b",
+        "size_in_bytes": 8613
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py",
+        "path_type": "hardlink",
+        "sha256": "3d7169a72056fb55155f3b69b6328733b9ce272e912159099d67d110e3fb9694",
+        "sha256_in_prefix": "3d7169a72056fb55155f3b69b6328733b9ce272e912159099d67d110e3fb9694",
+        "size_in_bytes": 31931
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/callback_connector.py",
+        "path_type": "hardlink",
+        "sha256": "80da36b847ac46aa418dcada5aa5c3b22b20ed8c301435b277c3de4cf36b942f",
+        "sha256_in_prefix": "80da36b847ac46aa418dcada5aa5c3b22b20ed8c301435b277c3de4cf36b942f",
+        "size_in_bytes": 12009
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py",
+        "path_type": "hardlink",
+        "sha256": "415da701fa26a9231974bf6176e19d015415990783c6f163aef360cadafd668f",
+        "sha256_in_prefix": "415da701fa26a9231974bf6176e19d015415990783c6f163aef360cadafd668f",
+        "size_in_bytes": 24805
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/data_connector.py",
+        "path_type": "hardlink",
+        "sha256": "059826ae0a9a3c29f008fd7622ab6a16d51f3f197c038dd5d699ac8291c49bb5",
+        "sha256_in_prefix": "059826ae0a9a3c29f008fd7622ab6a16d51f3f197c038dd5d699ac8291c49bb5",
+        "size_in_bytes": 22772
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/logger_connector/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bbe605a725c84c63d855214876310ca250d18aa7fa17c74327a7a16f0b90c2c1",
+        "sha256_in_prefix": "bbe605a725c84c63d855214876310ca250d18aa7fa17c74327a7a16f0b90c2c1",
+        "size_in_bytes": 114
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/logger_connector/fx_validator.py",
+        "path_type": "hardlink",
+        "sha256": "ce421aaa6ab169224c99bf9861bdb0f0d433d6d293125bc44d553d7429fef892",
+        "sha256_in_prefix": "ce421aaa6ab169224c99bf9861bdb0f0d433d6d293125bc44d553d7429fef892",
+        "size_in_bytes": 9315
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py",
+        "path_type": "hardlink",
+        "sha256": "7712119551a05f7aa340d360710911a765be61d3b4d5c6b144e7f27cce23e17e",
+        "sha256_in_prefix": "7712119551a05f7aa340d360710911a765be61d3b4d5c6b144e7f27cce23e17e",
+        "size_in_bytes": 10423
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/logger_connector/result.py",
+        "path_type": "hardlink",
+        "sha256": "e0794b8aec1a7216f4c54dc5f92192f4d824d546fae153f9a4172f46b04b896a",
+        "sha256_in_prefix": "e0794b8aec1a7216f4c54dc5f92192f4d824d546fae153f9a4172f46b04b896a",
+        "size_in_bytes": 20463
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/connectors/signal_connector.py",
+        "path_type": "hardlink",
+        "sha256": "8cd1743e35567aead2593ffc0b5dd4f4aad6e01dcddb5000e5ff2a11ccb9faaf",
+        "sha256_in_prefix": "8cd1743e35567aead2593ffc0b5dd4f4aad6e01dcddb5000e5ff2a11ccb9faaf",
+        "size_in_bytes": 6737
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/setup.py",
+        "path_type": "hardlink",
+        "sha256": "5a6d174ad7960ba270ea52129fb43dfcedc01efe1f41da44c4c0d6eeb839264d",
+        "sha256_in_prefix": "5a6d174ad7960ba270ea52129fb43dfcedc01efe1f41da44c4c0d6eeb839264d",
+        "size_in_bytes": 8152
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/states.py",
+        "path_type": "hardlink",
+        "sha256": "c42db65ab33a6bcfbf5ecbe010766cbbc7399eee6fe69c4212f352f7bc97a9dd",
+        "sha256_in_prefix": "c42db65ab33a6bcfbf5ecbe010766cbbc7399eee6fe69c4212f352f7bc97a9dd",
+        "size_in_bytes": 2891
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/trainer/trainer.py",
+        "path_type": "hardlink",
+        "sha256": "e557288e92c42872c42ef4a1aabdf0991aceac6af2b8b3f325586bbc1bdd8d61",
+        "sha256_in_prefix": "e557288e92c42872c42ef4a1aabdf0991aceac6af2b8b3f325586bbc1bdd8d61",
+        "size_in_bytes": 74493
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/tuner/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6af60f1194cb65c5e920c109c59c0038a2e9e710fdbdba7500d9b820aa4001af",
+        "sha256_in_prefix": "6af60f1194cb65c5e920c109c59c0038a2e9e710fdbdba7500d9b820aa4001af",
+        "size_in_bytes": 644
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/tuner/batch_size_scaling.py",
+        "path_type": "hardlink",
+        "sha256": "4d9f9c800b6faa909f579a32f94a31d0a2cec3d16bbb92571009a17897105079",
+        "sha256_in_prefix": "4d9f9c800b6faa909f579a32f94a31d0a2cec3d16bbb92571009a17897105079",
+        "size_in_bytes": 12855
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/tuner/lr_finder.py",
+        "path_type": "hardlink",
+        "sha256": "bf1b203706c3182fe4580878371af408462c35435f1effbfdcda35a0725493ed",
+        "sha256_in_prefix": "bf1b203706c3182fe4580878371af408462c35435f1effbfdcda35a0725493ed",
+        "size_in_bytes": 19627
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/tuner/tuning.py",
+        "path_type": "hardlink",
+        "sha256": "b64a705c379e05197d44716d0b463bfb12732eccb1f6c5874de701169c094535",
+        "sha256_in_prefix": "b64a705c379e05197d44716d0b463bfb12732eccb1f6c5874de701169c094535",
+        "size_in_bytes": 11471
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5b02b3e784f53c681466971414abdd33453346f2fce384b62574d26090226a13",
+        "sha256_in_prefix": "5b02b3e784f53c681466971414abdd33453346f2fce384b62574d26090226a13",
+        "size_in_bytes": 1928
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/_pytree.py",
+        "path_type": "hardlink",
+        "sha256": "6ca993f386e3b415fce461ba996191f895013c7e0c2a2a007790df634c61d670",
+        "sha256_in_prefix": "6ca993f386e3b415fce461ba996191f895013c7e0c2a2a007790df634c61d670",
+        "size_in_bytes": 1477
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/argparse.py",
+        "path_type": "hardlink",
+        "sha256": "c058559200de414cd460fce8f0d19f85c114ae53472df5f858441b99470f1130",
+        "sha256_in_prefix": "c058559200de414cd460fce8f0d19f85c114ae53472df5f858441b99470f1130",
+        "size_in_bytes": 2683
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/combined_loader.py",
+        "path_type": "hardlink",
+        "sha256": "387aaac905bd8a25e28285420fae4cd545616158484dc0936e6621bca033c32c",
+        "sha256_in_prefix": "387aaac905bd8a25e28285420fae4cd545616158484dc0936e6621bca033c32c",
+        "size_in_bytes": 16314
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/compile.py",
+        "path_type": "hardlink",
+        "sha256": "8f18fc9177b4b61d834e8d2fab60cdfb0ad3aed25cb3eca558aaa5b498cccf79",
+        "sha256_in_prefix": "8f18fc9177b4b61d834e8d2fab60cdfb0ad3aed25cb3eca558aaa5b498cccf79",
+        "size_in_bytes": 5898
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/consolidate_checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "7534ef007df7b07a01968877252311866880e9d5efb73e3f7899d43c53546b51",
+        "sha256_in_prefix": "7534ef007df7b07a01968877252311866880e9d5efb73e3f7899d43c53546b51",
+        "size_in_bytes": 1164
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/data.py",
+        "path_type": "hardlink",
+        "sha256": "9da7c23ff296f47ffcce86698788414d3ed7176460beec1a802d38294af5ad39",
+        "sha256_in_prefix": "9da7c23ff296f47ffcce86698788414d3ed7176460beec1a802d38294af5ad39",
+        "size_in_bytes": 16873
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "47470daa01b0f8007d308487b9f32e4ed5afffc41bba3e0fe07f1ebbc527d7e1",
+        "sha256_in_prefix": "47470daa01b0f8007d308487b9f32e4ed5afffc41bba3e0fe07f1ebbc527d7e1",
+        "size_in_bytes": 4753
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/enums.py",
+        "path_type": "hardlink",
+        "sha256": "e8137fa64bfb8368970382362a970663e0879d2619d7dc7417cebfc550df14f4",
+        "sha256_in_prefix": "e8137fa64bfb8368970382362a970663e0879d2619d7dc7417cebfc550df14f4",
+        "size_in_bytes": 1523
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/exceptions.py",
+        "path_type": "hardlink",
+        "sha256": "563eec35975103375d18322cb083736e616dcd3c1d8d3bb1e560e4a0d9a26928",
+        "sha256_in_prefix": "563eec35975103375d18322cb083736e616dcd3c1d8d3bb1e560e4a0d9a26928",
+        "size_in_bytes": 1511
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/grads.py",
+        "path_type": "hardlink",
+        "sha256": "22584022d6fd6493ef06f732f1a2ee041176530230ab817e703b565b6336abf6",
+        "sha256_in_prefix": "22584022d6fd6493ef06f732f1a2ee041176530230ab817e703b565b6336abf6",
+        "size_in_bytes": 2049
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/imports.py",
+        "path_type": "hardlink",
+        "sha256": "a613a034fada602389446dde336c2366db1ee2d31e2035dfe456b964c1c49322",
+        "sha256_in_prefix": "a613a034fada602389446dde336c2366db1ee2d31e2035dfe456b964c1c49322",
+        "size_in_bytes": 2232
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/memory.py",
+        "path_type": "hardlink",
+        "sha256": "08f5d80c44be2ea1af78eaf4c5ca179df98bbcd251179828fa1eb65f86386bcd",
+        "sha256_in_prefix": "08f5d80c44be2ea1af78eaf4c5ca179df98bbcd251179828fa1eb65f86386bcd",
+        "size_in_bytes": 3105
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/migration/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "825ab7835fdf3025bcdae73de82a6bbafaf343715e9628a2735e9155ff2788a0",
+        "sha256_in_prefix": "825ab7835fdf3025bcdae73de82a6bbafaf343715e9628a2735e9155ff2788a0",
+        "size_in_bytes": 701
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/migration/migration.py",
+        "path_type": "hardlink",
+        "sha256": "20d5a871928f187ae12f34e5242333ac67dacd3313c4c79dec95d9fc5d015ed7",
+        "sha256_in_prefix": "20d5a871928f187ae12f34e5242333ac67dacd3313c4c79dec95d9fc5d015ed7",
+        "size_in_bytes": 14525
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/migration/utils.py",
+        "path_type": "hardlink",
+        "sha256": "3bbd9f2297bc4c9e7364705072d81e14ca742f4029a5db66bad9d4686516093b",
+        "sha256_in_prefix": "3bbd9f2297bc4c9e7364705072d81e14ca742f4029a5db66bad9d4686516093b",
+        "size_in_bytes": 9067
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/model_helpers.py",
+        "path_type": "hardlink",
+        "sha256": "57005e0d8aa64b7be1cc477303de3281cefd068a5ca54633fdabbad7613488a3",
+        "sha256_in_prefix": "57005e0d8aa64b7be1cc477303de3281cefd068a5ca54633fdabbad7613488a3",
+        "size_in_bytes": 5270
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/model_registry.py",
+        "path_type": "hardlink",
+        "sha256": "57d9911dd767216b16691eb432ccc4e82e5d47de7371565603315c573cb860ca",
+        "sha256_in_prefix": "57d9911dd767216b16691eb432ccc4e82e5d47de7371565603315c573cb860ca",
+        "size_in_bytes": 6397
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/model_summary/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2151759ccbecb4d54ae0b54c5c60a54f33d1f3d558be7e5f4e88f517f70f90d9",
+        "sha256_in_prefix": "2151759ccbecb4d54ae0b54c5c60a54f33d1f3d558be7e5f4e88f517f70f90d9",
+        "size_in_bytes": 910
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/model_summary/model_summary.py",
+        "path_type": "hardlink",
+        "sha256": "346d070a68262c7d868c646f1d238032117ebce17692a654efdc8f454e1365af",
+        "sha256_in_prefix": "346d070a68262c7d868c646f1d238032117ebce17692a654efdc8f454e1365af",
+        "size_in_bytes": 19518
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/model_summary/model_summary_deepspeed.py",
+        "path_type": "hardlink",
+        "sha256": "00ec8d5bbead3e4defc0c9f410f69d75450633dcf1d334390c0ddc310a0347c1",
+        "sha256_in_prefix": "00ec8d5bbead3e4defc0c9f410f69d75450633dcf1d334390c0ddc310a0347c1",
+        "size_in_bytes": 4577
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/parameter_tying.py",
+        "path_type": "hardlink",
+        "sha256": "9c38892ab71a62f64263632df765a50725c2157d5c5f51926d472811e43e2dc5",
+        "sha256_in_prefix": "9c38892ab71a62f64263632df765a50725c2157d5c5f51926d472811e43e2dc5",
+        "size_in_bytes": 2426
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/parsing.py",
+        "path_type": "hardlink",
+        "sha256": "cfbf6aa0aa7acb91f9b8c007d45cb9cc7515e184a82e279659f45734c02f7edf",
+        "sha256_in_prefix": "cfbf6aa0aa7acb91f9b8c007d45cb9cc7515e184a82e279659f45734c02f7edf",
+        "size_in_bytes": 12149
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/rank_zero.py",
+        "path_type": "hardlink",
+        "sha256": "1e9d0fe69ce073e7f8ad28f256ac590a4ec3a81b5c0919e580c646adcdea20cd",
+        "sha256_in_prefix": "1e9d0fe69ce073e7f8ad28f256ac590a4ec3a81b5c0919e580c646adcdea20cd",
+        "size_in_bytes": 1107
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/seed.py",
+        "path_type": "hardlink",
+        "sha256": "dfea28082b9e3e5647d581892bf668569e0a4ba30aab49b0b2861edcfb7af0b3",
+        "sha256_in_prefix": "dfea28082b9e3e5647d581892bf668569e0a4ba30aab49b0b2861edcfb7af0b3",
+        "size_in_bytes": 1777
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/signature_utils.py",
+        "path_type": "hardlink",
+        "sha256": "e5fff9badc04cabf4b5fa821865e1b489dfd2638fbcc4d7e0aac033ba4af064a",
+        "sha256_in_prefix": "e5fff9badc04cabf4b5fa821865e1b489dfd2638fbcc4d7e0aac033ba4af064a",
+        "size_in_bytes": 1414
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/testing/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f735f69653833490aef30e66700e8f8bbdf4ac4e265faab13d0d2707eead5c04",
+        "sha256_in_prefix": "f735f69653833490aef30e66700e8f8bbdf4ac4e265faab13d0d2707eead5c04",
+        "size_in_bytes": 100
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/testing/_runif.py",
+        "path_type": "hardlink",
+        "sha256": "2390608b05cb7831bc0ac1be960d0c84e4245e72bb98a13317a1b7349ad1c7f1",
+        "sha256_in_prefix": "2390608b05cb7831bc0ac1be960d0c84e4245e72bb98a13317a1b7349ad1c7f1",
+        "size_in_bytes": 3915
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/types.py",
+        "path_type": "hardlink",
+        "sha256": "8534d64c0b8c42dc1f824957f6198c1c30dcce3b11fbb45bed90f74a01238f31",
+        "sha256_in_prefix": "8534d64c0b8c42dc1f824957f6198c1c30dcce3b11fbb45bed90f74a01238f31",
+        "size_in_bytes": 4143
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/upgrade_checkpoint.py",
+        "path_type": "hardlink",
+        "sha256": "1237a227c0308ce71cb0e715eea73569c43b32bd12f6933d45342910a4999870",
+        "sha256_in_prefix": "1237a227c0308ce71cb0e715eea73569c43b32bd12f6933d45342910a4999870",
+        "size_in_bytes": 3401
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/utilities/warnings.py",
+        "path_type": "hardlink",
+        "sha256": "5044b333a2138410d1674674f269cc6ef82f2bf38284bca27e396b6a3378018b",
+        "sha256_in_prefix": "5044b333a2138410d1674674f269cc6ef82f2bf38284bca27e396b6a3378018b",
+        "size_in_bytes": 723
+      },
+      {
+        "_path": "site-packages/pytorch_lightning/version.info",
+        "path_type": "hardlink",
+        "sha256": "8a81c718d7e78b74b27f8ec3313bbcec2a7acd1df926e6e72c71561996726595",
+        "sha256_in_prefix": "8a81c718d7e78b74b27f8ec3313bbcec2a7acd1df926e6e72c71561996726595",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/__about__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/__setup__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/__version__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/_graveyard/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/_graveyard/__pycache__/tpu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/accelerator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/cpu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/cuda.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/mps.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/registry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/accelerators/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/cli.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/fabric.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/csv_logs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/logger.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/loggers/__pycache__/tensorboard.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/collective.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/single_device.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/collectives/__pycache__/torch_collective.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/cluster_environment.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/kubeflow.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/lightning.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/lsf.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/mpi.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/slurm.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/torchelastic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/environments/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/checkpoint_io.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/torch_io.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/io/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/amp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/bitsandbytes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/double.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/fsdp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/half.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/precision.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/transformer_engine.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/plugins/precision/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/ddp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/dp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/fsdp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/launcher.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/multiprocessing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/subprocess_script.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/launchers/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/model_parallel.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/parallel.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/registry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/single_device.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/single_xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/strategy.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/strategies/__pycache__/xla_fsdp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/apply_func.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/cloud_io.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/consolidate_checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/data.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/device_dtype_mixin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/device_parser.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/distributed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/enums.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/imports.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/init.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/load.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/logger.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/optimizer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/rank_zero.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/registry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/seed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/spike.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/testing/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/testing/__pycache__/_runif.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/throughput.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/types.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/utilities/__pycache__/warnings.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_fabric/__pycache__/wrappers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__about__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__setup__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/__pycache__/__version__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/_torchmetrics.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/hpu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/precision.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/_graveyard/__pycache__/tpu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/accelerator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/cpu.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/cuda.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/mps.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/accelerators/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/batch_size_finder.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/callback.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/device_stats_monitor.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/early_stopping.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/finetuning.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/gradient_accumulation_scheduler.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lambda_function.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lr_finder.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/lr_monitor.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/model_checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/model_summary.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/on_exception_checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/prediction_writer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/progress_bar.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/rich_progress.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/progress/__pycache__/tqdm_progress.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/pruning.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/rich_model_summary.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/spike.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/stochastic_weight_avg.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/throughput_monitor.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/callbacks/__pycache__/timer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/__pycache__/cli.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/datamodule.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/hooks.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/mixins/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/mixins/__pycache__/hparams_mixin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/module.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/optimizer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/core/__pycache__/saving.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/boring_classes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/lstm.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/mnist_datamodule.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/demos/__pycache__/transformer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/comet.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/csv_logs.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/logger.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/mlflow.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/neptune.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/tensorboard.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/utilities.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loggers/__pycache__/wandb.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/evaluation_loop.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/fetchers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/fit_loop.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/loop.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/automatic.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/closure.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/optimization/__pycache__/manual.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/prediction_loop.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/progress.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/training_epoch_loop.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/loops/__pycache__/utilities.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/overrides/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/overrides/__pycache__/distributed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/environments/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/async_plugin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/checkpoint_plugin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/torch_plugin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/wrapper.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/io/__pycache__/xla_plugin.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/__pycache__/layer_sync.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/amp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/bitsandbytes.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/double.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/fsdp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/half.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/precision.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/transformer_engine.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/plugins/precision/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/advanced.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/base.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/profiler.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/pytorch.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/simple.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/profilers/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/servable_module.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/serve/__pycache__/servable_module_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/ddp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/fsdp.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/launcher.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/multiprocessing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/subprocess_script.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/launchers/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/model_parallel.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/parallel.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/single_device.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/single_xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/strategy.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/strategies/__pycache__/xla.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/call.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/configuration_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/accelerator_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/callback_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/checkpoint_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/data_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/fx_validator.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/logger_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/logger_connector/__pycache__/result.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/__pycache__/signal_connector.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/setup.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/states.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/trainer/__pycache__/trainer.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/batch_size_scaling.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/lr_finder.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/tuner/__pycache__/tuning.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/_pytree.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/argparse.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/combined_loader.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/compile.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/consolidate_checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/data.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/enums.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/exceptions.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/grads.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/imports.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/memory.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/migration.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/migration/__pycache__/utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/model_helpers.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/model_registry.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/model_summary.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/model_summary/__pycache__/model_summary_deepspeed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/parameter_tying.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/parsing.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/rank_zero.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/seed.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/signature_utils.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/testing/__pycache__/_runif.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/types.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/upgrade_checkpoint.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/pytorch_lightning/utilities/__pycache__/warnings.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "pytorch-lightning",
+  "sha256": "e4467135c189577877e825b01ca419c075195e82ec00821bd29041dc30e09db0",
+  "size": 453272,
+  "subdir": "noarch",
+  "timestamp": 1755148546000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pytorch-lightning-2.5.3-pyh2a12c56_0.conda",
+  "version": "2.5.3"
+}

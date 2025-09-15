@@ -1,0 +1,12 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
+includedir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/include
+
+Name: absl_debugging
+Description: Abseil debugging library
+URL: https://abseil.io/
+Version: 20250127
+Requires: absl_stacktrace = 20250127, absl_leak_check = 20250127
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

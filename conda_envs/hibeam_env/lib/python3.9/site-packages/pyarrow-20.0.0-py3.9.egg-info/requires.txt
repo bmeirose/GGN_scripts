@@ -1,0 +1,7 @@
+
+[test]
+pytest
+hypothesis
+cffi
+pytz
+pandas

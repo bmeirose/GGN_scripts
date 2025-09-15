@@ -1,0 +1,13 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SM
+Description: X Session Management Library
+Version: 1.2.6
+Requires:
+Requires.private: ice xproto uuid
+Cflags: -I${includedir}
+Libs: -L${libdir} -lSM
+Libs.private: 

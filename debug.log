@@ -38,64 +38,68 @@ Shell debugging restarted
 ++ export CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
 ++ CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
 ++ '[' -z x ']'
-+ conda env list
-+ grep -qE '^hibeam_env\s'
-+ local cmd=env
-+ case "$cmd" in
-+ __conda_exe env list
-+ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda env list
-+ log 'Activating environment: hibeam_env'
-+ printf '\033[1;34m[INFO]\033[0m %s\n' 'Activating environment: hibeam_env'
-[1;34m[INFO][0m Activating environment: hibeam_env
++ log 'Setting up data directory symlinks...'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Setting up data directory symlinks...'
+[1;34m[INFO][0m Setting up data directory symlinks...
++ mkdir -p Large_data
++ ln -sfn /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/large_training_data_smeared Large_data/training_data_smeared
++ ln -sfn /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/large_validation_data_smeared Large_data/validation_data_smeared
++ ENV_PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+++ dirname /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
++ mkdir -p /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs
++ '[' '!' -d /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env ']'
++ log 'Activating conda environment: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'
++ printf '\033[1;34m[INFO]\033[0m %s\n' 'Activating conda environment: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'
+[1;34m[INFO][0m Activating conda environment: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 + conda deactivate
-+ conda activate hibeam_env
++ conda activate /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 + local cmd=activate
 + case "$cmd" in
-+ __conda_activate activate hibeam_env
++ __conda_activate activate /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 + '[' -n '' ']'
 + local ask_conda
 ++ PS1=
-++ __conda_exe shell.posix activate hibeam_env
-++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda shell.posix activate hibeam_env
-+ ask_conda='PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
-export CONDA_PREFIX='\''/home/bmeirose42/.conda/envs/hibeam_env'\''
+++ __conda_exe shell.posix activate /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda shell.posix activate /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
++ ask_conda='PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PREFIX='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_DEFAULT_ENV='\''hibeam_env'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
+export CONDA_DEFAULT_ENV='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
 export CONDA_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda'\''
 export _CE_M='\'''\''
 export _CE_CONDA='\'''\''
 export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python'\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-+ eval 'PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
-export CONDA_PREFIX='\''/home/bmeirose42/.conda/envs/hibeam_env'\''
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
++ eval 'PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PREFIX='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_DEFAULT_ENV='\''hibeam_env'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
+export CONDA_DEFAULT_ENV='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env'\''
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
 export CONDA_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda'\''
 export _CE_M='\'''\''
 export _CE_CONDA='\'''\''
 export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python'\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-++ PS1='(hibeam_env) '
-++ export PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
-++ PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
-++ export CONDA_PREFIX=/home/bmeirose42/.conda/envs/hibeam_env
-++ CONDA_PREFIX=/home/bmeirose42/.conda/envs/hibeam_env
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
+++ PS1='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ export PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ export CONDA_PREFIX=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+++ CONDA_PREFIX=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 ++ export CONDA_SHLVL=1
 ++ CONDA_SHLVL=1
-++ export CONDA_DEFAULT_ENV=hibeam_env
-++ CONDA_DEFAULT_ENV=hibeam_env
-++ export 'CONDA_PROMPT_MODIFIER=(hibeam_env) '
-++ CONDA_PROMPT_MODIFIER='(hibeam_env) '
+++ export CONDA_DEFAULT_ENV=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+++ CONDA_DEFAULT_ENV=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+++ export 'CONDA_PROMPT_MODIFIER=(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ CONDA_PROMPT_MODIFIER='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
 ++ export CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
 ++ CONDA_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda
 ++ export _CE_M=
@@ -104,43 +108,43 @@ export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin
 ++ _CE_CONDA=
 ++ export CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
 ++ CONDA_PYTHON_EXE=/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/python
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
 +++ '[' -n '' ']'
 +++ _la_log 'Beginning libarrow activation.'
 +++ '[' '' = 1 ']'
-+++ _la_gdb_prefix=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load
-+++ '[' '!' -w /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load ']'
++++ _la_gdb_prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load
++++ '[' '!' -w /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load ']'
 +++ _la_placeholder=replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX
-+++ _la_symlink_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib
-+++ _la_orig_install_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
-+++ _la_log '          _la_gdb_prefix: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load'
++++ _la_symlink_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
++++ _la_orig_install_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
++++ _la_log '          _la_gdb_prefix: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load'
 +++ '[' '' = 1 ']'
 +++ _la_log '         _la_placeholder: replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX'
 +++ '[' '' = 1 ']'
-+++ _la_log '         _la_symlink_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib'
++++ _la_log '         _la_symlink_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib'
 +++ '[' '' = 1 ']'
-+++ _la_log '    _la_orig_install_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
++++ _la_log '    _la_orig_install_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
 +++ '[' '' = 1 ']'
 +++ _la_log '  content of that folder:'
 +++ '[' '' = 1 ']'
-++++ ls -al /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
+++++ ls -al /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
 ++++ sed 's/^/      /'
-+++ _la_log '      total 2
-      drwxr-sr-x 2 bmeirose42 mnxb01 4096 Sep 14 21:48 .
-      drwxr-sr-x 3 bmeirose42 mnxb01 4096 Sep 14 21:43 ..
-      -rw-r--r-- 1 bmeirose42 mnxb01  982 Sep 14 21:47 libarrow.so.2000.0.0-gdb.py'
++++ _la_log '      total 4
+      drwxr-xr-x 2 bmeirose42 mnxb01   49 Sep 14 22:59 .
+      drwxr-xr-x 3 bmeirose42 mnxb01   25 Sep 14 22:53 ..
+      -rw-r--r-- 1 bmeirose42 mnxb01 1028 Sep 14 22:58 libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
 +++ for _la_target in "$_la_orig_install_dir/"*.py
-+++ '[' '!' -e /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ basename /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_symlink=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_log '   _la_target: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
++++ '[' '!' -e /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ basename /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_symlink=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_log '   _la_target: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ _la_log '  _la_symlink: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
++++ _la_log '  _la_symlink: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ '[' -L /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ readlink /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ '[' /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
++++ '[' -L /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ readlink /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ '[' /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
 +++ _la_log 'symlink $_la_symlink already exists and points to $_la_target, skipping.'
 +++ '[' '' = 1 ']'
 +++ continue
@@ -153,17 +157,17 @@ export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin
 +++ unset _la_symlink
 +++ unset _la_symlink_dir
 +++ unset _la_target
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
 +++ export CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ export MKL_INTERFACE_LAYER=LP64,GNU
 +++ MKL_INTERFACE_LAYER=LP64,GNU
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
 +++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
 +++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
-+++ export GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-+++ GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
++++ export GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
 +++ test -n ''
 +++ xml_catalog_files_libxml2=
 +++ XML_CATALOG_FILES=
@@ -171,16 +175,16 @@ export CONDA_PYTHON_EXE='\''/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin
 +++ ifs_libxml2=' 	
 '
 +++ IFS=' '
-+++ rem=/home/bmeirose42/.conda/envs/hibeam_env
++++ rem=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ for pre in ${rem}
-+++ test '' = /home/bmeirose42/.conda/envs/hibeam_env
-+++ conda_catalog_files=/home/bmeirose42/.conda/envs/hibeam_env
++++ test '' = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
++++ conda_catalog_files=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ rem=
 +++ IFS=' 	
 '
-+++ conda_catalog_files='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ export 'XML_CATALOG_FILES=file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ XML_CATALOG_FILES='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ conda_catalog_files='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ export 'XML_CATALOG_FILES=file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ XML_CATALOG_FILES='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
 +++ unset conda_catalog_files ifs_libxml2 rem
 + __conda_hashr
 + '[' -n '' ']'
@@ -206,89 +210,89 @@ Solving environment: ...working... done
 
 + __conda_reactivate
 + local ask_conda
-++ PS1='(hibeam_env) '
+++ PS1='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
 ++ __conda_exe shell.posix reactivate
 ++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda shell.posix reactivate
-+ ask_conda='. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
-PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
++ ask_conda='. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
+PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-+ eval '. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
-PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
++ eval '. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
+PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh
 +++ test -n ''
 +++ unset XML_CATALOG_FILES
 +++ unset xml_catalog_files_libxml2
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh
 +++ export GSETTINGS_SCHEMA_DIR=
 +++ GSETTINGS_SCHEMA_DIR=
 +++ unset GSETTINGS_SCHEMA_DIR_CONDA_BACKUP
 +++ '[' -z ']'
 +++ unset GSETTINGS_SCHEMA_DIR
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh
 +++ '[' '' = '' ']'
 +++ unset MKL_INTERFACE_LAYER
 +++ unset CONDA_MKL_INTERFACE_LAYER_BACKUP
-++ PS1='(hibeam_env) '
-++ export PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
-++ PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PS1='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ export PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
 ++ export CONDA_SHLVL=1
 ++ CONDA_SHLVL=1
-++ export 'CONDA_PROMPT_MODIFIER=(hibeam_env) '
-++ CONDA_PROMPT_MODIFIER='(hibeam_env) '
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
+++ export 'CONDA_PROMPT_MODIFIER=(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ CONDA_PROMPT_MODIFIER='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
 +++ '[' -n '' ']'
 +++ _la_log 'Beginning libarrow activation.'
 +++ '[' '' = 1 ']'
-+++ _la_gdb_prefix=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load
-+++ '[' '!' -w /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load ']'
++++ _la_gdb_prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load
++++ '[' '!' -w /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load ']'
 +++ _la_placeholder=replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX
-+++ _la_symlink_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib
-+++ _la_orig_install_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
-+++ _la_log '          _la_gdb_prefix: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load'
++++ _la_symlink_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
++++ _la_orig_install_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
++++ _la_log '          _la_gdb_prefix: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load'
 +++ '[' '' = 1 ']'
 +++ _la_log '         _la_placeholder: replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX'
 +++ '[' '' = 1 ']'
-+++ _la_log '         _la_symlink_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib'
++++ _la_log '         _la_symlink_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib'
 +++ '[' '' = 1 ']'
-+++ _la_log '    _la_orig_install_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
++++ _la_log '    _la_orig_install_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
 +++ '[' '' = 1 ']'
 +++ _la_log '  content of that folder:'
 +++ '[' '' = 1 ']'
-++++ ls -al /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
+++++ ls -al /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
 ++++ sed 's/^/      /'
-+++ _la_log '      total 2
-      drwxr-sr-x 2 bmeirose42 mnxb01 4096 Sep 14 21:48 .
-      drwxr-sr-x 3 bmeirose42 mnxb01 4096 Sep 14 21:43 ..
-      -rw-r--r-- 1 bmeirose42 mnxb01  982 Sep 14 21:47 libarrow.so.2000.0.0-gdb.py'
++++ _la_log '      total 4
+      drwxr-xr-x 2 bmeirose42 mnxb01   49 Sep 14 22:59 .
+      drwxr-xr-x 3 bmeirose42 mnxb01   25 Sep 14 22:53 ..
+      -rw-r--r-- 1 bmeirose42 mnxb01 1028 Sep 14 22:58 libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
 +++ for _la_target in "$_la_orig_install_dir/"*.py
-+++ '[' '!' -e /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ basename /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_symlink=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_log '   _la_target: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
++++ '[' '!' -e /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ basename /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_symlink=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_log '   _la_target: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ _la_log '  _la_symlink: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
++++ _la_log '  _la_symlink: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ '[' -L /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ readlink /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ '[' /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
++++ '[' -L /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ readlink /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ '[' /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
 +++ _la_log 'symlink $_la_symlink already exists and points to $_la_target, skipping.'
 +++ '[' '' = 1 ']'
 +++ continue
@@ -301,17 +305,17 @@ export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
 +++ unset _la_symlink
 +++ unset _la_symlink_dir
 +++ unset _la_target
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
 +++ export CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ export MKL_INTERFACE_LAYER=LP64,GNU
 +++ MKL_INTERFACE_LAYER=LP64,GNU
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
 +++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
 +++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
-+++ export GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-+++ GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
++++ export GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
 +++ test -n ''
 +++ xml_catalog_files_libxml2=
 +++ XML_CATALOG_FILES=
@@ -319,16 +323,16 @@ export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
 +++ ifs_libxml2=' 	
 '
 +++ IFS=' '
-+++ rem=/home/bmeirose42/.conda/envs/hibeam_env
++++ rem=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ for pre in ${rem}
-+++ test '' = /home/bmeirose42/.conda/envs/hibeam_env
-+++ conda_catalog_files=/home/bmeirose42/.conda/envs/hibeam_env
++++ test '' = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
++++ conda_catalog_files=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ rem=
 +++ IFS=' 	
 '
-+++ conda_catalog_files='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ export 'XML_CATALOG_FILES=file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ XML_CATALOG_FILES='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ conda_catalog_files='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ export 'XML_CATALOG_FILES=file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ XML_CATALOG_FILES='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
 +++ unset conda_catalog_files ifs_libxml2 rem
 + __conda_hashr
 + '[' -n '' ']'
@@ -351,89 +355,89 @@ Solving environment: ...working... done
 
 + __conda_reactivate
 + local ask_conda
-++ PS1='(hibeam_env) '
+++ PS1='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
 ++ __conda_exe shell.posix reactivate
 ++ /sw/easybuild_milan/software/Anaconda3/2024.02-1/bin/conda shell.posix reactivate
-+ ask_conda='. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
-PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
++ ask_conda='. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
+PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-+ eval '. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
-PS1='\''(hibeam_env) '\''
-export PATH='\''/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
++ eval '. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh"
+PS1='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+export PATH='\''/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin'\''
 export CONDA_SHLVL='\''1'\''
-export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
-. "/home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh
+export CONDA_PROMPT_MODIFIER='\''(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '\''
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh"
+. "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh"'
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libxml2_deactivate.sh
 +++ test -n ''
 +++ unset XML_CATALOG_FILES
 +++ unset xml_catalog_files_libxml2
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libglib_deactivate.sh
 +++ export GSETTINGS_SCHEMA_DIR=
 +++ GSETTINGS_SCHEMA_DIR=
 +++ unset GSETTINGS_SCHEMA_DIR_CONDA_BACKUP
 +++ '[' -z ']'
 +++ unset GSETTINGS_SCHEMA_DIR
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/deactivate.d/libblas_mkl_deactivate.sh
 +++ '[' '' = '' ']'
 +++ unset MKL_INTERFACE_LAYER
 +++ unset CONDA_MKL_INTERFACE_LAYER_BACKUP
-++ PS1='(hibeam_env) '
-++ export PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
-++ PATH=/home/bmeirose42/.conda/envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PS1='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ export PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
+++ PATH=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1:/sw/easybuild_milan/software/Anaconda3/2024.02-1/sbin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/bin:/sw/easybuild_milan/software/Anaconda3/2024.02-1/condabin:/sw/pkg/gfxlauncher:/bin:/usr/bin:/opt/thinlinc/bin:/usr/local/bin:/usr/bin/X11:/sbin:/usr/sbin:/usr/local/sbin:/home/bmeirose42/bin:.:/sw/pkg/lunarc/bin:/sw/pkg/slurm/local/bin:/opt/thinlinc/sbin
 ++ export CONDA_SHLVL=1
 ++ CONDA_SHLVL=1
-++ export 'CONDA_PROMPT_MODIFIER=(hibeam_env) '
-++ CONDA_PROMPT_MODIFIER='(hibeam_env) '
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
+++ export 'CONDA_PROMPT_MODIFIER=(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ CONDA_PROMPT_MODIFIER='(/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env) '
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libarrow_activate.sh
 +++ '[' -n '' ']'
 +++ _la_log 'Beginning libarrow activation.'
 +++ '[' '' = 1 ']'
-+++ _la_gdb_prefix=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load
-+++ '[' '!' -w /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load ']'
++++ _la_gdb_prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load
++++ '[' '!' -w /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load ']'
 +++ _la_placeholder=replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX
-+++ _la_symlink_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib
-+++ _la_orig_install_dir=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
-+++ _la_log '          _la_gdb_prefix: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load'
++++ _la_symlink_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
++++ _la_orig_install_dir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
++++ _la_log '          _la_gdb_prefix: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load'
 +++ '[' '' = 1 ']'
 +++ _la_log '         _la_placeholder: replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX'
 +++ '[' '' = 1 ']'
-+++ _la_log '         _la_symlink_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib'
++++ _la_log '         _la_symlink_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib'
 +++ '[' '' = 1 ']'
-+++ _la_log '    _la_orig_install_dir: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
++++ _la_log '    _la_orig_install_dir: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib'
 +++ '[' '' = 1 ']'
 +++ _la_log '  content of that folder:'
 +++ '[' '' = 1 ']'
-++++ ls -al /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
+++++ ls -al /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib
 ++++ sed 's/^/      /'
-+++ _la_log '      total 2
-      drwxr-sr-x 2 bmeirose42 mnxb01 4096 Sep 14 21:48 .
-      drwxr-sr-x 3 bmeirose42 mnxb01 4096 Sep 14 21:43 ..
-      -rw-r--r-- 1 bmeirose42 mnxb01  982 Sep 14 21:47 libarrow.so.2000.0.0-gdb.py'
++++ _la_log '      total 4
+      drwxr-xr-x 2 bmeirose42 mnxb01   49 Sep 14 22:59 .
+      drwxr-xr-x 3 bmeirose42 mnxb01   25 Sep 14 22:53 ..
+      -rw-r--r-- 1 bmeirose42 mnxb01 1028 Sep 14 22:58 libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
 +++ for _la_target in "$_la_orig_install_dir/"*.py
-+++ '[' '!' -e /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ basename /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_symlink=/home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ _la_log '   _la_target: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
++++ '[' '!' -e /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ basename /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_symlink=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ _la_log '   _la_target: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ _la_log '  _la_symlink: /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
++++ _la_log '  _la_symlink: /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py'
 +++ '[' '' = 1 ']'
-+++ '[' -L /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
-++++ readlink /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load//home/bmeirose42/.conda/envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
-+++ '[' /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /home/bmeirose42/.conda/envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
++++ '[' -L /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py ']'
+++++ readlink /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load//projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/libarrow.so.2000.0.0-gdb.py
++++ '[' /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/gdb/auto-load/replace_this_section_with_absolute_slashed_path_to_CONDA_PREFIX/lib/libarrow.so.2000.0.0-gdb.py ']'
 +++ _la_log 'symlink $_la_symlink already exists and points to $_la_target, skipping.'
 +++ '[' '' = 1 ']'
 +++ continue
@@ -446,17 +450,17 @@ export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
 +++ unset _la_symlink
 +++ unset _la_symlink_dir
 +++ unset _la_target
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libblas_mkl_activate.sh
 +++ export CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ CONDA_MKL_INTERFACE_LAYER_BACKUP=
 +++ export MKL_INTERFACE_LAYER=LP64,GNU
 +++ MKL_INTERFACE_LAYER=LP64,GNU
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libglib_activate.sh
 +++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
 +++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
-+++ export GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-+++ GSETTINGS_SCHEMA_DIR=/home/bmeirose42/.conda/envs/hibeam_env/share/glib-2.0/schemas
-++ . /home/bmeirose42/.conda/envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
++++ export GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/glib-2.0/schemas
+++ . /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/conda/activate.d/libxml2_activate.sh
 +++ test -n ''
 +++ xml_catalog_files_libxml2=
 +++ XML_CATALOG_FILES=
@@ -464,16 +468,16 @@ export CONDA_PROMPT_MODIFIER='\''(hibeam_env) '\''
 +++ ifs_libxml2=' 	
 '
 +++ IFS=' '
-+++ rem=/home/bmeirose42/.conda/envs/hibeam_env
++++ rem=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ for pre in ${rem}
-+++ test '' = /home/bmeirose42/.conda/envs/hibeam_env
-+++ conda_catalog_files=/home/bmeirose42/.conda/envs/hibeam_env
++++ test '' = /projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
++++ conda_catalog_files=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
 +++ rem=
 +++ IFS=' 	
 '
-+++ conda_catalog_files='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ export 'XML_CATALOG_FILES=file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
-+++ XML_CATALOG_FILES='file:///home/bmeirose42/.conda/envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ conda_catalog_files='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ export 'XML_CATALOG_FILES=file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
++++ XML_CATALOG_FILES='file:///projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/etc/xml/catalog file:///etc/xml/catalog'
 +++ unset conda_catalog_files ifs_libxml2 rem
 + __conda_hashr
 + '[' -n '' ']'
@@ -490,12 +494,12 @@ Requirement already satisfied: prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30 in /home/b
 Requirement already satisfied: pygments>=2.4.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (2.19.2)
 Requirement already satisfied: stack-data in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (0.6.2)
 Requirement already satisfied: traitlets>=5 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (5.9.0)
-Requirement already satisfied: typing-extensions in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from ipython[all]) (4.14.1)
+Requirement already satisfied: typing-extensions in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from ipython[all]) (4.14.1)
 Requirement already satisfied: exceptiongroup in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (1.1.3)
 Requirement already satisfied: pexpect>4.3 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (4.9.0)
 Requirement already satisfied: black in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (25.1.0)
 Requirement already satisfied: ipykernel in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (6.25.2)
-Requirement already satisfied: setuptools>=18.5 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from ipython[all]) (75.8.2)
+Requirement already satisfied: setuptools>=18.5 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from ipython[all]) (75.8.2)
 Requirement already satisfied: sphinx>=1.3 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (7.4.7)
 Requirement already satisfied: sphinx-rtd-theme in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (3.0.2)
 Requirement already satisfied: docrepr in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipython[all]) (0.2.0)
@@ -557,7 +561,7 @@ Requirement already satisfied: nest-asyncio in /home/bmeirose42/.local/lib/pytho
 Requirement already satisfied: psutil in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipykernel->ipython[all]) (7.0.0)
 Requirement already satisfied: pyzmq>=20 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipykernel->ipython[all]) (25.1.1)
 Requirement already satisfied: tornado>=6.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipykernel->ipython[all]) (6.3.3)
-Requirement already satisfied: tqdm in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from ipyparallel->ipython[all]) (4.67.1)
+Requirement already satisfied: tqdm in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from ipyparallel->ipython[all]) (4.67.1)
 Requirement already satisfied: widgetsnbextension~=4.0.7 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipywidgets->ipython[all]) (4.0.8)
 Requirement already satisfied: jupyterlab-widgets~=3.0.7 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ipywidgets->ipython[all]) (3.0.8)
 Requirement already satisfied: beautifulsoup4 in /home/bmeirose42/.local/lib/python3.9/site-packages (from nbconvert->ipython[all]) (4.12.2)
@@ -575,7 +579,7 @@ Requirement already satisfied: jupyter-server<3,>=2.4.0 in /home/bmeirose42/.loc
 Requirement already satisfied: jupyterlab-server<3,>=2.22.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from notebook->ipython[all]) (2.24.0)
 Requirement already satisfied: jupyterlab<5,>=4.0.2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from notebook->ipython[all]) (4.0.5)
 Requirement already satisfied: notebook-shim<0.3,>=0.2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from notebook->ipython[all]) (0.2.3)
-Requirement already satisfied: pytz>=2020.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from pandas->ipython[all]) (2025.2)
+Requirement already satisfied: pytz>=2020.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from pandas->ipython[all]) (2025.2)
 Requirement already satisfied: tzdata>=2022.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from pandas->ipython[all]) (2023.3)
 Requirement already satisfied: ipython-genutils in /home/bmeirose42/.local/lib/python3.9/site-packages (from qtconsole->ipython[all]) (0.2.0)
 Requirement already satisfied: qtpy>=2.4.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from qtconsole->ipython[all]) (2.4.0)
@@ -584,10 +588,10 @@ Requirement already satisfied: executing>=1.2.0 in /home/bmeirose42/.local/lib/p
 Requirement already satisfied: asttokens>=2.1.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from stack-data->ipython[all]) (2.4.0)
 Requirement already satisfied: pure-eval in /home/bmeirose42/.local/lib/python3.9/site-packages (from stack-data->ipython[all]) (0.2.2)
 Requirement already satisfied: sortedcontainers in /home/bmeirose42/.local/lib/python3.9/site-packages (from trio->ipython[all]) (2.4.0)
-Requirement already satisfied: idna in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from trio->ipython[all]) (3.10)
+Requirement already satisfied: idna in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from trio->ipython[all]) (3.10)
 Requirement already satisfied: outcome in /home/bmeirose42/.local/lib/python3.9/site-packages (from trio->ipython[all]) (1.3.0.post0)
 Requirement already satisfied: sniffio>=1.3.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from trio->ipython[all]) (1.3.0)
-Requirement already satisfied: six>=1.12.0 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from asttokens>=2.1.0->stack-data->ipython[all]) (1.17.0)
+Requirement already satisfied: six>=1.12.0 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from asttokens>=2.1.0->stack-data->ipython[all]) (1.17.0)
 Requirement already satisfied: webencodings in /home/bmeirose42/.local/lib/python3.9/site-packages (from bleach!=5.0.0->nbconvert->ipython[all]) (0.5.1)
 Requirement already satisfied: zipp>=0.5 in /home/bmeirose42/.local/lib/python3.9/site-packages (from importlib-metadata>=6.0->sphinx>=1.3->ipython[all]) (3.16.2)
 Requirement already satisfied: jsonschema-specifications>=2023.03.6 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jsonschema>=2.6->nbformat->ipython[all]) (2023.7.1)
@@ -606,7 +610,7 @@ Requirement already satisfied: async-lru>=1.0.0 in /home/bmeirose42/.local/lib/p
 Requirement already satisfied: jupyter-lsp>=2.0.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jupyterlab<5,>=4.0.2->notebook->ipython[all]) (2.2.0)
 Requirement already satisfied: json5>=0.9.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jupyterlab-server<3,>=2.22.1->notebook->ipython[all]) (0.9.14)
 Requirement already satisfied: charset-normalizer<4,>=2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests>=2.30.0->sphinx>=1.3->ipython[all]) (3.2.0)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from requests>=2.30.0->sphinx>=1.3->ipython[all]) (2.5.0)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from requests>=2.30.0->sphinx>=1.3->ipython[all]) (2.5.0)
 Requirement already satisfied: certifi>=2017.4.17 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests>=2.30.0->sphinx>=1.3->ipython[all]) (2023.7.22)
 Requirement already satisfied: soupsieve>1.2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from beautifulsoup4->nbconvert->ipython[all]) (2.5)
 Requirement already satisfied: python-json-logger>=2.0.4 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jupyter-events>=0.6.0->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (2.0.7)
@@ -619,8 +623,8 @@ Requirement already satisfied: isoduration in /home/bmeirose42/.local/lib/python
 Requirement already satisfied: jsonpointer>1.13 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.6.0->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (2.4)
 Requirement already satisfied: uri-template in /home/bmeirose42/.local/lib/python3.9/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.6.0->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (1.3.0)
 Requirement already satisfied: webcolors>=1.11 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.6.0->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (1.13)
-Requirement already satisfied: cffi>=1.0.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from argon2-cffi-bindings->argon2-cffi->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (1.17.1)
-Requirement already satisfied: pycparser in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (2.22)
+Requirement already satisfied: cffi>=1.0.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from argon2-cffi-bindings->argon2-cffi->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (1.17.1)
+Requirement already satisfied: pycparser in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (2.22)
 Requirement already satisfied: arrow>=0.15.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from isoduration->jsonschema[format-nongpl]>=4.18.0->jupyter-events>=0.6.0->jupyter-server<3,>=2.4.0->notebook->ipython[all]) (1.2.3)
 
 [notice] A new release of pip is available: 23.3 -> 25.2
@@ -633,13 +637,13 @@ Requirement already satisfied: arrow>=0.15.0 in /home/bmeirose42/.local/lib/pyth
 Looking in links: https://data.pyg.org/whl/torch-2.5.1.html
 Requirement already satisfied: torch-geometric in /home/bmeirose42/.local/lib/python3.9/site-packages (2.6.1)
 Requirement already satisfied: aiohttp in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (3.12.15)
-Requirement already satisfied: fsspec in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch-geometric) (2025.7.0)
+Requirement already satisfied: fsspec in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch-geometric) (2025.7.0)
 Requirement already satisfied: jinja2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (3.1.2)
 Requirement already satisfied: numpy in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (1.25.2)
 Requirement already satisfied: psutil>=5.8.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (7.0.0)
 Requirement already satisfied: pyparsing in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (3.0.9)
 Requirement already satisfied: requests in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch-geometric) (2.31.0)
-Requirement already satisfied: tqdm in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch-geometric) (4.67.1)
+Requirement already satisfied: tqdm in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch-geometric) (4.67.1)
 Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from aiohttp->torch-geometric) (2.6.1)
 Requirement already satisfied: aiosignal>=1.4.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from aiohttp->torch-geometric) (1.4.0)
 Requirement already satisfied: async-timeout<6.0,>=4.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from aiohttp->torch-geometric) (5.0.1)
@@ -650,10 +654,10 @@ Requirement already satisfied: propcache>=0.2.0 in /home/bmeirose42/.local/lib/p
 Requirement already satisfied: yarl<2.0,>=1.17.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from aiohttp->torch-geometric) (1.20.1)
 Requirement already satisfied: MarkupSafe>=2.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jinja2->torch-geometric) (2.1.3)
 Requirement already satisfied: charset-normalizer<4,>=2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests->torch-geometric) (3.2.0)
-Requirement already satisfied: idna<4,>=2.5 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from requests->torch-geometric) (3.10)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from requests->torch-geometric) (2.5.0)
+Requirement already satisfied: idna<4,>=2.5 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from requests->torch-geometric) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from requests->torch-geometric) (2.5.0)
 Requirement already satisfied: certifi>=2017.4.17 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests->torch-geometric) (2023.7.22)
-Requirement already satisfied: typing-extensions>=4.2 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from aiosignal>=1.4.0->aiohttp->torch-geometric) (4.14.1)
+Requirement already satisfied: typing-extensions>=4.2 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from aiosignal>=1.4.0->aiohttp->torch-geometric) (4.14.1)
 
 [notice] A new release of pip is available: 23.3 -> 25.2
 [notice] To update, run: pip install --upgrade pip
@@ -662,8 +666,8 @@ Requirement already satisfied: typing-extensions>=4.2 in /home/bmeirose42/.conda
 [1;34m[INFO][0m Installing GraphNeT...
 + pip install --user git+https://github.com/graphnet-team/graphnet.git
 Collecting git+https://github.com/graphnet-team/graphnet.git
-  Cloning https://github.com/graphnet-team/graphnet.git to /tmp/pip-req-build-w8xlbcbq
-  Running command git clone --filter=blob:none --quiet https://github.com/graphnet-team/graphnet.git /tmp/pip-req-build-w8xlbcbq
+  Cloning https://github.com/graphnet-team/graphnet.git to /tmp/pip-req-build-5gzqwmjd
+  Running command git clone --filter=blob:none --quiet https://github.com/graphnet-team/graphnet.git /tmp/pip-req-build-5gzqwmjd
   Resolved https://github.com/graphnet-team/graphnet.git to commit 401f28b450e995cc567a70e83bb813757e9a4d63
   Installing build dependencies: started
   Installing build dependencies: finished with status 'done'
@@ -677,21 +681,21 @@ Requirement already satisfied: dill>=0.3 in /home/bmeirose42/.local/lib/python3.
 Requirement already satisfied: matplotlib>=3.5 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (3.7.2)
 Requirement already satisfied: numpy<2.0,>=1.22 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (1.25.2)
 Requirement already satisfied: pandas>=1.3 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (2.1.1)
-Requirement already satisfied: pyarrow in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (20.0.0)
+Requirement already satisfied: pyarrow in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (20.0.0)
 Requirement already satisfied: pydantic in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (2.11.9)
 Requirement already satisfied: ruamel.yaml in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (0.17.32)
 Requirement already satisfied: scikit_learn>=1.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (1.3.1)
 Requirement already satisfied: scipy>=1.7 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (1.11.2)
 Requirement already satisfied: sqlalchemy>=1.4 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (2.0.43)
-Requirement already satisfied: tqdm>=4.64 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (4.67.1)
+Requirement already satisfied: tqdm>=4.64 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (4.67.1)
 Requirement already satisfied: wandb>=0.12 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (0.21.4)
 Requirement already satisfied: polars>=0.19 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (1.33.1)
 Requirement already satisfied: torchscale==0.2.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (0.2.0)
 Requirement already satisfied: h5py>=3.7.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from graphnet==1.0.0+4264.g401f28b4) (3.14.0)
-Requirement already satisfied: torch>=1.8 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (2.5.1)
+Requirement already satisfied: torch>=1.8 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (2.5.1)
 Requirement already satisfied: fairscale==0.4.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (0.4.0)
 Requirement already satisfied: timm==0.4.12 in /home/bmeirose42/.local/lib/python3.9/site-packages (from torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (0.4.12)
-Requirement already satisfied: torchvision in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from timm==0.4.12->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (0.20.1)
+Requirement already satisfied: torchvision in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from timm==0.4.12->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (0.20.1)
 Requirement already satisfied: contourpy>=1.0.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (1.1.0)
 Requirement already satisfied: cycler>=0.10 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (0.11.0)
 Requirement already satisfied: fonttools>=4.22.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (4.42.0)
@@ -701,12 +705,12 @@ Requirement already satisfied: pillow>=6.2.0 in /home/bmeirose42/.local/lib/pyth
 Requirement already satisfied: pyparsing<3.1,>=2.3.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (3.0.9)
 Requirement already satisfied: python-dateutil>=2.7 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (2.8.2)
 Requirement already satisfied: importlib-resources>=3.2.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (6.0.1)
-Requirement already satisfied: pytz>=2020.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from pandas>=1.3->graphnet==1.0.0+4264.g401f28b4) (2025.2)
+Requirement already satisfied: pytz>=2020.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from pandas>=1.3->graphnet==1.0.0+4264.g401f28b4) (2025.2)
 Requirement already satisfied: tzdata>=2022.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from pandas>=1.3->graphnet==1.0.0+4264.g401f28b4) (2023.3)
 Requirement already satisfied: joblib>=1.1.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from scikit_learn>=1.0->graphnet==1.0.0+4264.g401f28b4) (1.3.2)
 Requirement already satisfied: threadpoolctl>=2.0.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from scikit_learn>=1.0->graphnet==1.0.0+4264.g401f28b4) (3.2.0)
 Requirement already satisfied: greenlet>=1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from sqlalchemy>=1.4->graphnet==1.0.0+4264.g401f28b4) (3.2.4)
-Requirement already satisfied: typing-extensions>=4.6.0 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from sqlalchemy>=1.4->graphnet==1.0.0+4264.g401f28b4) (4.14.1)
+Requirement already satisfied: typing-extensions>=4.6.0 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from sqlalchemy>=1.4->graphnet==1.0.0+4264.g401f28b4) (4.14.1)
 Requirement already satisfied: click>=8.0.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (8.1.8)
 Requirement already satisfied: eval-type-backport in /home/bmeirose42/.local/lib/python3.9/site-packages (from wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (0.2.2)
 Requirement already satisfied: gitpython!=3.1.29,>=1.0.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (3.1.45)
@@ -721,16 +725,16 @@ Requirement already satisfied: typing-inspection>=0.4.0 in /home/bmeirose42/.loc
 Requirement already satisfied: ruamel.yaml.clib>=0.2.7 in /home/bmeirose42/.local/lib/python3.9/site-packages (from ruamel.yaml->graphnet==1.0.0+4264.g401f28b4) (0.2.7)
 Requirement already satisfied: gitdb<5,>=4.0.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from gitpython!=3.1.29,>=1.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (4.0.12)
 Requirement already satisfied: zipp>=3.1.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from importlib-resources>=3.2.0->matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (3.16.2)
-Requirement already satisfied: six>=1.5 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from python-dateutil>=2.7->matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (1.17.0)
+Requirement already satisfied: six>=1.5 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from python-dateutil>=2.7->matplotlib>=3.5->graphnet==1.0.0+4264.g401f28b4) (1.17.0)
 Requirement already satisfied: charset-normalizer<4,>=2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (3.2.0)
-Requirement already satisfied: idna<4,>=2.5 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (3.10)
-Requirement already satisfied: urllib3<3,>=1.21.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (2.5.0)
+Requirement already satisfied: idna<4,>=2.5 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (2.5.0)
 Requirement already satisfied: certifi>=2017.4.17 in /home/bmeirose42/.local/lib/python3.9/site-packages (from requests<3,>=2.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (2023.7.22)
-Requirement already satisfied: filelock in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (3.19.1)
-Requirement already satisfied: sympy!=1.13.2,>=1.13.1 in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (1.14.0)
-Requirement already satisfied: networkx in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (3.2.1)
+Requirement already satisfied: filelock in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (3.19.1)
+Requirement already satisfied: sympy!=1.13.2,>=1.13.1 in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (1.14.0)
+Requirement already satisfied: networkx in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (3.2.1)
 Requirement already satisfied: jinja2 in /home/bmeirose42/.local/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (3.1.2)
-Requirement already satisfied: fsspec in /home/bmeirose42/.conda/envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (2025.7.0)
+Requirement already satisfied: fsspec in ./conda_envs/hibeam_env/lib/python3.9/site-packages (from torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (2025.7.0)
 Requirement already satisfied: smmap<6,>=3.0.1 in /home/bmeirose42/.local/lib/python3.9/site-packages (from gitdb<5,>=4.0.1->gitpython!=3.1.29,>=1.0.0->wandb>=0.12->graphnet==1.0.0+4264.g401f28b4) (5.0.2)
 Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from sympy!=1.13.2,>=1.13.1->torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (1.3.0)
 Requirement already satisfied: MarkupSafe>=2.0 in /home/bmeirose42/.local/lib/python3.9/site-packages (from jinja2->torch>=1.8->torchscale==0.2.0->graphnet==1.0.0+4264.g401f28b4) (2.1.3)
@@ -867,14 +871,21 @@ All smearing tasks complete.
 + printf '\033[1;34m[INFO]\033[0m %s\n' 'Running HIBEAM GNN...'
 [1;34m[INFO][0m Running HIBEAM GNN...
 + python HIBEAM_GNN_v1.py
-[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 22:05:54 - has_icecube_package - `icecube` not available. Some functionality may be missing.[0m
-[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 22:05:56 - has_jammy_flows_package - `jammy_flows` not available. Normalizing Flow functionality is missing.[0m
-[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 22:05:56 - <module> - `graphnet.models.graphs` will be depricated soon. All functionality has been moved to `graphnet.models.data_representation`.[0m
-[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 22:05:56 - HIBEAM_Detector.__init__ - Writing log to [1mlogs/graphnet_20250914-220556.log[0m
-[ERROR] Base directory does not exist: Large_data/training_data_smeared
-+ log 'HIBEAM GNN completed successfully'
-+ printf '\033[1;34m[INFO]\033[0m %s\n' 'HIBEAM GNN completed successfully'
-[1;34m[INFO][0m HIBEAM GNN completed successfully
-+ log 'Pipeline finished successfully!'
-+ printf '\033[1;34m[INFO]\033[0m %s\n' 'Pipeline finished successfully!'
-[1;34m[INFO][0m Pipeline finished successfully!
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-15 11:37:15 - has_icecube_package - `icecube` not available. Some functionality may be missing.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-15 11:37:18 - has_jammy_flows_package - `jammy_flows` not available. Normalizing Flow functionality is missing.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-15 11:37:18 - <module> - `graphnet.models.graphs` will be depricated soon. All functionality has been moved to `graphnet.models.data_representation`.[0m
+[INFO] No GPU detected. Falling back to CPU.
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 11:37:18 - HIBEAM_Detector.__init__ - Writing log to [1mlogs/graphnet_20250915-113718.log[0m
+
+=== Training for res_0cm ===
+Data: Large_data/training_data_smeared/particles_3/res_0cm
+Traceback (most recent call last):
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/HIBEAM_GNN_v1.py", line 223, in <module>
+    main()
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/HIBEAM_GNN_v1.py", line 208, in main
+    out_dir, metrics = train_and_eval_for_dir(data_dir, pred_dir, res_tag, mul_tag, max_epochs=MAX_EPOCHS, folder=folder_name)
+NameError: name 'MAX_EPOCHS' is not defined
++ error 'HIBEAM GNN failed with exit code 1'
++ printf '\033[1;31m[ERROR]\033[0m %s\n' 'HIBEAM GNN failed with exit code 1'
+[1;31m[ERROR][0m HIBEAM GNN failed with exit code 1
++ exit 1

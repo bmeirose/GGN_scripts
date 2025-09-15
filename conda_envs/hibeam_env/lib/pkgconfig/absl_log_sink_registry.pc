@@ -1,0 +1,12 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
+includedir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/include
+
+Name: absl_log_sink_registry
+Description: Abseil log_sink_registry library
+URL: https://abseil.io/
+Version: 20250127
+Requires: absl_config = 20250127, absl_log_sink = 20250127, absl_log_internal_log_sink_set = 20250127, absl_nullability = 20250127
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

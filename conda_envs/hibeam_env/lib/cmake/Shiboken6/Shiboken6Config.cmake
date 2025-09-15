@@ -1,0 +1,5 @@
+if (NOT PYTHON_CONFIG_SUFFIX)
+    message(STATUS "Shiboken6Config: Using default python: .cpython-39-x86_64-linux-gnu")
+    SET(PYTHON_CONFIG_SUFFIX .cpython-39-x86_64-linux-gnu)
+endif()
+include("${CMAKE_CURRENT_LIST_DIR}/Shiboken6Config${PYTHON_CONFIG_SUFFIX}.cmake")

@@ -1,0 +1,2 @@
+mean_abs_dx,mean_abs_dy,mean_abs_dz,mean_dist_residual,n_events,data_dir,pred_dir,res_tag,mul_tag,failed,error
+,,,,0,Large_data/training_data_smeared/particles_3/res_0cm,Large_data/validation_data_smeared/vertex_random/particles_3/res_0cm,res_0cm,particles_3,True,No supported gpu backend found!

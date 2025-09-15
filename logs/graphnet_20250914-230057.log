@@ -1,0 +1,38 @@
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:00:57 - HIBEAM_Detector.__init__ - Writing log to [1mlogs/graphnet_20250914-230057.log[0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:00:58 - _set_dataloader_kwargs - No `val_dataloader_kwargs` given. This arg has been set to `train_dataloader_kwargs` with `shuffle` = False.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - _add_context - GraphNeTDataModule has automatically set multiprocessing_context = 'spawn' in training dataloader.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - _add_context - GraphNeTDataModule has automatically set multiprocessing_context = 'spawn' in validation dataloader.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - _resolve_selections - GraphNeTDataModule did not receive an argument for `test_selection` and will therefore not have a prediction dataloader available.[0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:00:58 - _resolve_selections - GraphNeTDataModule did not receive an for `selection`. Selection will will automatically be created with a split of train: 0.9 and validation: 0.1[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - ParquetDataset.__init__ - DeprecationWarning: Argument `graph_definition` will be deprecated in GraphNeT 2.0. Please use `data_representation` instead.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - ParquetDataset.__init__ - DeprecationWarning: Argument `graph_definition` will be deprecated in GraphNeT 2.0. Please use `data_representation` instead.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - ParquetDataset.__init__ - DeprecationWarning: Argument `graph_definition` will be deprecated in GraphNeT 2.0. Please use `data_representation` instead.[0m
+[1;34mgraphnet[0m [MainProcess] [33mWARNING [0m 2025-09-14 23:00:58 - StandardModel.__init__ - DeprecationWarning: Argument `graph_definition` will be deprecated in GraphNeT 2.0. Please use `data_representation` instead.[0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:00:58 - StandardModel._create_default_callbacks - EarlyStopping has been added with a patience of 5.[0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:00:58 - StandardModel._print_callbacks - Training initiated with callbacks: ProgressBar, EarlyStopping, ModelCheckpoint[0m
+GPU available: False, used: False
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+
+  | Name                 | Type       | Params | Mode 
+------------------------------------------------------------
+0 | _tasks               | ModuleList | 387    | train
+1 | _data_representation | KNNGraph   | 0      | train
+2 | backbone             | DynEdge    | 1.4 M  | train
+------------------------------------------------------------
+1.4 M     Trainable params
+0         Non-trainable params
+1.4 M     Total params
+5.516     Total estimated model params size (MB)
+36        Modules in train mode
+0         Modules in eval mode
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:25:35 - on_train_epoch_end - Epoch  0: 100%|[32m██████████[0m| 3516/3516 [24:15<00:00,  2.42 batch(es)/s, lr=0.000975, val_loss=0.000412, train_loss=0.157][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-14 23:49:29 - on_train_epoch_end - Epoch  1: 100%|[32m██████████[0m| 3516/3516 [23:53<00:00,  2.45 batch(es)/s, lr=0.000924, val_loss=0.000165, train_loss=0.00894][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 00:12:51 - on_train_epoch_end - Epoch  2: 100%|[32m██████████[0m| 3516/3516 [23:21<00:00,  2.51 batch(es)/s, lr=0.000873, val_loss=5.65e-5, train_loss=0.000203][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 00:36:09 - on_train_epoch_end - Epoch  3: 100%|[32m██████████[0m| 3516/3516 [23:17<00:00,  2.52 batch(es)/s, lr=0.000822, val_loss=5.61e-5, train_loss=0.000112][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 00:59:36 - on_train_epoch_end - Epoch  4: 100%|[32m██████████[0m| 3516/3516 [23:26<00:00,  2.50 batch(es)/s, lr=0.000772, val_loss=0.000358, train_loss=6.22e-5][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 01:23:57 - on_train_epoch_end - Epoch  5: 100%|[32m██████████[0m| 3516/3516 [24:21<00:00,  2.41 batch(es)/s, lr=0.000721, val_loss=5.89e-5, train_loss=0.00168][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 01:48:16 - on_train_epoch_end - Epoch  6: 100%|[32m██████████[0m| 3516/3516 [24:18<00:00,  2.41 batch(es)/s, lr=0.00067, val_loss=3.55e-5, train_loss=3.48e-5][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 02:12:29 - on_train_epoch_end - Epoch  7: 100%|[32m██████████[0m| 3516/3516 [24:12<00:00,  2.42 batch(es)/s, lr=0.000619, val_loss=2.59e-5, train_loss=2.66e-5][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 02:36:48 - on_train_epoch_end - Epoch  8: 100%|[32m██████████[0m| 3516/3516 [24:18<00:00,  2.41 batch(es)/s, lr=0.000568, val_loss=2.35e-5, train_loss=2.1e-5][0m
+[1;34mgraphnet[0m [MainProcess] [32mINFO    [0m 2025-09-15 03:00:51 - on_train_epoch_end - Epoch  9: 100%|[32m██████████[0m| 3516/3516 [24:02<00:00,  2.44 batch(es)/s, lr=0.000518, val_loss=2.09e-5, train_loss=1.71e-5][0m

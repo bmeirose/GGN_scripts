@@ -1,0 +1,44 @@
+{
+  "build": "hb03c661_4",
+  "build_number": 4,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libbrotlidec 1.1.0 hb03c661_4",
+    "libbrotlienc 1.1.0 hb03c661_4",
+    "libgcc >=14"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/brotli-bin-1.1.0-hb03c661_4",
+  "files": [
+    "bin/brotli"
+  ],
+  "fn": "brotli-bin-1.1.0-hb03c661_4.conda",
+  "license": "MIT",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/brotli-bin-1.1.0-hb03c661_4",
+    "type": 1
+  },
+  "md5": "ca4ed8015764937c81b830f7f5b68543",
+  "name": "brotli-bin",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/brotli-bin-1.1.0-hb03c661_4.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "bin/brotli",
+        "path_type": "hardlink",
+        "sha256": "d3a3013bfc433d9199da12930e916c16fa9a45fb5a1f47fe3b5ea900c4df0087",
+        "sha256_in_prefix": "d3a3013bfc433d9199da12930e916c16fa9a45fb5a1f47fe3b5ea900c4df0087",
+        "size_in_bytes": 34680
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "444903c6e5c553175721a16b7c7de590ef754a15c28c99afbc8a963b35269517",
+  "size": 19615,
+  "subdir": "linux-64",
+  "timestamp": 1756599385000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/brotli-bin-1.1.0-hb03c661_4.conda",
+  "version": "1.1.0"
+}

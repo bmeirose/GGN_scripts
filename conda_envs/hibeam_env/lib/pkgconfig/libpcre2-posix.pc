@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libpcre2-posix
+Description: Posix compatible interface to libpcre2-8
+Version: 10.45
+Libs: -L${libdir} -lpcre2-posix
+Cflags: -I${includedir} -DPCRE2POSIX_SHARED
+Requires.private: libpcre2-8

@@ -1,0 +1,9 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: pciaccess
+Description: Library providing generic access to the PCI bus and devices
+Version: 0.18
+Libs: -L${libdir} -lpciaccess
+Cflags: -I${includedir}

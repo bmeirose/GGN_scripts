@@ -1,0 +1,9 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+libdir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib
+includedir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/include
+
+Name: SLEEF
+Description: SIMD Library for Evaluating Elementary Functions, vectorized libm and DFT
+Version: 3.9.0
+Cflags: -I${includedir}
+Libs: -L${libdir} -lsleef

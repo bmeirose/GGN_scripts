@@ -1,0 +1,8 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+includedir=${prefix}/include
+
+Name: cairo-svg
+Description: SVG surface backend for cairo graphics library
+Version: 1.18.4
+Requires: cairo, libpng >=  1.4.0
+Cflags: -I${includedir}

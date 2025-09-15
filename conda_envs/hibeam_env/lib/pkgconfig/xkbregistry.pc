@@ -1,0 +1,10 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: xkbregistry
+Description: XKB API to query available rules, models, layouts, variants and options
+Version: 1.11.0
+Requires.private: libxml-2.0
+Libs: -L${libdir} -lxkbregistry
+Cflags: -I${includedir}

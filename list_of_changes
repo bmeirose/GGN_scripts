@@ -1,0 +1,19 @@
+GPU handling: replaced hardcoded GPUS = [0] with auto-detection of CUDA devices, fallback to CPU if none found.
+
+Added error handling around training/prediction to avoid crashes; exceptions are caught and written to a metrics_failed.txt.
+
+Added safe_read_parquet_list to read truth files more robustly (skip broken ones).
+
+Prediction writing: now tries parquet first, falls back to CSV if parquet writing fails.
+
+Truth merge: checks for missing or empty files, saves empty merged CSV if no rows.
+
+Residual calculation: verifies that required columns exist before computing dx, dy, dz.
+
+Scheduler milestones: made safer (max(1, len(train_loader)//2), etc.) to avoid invalid values.
+
+Histogram saving: skips plotting if series is empty.
+
+Output: also saves merged predictions+truth CSV in addition to predictions and metrics.
+
+Main function: checks that base directory exists and that resolution dirs are found; otherwise prints clear errors and exits.

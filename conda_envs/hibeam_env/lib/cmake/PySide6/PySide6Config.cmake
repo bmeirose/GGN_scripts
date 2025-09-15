@@ -1,0 +1,5 @@
+if (NOT PYTHON_CONFIG_SUFFIX)
+    message(STATUS "PySide6Config: Using default python: .cpython-39-x86_64-linux-gnu")
+    SET(PYTHON_CONFIG_SUFFIX .cpython-39-x86_64-linux-gnu)
+endif()
+include(${CMAKE_CURRENT_LIST_DIR}/PySide6Config${PYTHON_CONFIG_SUFFIX}.cmake)

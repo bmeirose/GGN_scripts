@@ -1,0 +1,14 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+libdir=lib
+includedir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/include/PySide6
+typesystemdir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/PySide6/typesystems
+gluedir=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/share/PySide6/glue
+pythonpath=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/python3.9/site-packages
+
+Name: PySide6
+Description: Support library for Python bindings of Qt5-based libraries.
+Version: 6.9.1
+Libs: -L${libdir} -lpyside6.cpython-39-x86_64-linux-gnu
+Cflags: -I${includedir}
+Requires: shiboken6

@@ -1,0 +1,182 @@
+{
+  "build": "ha0421bc_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "_openmp_mutex >=4.5",
+    "libgcc >=14",
+    "libstdcxx >=14"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/sleef-3.9.0-ha0421bc_0",
+  "files": [
+    "include/sleef.h",
+    "include/sleefquad.h",
+    "lib/cmake/sleef/sleefConfig.cmake",
+    "lib/cmake/sleef/sleefConfigVersion.cmake",
+    "lib/cmake/sleef/sleefTargets-release.cmake",
+    "lib/cmake/sleef/sleefTargets.cmake",
+    "lib/libsleef.so",
+    "lib/libsleef.so.3",
+    "lib/libsleef.so.3.9.0",
+    "lib/libsleefgnuabi.so",
+    "lib/libsleefgnuabi.so.3",
+    "lib/libsleefgnuabi.so.3.9",
+    "lib/libsleefquad.so",
+    "lib/libsleefquad.so.3",
+    "lib/libsleefquad.so.3.9.0",
+    "lib/libsleefscalar.so",
+    "lib/libsleefscalar.so.3",
+    "lib/libsleefscalar.so.3.9.0",
+    "lib/pkgconfig/sleef.pc"
+  ],
+  "fn": "sleef-3.9.0-ha0421bc_0.conda",
+  "license": "BSL-1.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/sleef-3.9.0-ha0421bc_0",
+    "type": 1
+  },
+  "md5": "e8a0b4f5e82ecacffaa5e805020473cb",
+  "name": "sleef",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/sleef-3.9.0-ha0421bc_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/sleef.h",
+        "path_type": "hardlink",
+        "sha256": "2f8add3a70ea0653d15dd29df4ec999ca33fd995cda9fe283ab01951df37623a",
+        "sha256_in_prefix": "2f8add3a70ea0653d15dd29df4ec999ca33fd995cda9fe283ab01951df37623a",
+        "size_in_bytes": 268952
+      },
+      {
+        "_path": "include/sleefquad.h",
+        "path_type": "hardlink",
+        "sha256": "8969ad68e349acec4a7eda2c26fb20c1d15a9be0f36c30d3b6d4403cfdabc510",
+        "sha256_in_prefix": "8969ad68e349acec4a7eda2c26fb20c1d15a9be0f36c30d3b6d4403cfdabc510",
+        "size_in_bytes": 56260
+      },
+      {
+        "_path": "lib/cmake/sleef/sleefConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "9fa40c305e24fa7bb1ce3e6e26e4b7f00ada10cbc460781570ffdcec398c5e15",
+        "sha256_in_prefix": "9fa40c305e24fa7bb1ce3e6e26e4b7f00ada10cbc460781570ffdcec398c5e15",
+        "size_in_bytes": 56
+      },
+      {
+        "_path": "lib/cmake/sleef/sleefConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "04aa53d2c42172a7e7f53536b082d032af093127e74842d8b0231ece937af725",
+        "sha256_in_prefix": "04aa53d2c42172a7e7f53536b082d032af093127e74842d8b0231ece937af725",
+        "size_in_bytes": 2762
+      },
+      {
+        "_path": "lib/cmake/sleef/sleefTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "6f457910bc1e001b07ff677021261a292bb78b6925a6c78ae52bedabba09258e",
+        "sha256_in_prefix": "6f457910bc1e001b07ff677021261a292bb78b6925a6c78ae52bedabba09258e",
+        "size_in_bytes": 2338
+      },
+      {
+        "_path": "lib/cmake/sleef/sleefTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "6a76df44825c4b7ccf918704bf7cefb526aa023387c7d69061af836f2610c007",
+        "sha256_in_prefix": "6a76df44825c4b7ccf918704bf7cefb526aa023387c7d69061af836f2610c007",
+        "size_in_bytes": 4550
+      },
+      {
+        "_path": "lib/libsleef.so",
+        "path_type": "softlink",
+        "sha256": "aa23952c9f163ba7bb89c8f7bdaf9350f7cf3c4dafdd86ca96d6646fffbb6a7a",
+        "size_in_bytes": 2581232
+      },
+      {
+        "_path": "lib/libsleef.so.3",
+        "path_type": "softlink",
+        "sha256": "aa23952c9f163ba7bb89c8f7bdaf9350f7cf3c4dafdd86ca96d6646fffbb6a7a",
+        "size_in_bytes": 2581232
+      },
+      {
+        "_path": "lib/libsleef.so.3.9.0",
+        "path_type": "hardlink",
+        "sha256": "aa23952c9f163ba7bb89c8f7bdaf9350f7cf3c4dafdd86ca96d6646fffbb6a7a",
+        "sha256_in_prefix": "aa23952c9f163ba7bb89c8f7bdaf9350f7cf3c4dafdd86ca96d6646fffbb6a7a",
+        "size_in_bytes": 2581232
+      },
+      {
+        "_path": "lib/libsleefgnuabi.so",
+        "path_type": "softlink",
+        "sha256": "11713bf33a5043e4c37b3540f1d0bd5a88059ed55e62a5127ddd9e1194c21a37",
+        "size_in_bytes": 702728
+      },
+      {
+        "_path": "lib/libsleefgnuabi.so.3",
+        "path_type": "softlink",
+        "sha256": "11713bf33a5043e4c37b3540f1d0bd5a88059ed55e62a5127ddd9e1194c21a37",
+        "size_in_bytes": 702728
+      },
+      {
+        "_path": "lib/libsleefgnuabi.so.3.9",
+        "path_type": "hardlink",
+        "sha256": "11713bf33a5043e4c37b3540f1d0bd5a88059ed55e62a5127ddd9e1194c21a37",
+        "sha256_in_prefix": "11713bf33a5043e4c37b3540f1d0bd5a88059ed55e62a5127ddd9e1194c21a37",
+        "size_in_bytes": 702728
+      },
+      {
+        "_path": "lib/libsleefquad.so",
+        "path_type": "softlink",
+        "sha256": "9a07e591cd215f7f4413b50612c821effa6c8c09c99379b78e525aedd2eb162b",
+        "size_in_bytes": 2244208
+      },
+      {
+        "_path": "lib/libsleefquad.so.3",
+        "path_type": "softlink",
+        "sha256": "9a07e591cd215f7f4413b50612c821effa6c8c09c99379b78e525aedd2eb162b",
+        "size_in_bytes": 2244208
+      },
+      {
+        "_path": "lib/libsleefquad.so.3.9.0",
+        "path_type": "hardlink",
+        "sha256": "9a07e591cd215f7f4413b50612c821effa6c8c09c99379b78e525aedd2eb162b",
+        "sha256_in_prefix": "9a07e591cd215f7f4413b50612c821effa6c8c09c99379b78e525aedd2eb162b",
+        "size_in_bytes": 2244208
+      },
+      {
+        "_path": "lib/libsleefscalar.so",
+        "path_type": "softlink",
+        "sha256": "fc5979c8078696d7eb0e5ab62406cb35c30872022e08e2bfb18d2aa0d23be207",
+        "size_in_bytes": 209760
+      },
+      {
+        "_path": "lib/libsleefscalar.so.3",
+        "path_type": "softlink",
+        "sha256": "fc5979c8078696d7eb0e5ab62406cb35c30872022e08e2bfb18d2aa0d23be207",
+        "size_in_bytes": 209760
+      },
+      {
+        "_path": "lib/libsleefscalar.so.3.9.0",
+        "path_type": "hardlink",
+        "sha256": "fc5979c8078696d7eb0e5ab62406cb35c30872022e08e2bfb18d2aa0d23be207",
+        "sha256_in_prefix": "fc5979c8078696d7eb0e5ab62406cb35c30872022e08e2bfb18d2aa0d23be207",
+        "size_in_bytes": 209760
+      },
+      {
+        "_path": "lib/pkgconfig/sleef.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/sleef_1756274377883/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "1acde2286f4026be2f52f52bcfdb473a1da0a2134df936d5a7bff1de0e1274c7",
+        "sha256_in_prefix": "e24cda2c5aaf8ada66af876d905989e42cfae5db7a85c0025526ccc43119e385",
+        "size_in_bytes": 970
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "57afc2ab5bdb24cf979964018dddbc5dfaee130b415e6863765e45aed2175ee4",
+  "size": 1951720,
+  "subdir": "linux-64",
+  "timestamp": 1756274576000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/sleef-3.9.0-ha0421bc_0.conda",
+  "version": "3.9.0"
+}

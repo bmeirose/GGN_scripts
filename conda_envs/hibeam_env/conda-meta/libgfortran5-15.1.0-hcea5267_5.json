@@ -1,0 +1,66 @@
+{
+  "build": "hcea5267_5",
+  "build_number": 5,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "libgfortran 15.1.0"
+  ],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=15.1.0"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/libgfortran5-15.1.0-hcea5267_5",
+  "files": [
+    "lib/libgfortran.so",
+    "lib/libgfortran.so.5",
+    "lib/libgfortran.so.5.0.0",
+    "share/licenses/libgfortran/RUNTIME.LIBRARY.EXCEPTION"
+  ],
+  "fn": "libgfortran5-15.1.0-hcea5267_5.conda",
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/libgfortran5-15.1.0-hcea5267_5",
+    "type": 1
+  },
+  "md5": "fbd4008644add05032b6764807ee2cba",
+  "name": "libgfortran5",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/libgfortran5-15.1.0-hcea5267_5.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libgfortran.so",
+        "path_type": "softlink",
+        "sha256": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "size_in_bytes": 7655696
+      },
+      {
+        "_path": "lib/libgfortran.so.5",
+        "path_type": "softlink",
+        "sha256": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "size_in_bytes": 7655696
+      },
+      {
+        "_path": "lib/libgfortran.so.5.0.0",
+        "path_type": "hardlink",
+        "sha256": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "sha256_in_prefix": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "size_in_bytes": 7655696
+      },
+      {
+        "_path": "share/licenses/libgfortran/RUNTIME.LIBRARY.EXCEPTION",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "sha256_in_prefix": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "9d06adc6d8e8187ddc1cad87525c690bc8202d8cb06c13b76ab2fc80a35ed565",
+  "size": 1564589,
+  "subdir": "linux-64",
+  "timestamp": 1757042559000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libgfortran5-15.1.0-hcea5267_5.conda",
+  "version": "15.1.0"
+}

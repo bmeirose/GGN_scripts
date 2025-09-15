@@ -1,0 +1,19 @@
+error: No supported gpu backend found!
+
+traceback:
+Traceback (most recent call last):
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/HIBEAM_GNN_v1.py", line 152, in train_and_eval_for_dir
+    model.fit(
+  File "/home/bmeirose42/.local/lib/python3.9/site-packages/graphnet/models/easy_model.py", line 157, in fit
+    trainer = self._construct_trainer(
+  File "/home/bmeirose42/.local/lib/python3.9/site-packages/graphnet/models/easy_model.py", line 100, in _construct_trainer
+    trainer = Trainer(
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/python3.9/site-packages/pytorch_lightning/utilities/argparse.py", line 70, in insert_env_defaults
+    return fn(self, **kwargs)
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 404, in __init__
+    self._accelerator_connector = _AcceleratorConnector(
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 144, in __init__
+    self._accelerator_flag = self._choose_gpu_accelerator_backend()
+  File "/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env/lib/python3.9/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py", line 348, in _choose_gpu_accelerator_backend
+    raise MisconfigurationException("No supported gpu backend found!")
+lightning_fabric.utilities.exceptions.MisconfigurationException: No supported gpu backend found!

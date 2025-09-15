@@ -1,0 +1,105 @@
+{
+  "build": "h1bed206_8_cpu",
+  "build_number": 8,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libabseil * cxx17*",
+    "libabseil >=20250127.1,<20250128.0a0",
+    "libarrow 20.0.0 h1b9301b_8_cpu",
+    "libarrow-acero 20.0.0 hcb10f89_8_cpu",
+    "libarrow-dataset 20.0.0 hcb10f89_8_cpu",
+    "libgcc >=13",
+    "libprotobuf >=5.29.3,<5.29.4.0a0",
+    "libstdcxx >=13"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/libarrow-substrait-20.0.0-h1bed206_8_cpu",
+  "files": [
+    "lib/cmake/ArrowSubstrait/ArrowSubstraitConfig.cmake",
+    "lib/cmake/ArrowSubstrait/ArrowSubstraitConfigVersion.cmake",
+    "lib/cmake/ArrowSubstrait/ArrowSubstraitTargets-release.cmake",
+    "lib/cmake/ArrowSubstrait/ArrowSubstraitTargets.cmake",
+    "lib/libarrow_substrait.so",
+    "lib/libarrow_substrait.so.2000",
+    "lib/libarrow_substrait.so.2000.0.0",
+    "lib/pkgconfig/arrow-substrait.pc"
+  ],
+  "fn": "libarrow-substrait-20.0.0-h1bed206_8_cpu.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/libarrow-substrait-20.0.0-h1bed206_8_cpu",
+    "type": 1
+  },
+  "md5": "8a98f2bf0cf61725f8842ec45dbd7986",
+  "name": "libarrow-substrait",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/libarrow-substrait-20.0.0-h1bed206_8_cpu.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/cmake/ArrowSubstrait/ArrowSubstraitConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "5d2faccc8080c15f44ef953965e7158e5e06a7a882caf87be3fc591ef5836c71",
+        "sha256_in_prefix": "5d2faccc8080c15f44ef953965e7158e5e06a7a882caf87be3fc591ef5836c71",
+        "size_in_bytes": 2443
+      },
+      {
+        "_path": "lib/cmake/ArrowSubstrait/ArrowSubstraitConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "4eb556774449e5062cea02eaaab6b824572fe8dadcdfb258fc6e518fac98006b",
+        "sha256_in_prefix": "4eb556774449e5062cea02eaaab6b824572fe8dadcdfb258fc6e518fac98006b",
+        "size_in_bytes": 2765
+      },
+      {
+        "_path": "lib/cmake/ArrowSubstrait/ArrowSubstraitTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "f73120af79571e97fcdf004aa45b404e59e5bee7efe8ae8298c9dbd72d73b693",
+        "sha256_in_prefix": "f73120af79571e97fcdf004aa45b404e59e5bee7efe8ae8298c9dbd72d73b693",
+        "size_in_bytes": 1006
+      },
+      {
+        "_path": "lib/cmake/ArrowSubstrait/ArrowSubstraitTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "c9b856c18035fc11b64d181510e6d7110f3ede2f9f21a28c6afd1162e2c62117",
+        "sha256_in_prefix": "c9b856c18035fc11b64d181510e6d7110f3ede2f9f21a28c6afd1162e2c62117",
+        "size_in_bytes": 4288
+      },
+      {
+        "_path": "lib/libarrow_substrait.so",
+        "path_type": "softlink",
+        "sha256": "a2f0ea912d8d51ac357711e8ed0ead15105f275522535d599e8a23286962ba55",
+        "size_in_bytes": 2383472
+      },
+      {
+        "_path": "lib/libarrow_substrait.so.2000",
+        "path_type": "softlink",
+        "sha256": "a2f0ea912d8d51ac357711e8ed0ead15105f275522535d599e8a23286962ba55",
+        "size_in_bytes": 2383472
+      },
+      {
+        "_path": "lib/libarrow_substrait.so.2000.0.0",
+        "path_type": "hardlink",
+        "sha256": "a2f0ea912d8d51ac357711e8ed0ead15105f275522535d599e8a23286962ba55",
+        "sha256_in_prefix": "a2f0ea912d8d51ac357711e8ed0ead15105f275522535d599e8a23286962ba55",
+        "size_in_bytes": 2383472
+      },
+      {
+        "_path": "lib/pkgconfig/arrow-substrait.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/apache-arrow_1750860922073/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol",
+        "sha256": "af010bdbbc727d1bd28de37008da3c15d71012b6ae42a50e12467ec136431d9d",
+        "sha256_in_prefix": "2639e619c7e2bdc7992dde93bc3b11878d27e7ef22ba9f3e9ff0994304cbaf60",
+        "size_in_bytes": 1286
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "04f214b1f6d5b35fa89a17cce43f5c321167038d409d1775d7457015c6a26cba",
+  "size": 525599,
+  "subdir": "linux-64",
+  "timestamp": 1750865405000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libarrow-substrait-20.0.0-h1bed206_8_cpu.conda",
+  "version": "20.0.0"
+}

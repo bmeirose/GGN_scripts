@@ -1,0 +1,69 @@
+{
+  "build": "hecd9e04_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=14",
+    "libstdcxx >=14",
+    "libxml2 >=2.13.8,<2.14.0a0",
+    "libzlib >=1.3.1,<2.0a0",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/libllvm21-21.1.0-hecd9e04_0",
+  "files": [
+    "lib/libLLVM-21.so",
+    "lib/libLLVM.so.21.1",
+    "lib/libLTO.so.21.1",
+    "lib/libRemarks.so.21.1"
+  ],
+  "fn": "libllvm21-21.1.0-hecd9e04_0.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/libllvm21-21.1.0-hecd9e04_0",
+    "type": 1
+  },
+  "md5": "9ad637a7ac380c442be142dfb0b1b955",
+  "name": "libllvm21",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/libllvm21-21.1.0-hecd9e04_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libLLVM-21.so",
+        "path_type": "softlink",
+        "sha256": "caebda7f96d43b3cbb36fba55c9e1f67624fc0af8d9ea2e3d9404e71a2407253",
+        "size_in_bytes": 182928480
+      },
+      {
+        "_path": "lib/libLLVM.so.21.1",
+        "path_type": "hardlink",
+        "sha256": "caebda7f96d43b3cbb36fba55c9e1f67624fc0af8d9ea2e3d9404e71a2407253",
+        "sha256_in_prefix": "caebda7f96d43b3cbb36fba55c9e1f67624fc0af8d9ea2e3d9404e71a2407253",
+        "size_in_bytes": 182928480
+      },
+      {
+        "_path": "lib/libLTO.so.21.1",
+        "path_type": "hardlink",
+        "sha256": "9eeed9a2cb66e7a6a620952e334fbdcf331f9d941298501c6eed624ec977c667",
+        "sha256_in_prefix": "9eeed9a2cb66e7a6a620952e334fbdcf331f9d941298501c6eed624ec977c667",
+        "size_in_bytes": 101144
+      },
+      {
+        "_path": "lib/libRemarks.so.21.1",
+        "path_type": "hardlink",
+        "sha256": "696d0a3dcae519107d1101d125435c97d7b941d17b24efa38d6ce0e4d56bac05",
+        "sha256_in_prefix": "696d0a3dcae519107d1101d125435c97d7b941d17b24efa38d6ce0e4d56bac05",
+        "size_in_bytes": 14952
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d190f1bf322149321890908a534441ca2213a9a96c59819da6cabf2c5b474115",
+  "size": 44363060,
+  "subdir": "linux-64",
+  "timestamp": 1756291822000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libllvm21-21.1.0-hecd9e04_0.conda",
+  "version": "21.1.0"
+}

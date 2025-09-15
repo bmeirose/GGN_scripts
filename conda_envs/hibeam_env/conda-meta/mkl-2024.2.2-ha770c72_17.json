@@ -1,0 +1,450 @@
+{
+  "build": "ha770c72_17",
+  "build_number": 17,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "_openmp_mutex * *_llvm",
+    "_openmp_mutex >=4.5",
+    "llvm-openmp >=20.1.8",
+    "tbb 2021.*"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/mkl-2024.2.2-ha770c72_17",
+  "files": [
+    "lib/libmkl_avx2.so.2",
+    "lib/libmkl_avx512.so.2",
+    "lib/libmkl_blacs_intelmpi_ilp64.so",
+    "lib/libmkl_blacs_intelmpi_ilp64.so.2",
+    "lib/libmkl_blacs_intelmpi_lp64.so",
+    "lib/libmkl_blacs_intelmpi_lp64.so.2",
+    "lib/libmkl_blacs_openmpi_ilp64.so",
+    "lib/libmkl_blacs_openmpi_ilp64.so.2",
+    "lib/libmkl_blacs_openmpi_lp64.so",
+    "lib/libmkl_blacs_openmpi_lp64.so.2",
+    "lib/libmkl_cdft_core.so",
+    "lib/libmkl_cdft_core.so.2",
+    "lib/libmkl_core.so",
+    "lib/libmkl_core.so.2",
+    "lib/libmkl_def.so.2",
+    "lib/libmkl_gf_ilp64.so",
+    "lib/libmkl_gf_ilp64.so.2",
+    "lib/libmkl_gf_lp64.so",
+    "lib/libmkl_gf_lp64.so.2",
+    "lib/libmkl_gnu_thread.so",
+    "lib/libmkl_gnu_thread.so.2",
+    "lib/libmkl_intel_ilp64.so",
+    "lib/libmkl_intel_ilp64.so.2",
+    "lib/libmkl_intel_lp64.so",
+    "lib/libmkl_intel_lp64.so.2",
+    "lib/libmkl_intel_thread.so",
+    "lib/libmkl_intel_thread.so.2",
+    "lib/libmkl_mc3.so.2",
+    "lib/libmkl_pgi_thread.so",
+    "lib/libmkl_pgi_thread.so.2",
+    "lib/libmkl_rt.so",
+    "lib/libmkl_rt.so.2",
+    "lib/libmkl_scalapack_ilp64.so",
+    "lib/libmkl_scalapack_ilp64.so.2",
+    "lib/libmkl_scalapack_lp64.so",
+    "lib/libmkl_scalapack_lp64.so.2",
+    "lib/libmkl_sequential.so",
+    "lib/libmkl_sequential.so.2",
+    "lib/libmkl_tbb_thread.so",
+    "lib/libmkl_tbb_thread.so.2",
+    "lib/libmkl_vml_avx2.so.2",
+    "lib/libmkl_vml_avx512.so.2",
+    "lib/libmkl_vml_cmpt.so.2",
+    "lib/libmkl_vml_def.so.2",
+    "lib/libmkl_vml_mc3.so.2",
+    "lib/locale/en_US/mkl_msg.cat",
+    "share/doc/mkl/licensing/third-party-programs-IntelMPI.txt",
+    "share/doc/mkl/licensing/third-party-programs-benchmarks.txt",
+    "share/doc/mkl/licensing/third-party-programs-level-zero.txt",
+    "share/doc/mkl/licensing/third-party-programs-oneMKL-Interfaces.txt",
+    "share/doc/mkl/licensing/third-party-programs-oneTBB.txt",
+    "share/doc/mkl/licensing/third-party-programs-openmp.txt",
+    "share/doc/mkl/licensing/third-party-programs-safestring.txt",
+    "share/doc/mkl/licensing/third-party-programs.txt"
+  ],
+  "fn": "mkl-2024.2.2-ha770c72_17.conda",
+  "license": "LicenseRef-IntelSimplifiedSoftwareOct2022",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/mkl-2024.2.2-ha770c72_17",
+    "type": 1
+  },
+  "md5": "e4ab075598123e783b788b995afbdad0",
+  "name": "mkl",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/mkl-2024.2.2-ha770c72_17.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libmkl_avx2.so.2",
+        "path_type": "hardlink",
+        "sha256": "548e3fe084f4effe061c92d90ad54cad8c904f825ac9bf4b481cff321a2b019e",
+        "sha256_in_prefix": "548e3fe084f4effe061c92d90ad54cad8c904f825ac9bf4b481cff321a2b019e",
+        "size_in_bytes": 45025456
+      },
+      {
+        "_path": "lib/libmkl_avx512.so.2",
+        "path_type": "hardlink",
+        "sha256": "55e1bf80fa085b4afaeea368c09cad6cd30cbb009e5d17608417dada782e8825",
+        "sha256_in_prefix": "55e1bf80fa085b4afaeea368c09cad6cd30cbb009e5d17608417dada782e8825",
+        "size_in_bytes": 65962176
+      },
+      {
+        "_path": "lib/libmkl_blacs_intelmpi_ilp64.so",
+        "path_type": "softlink",
+        "sha256": "611caac1297b99d5aabd4d877903cdf572f0e8700fade29d26241653add2efee",
+        "size_in_bytes": 557544
+      },
+      {
+        "_path": "lib/libmkl_blacs_intelmpi_ilp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "611caac1297b99d5aabd4d877903cdf572f0e8700fade29d26241653add2efee",
+        "sha256_in_prefix": "611caac1297b99d5aabd4d877903cdf572f0e8700fade29d26241653add2efee",
+        "size_in_bytes": 557544
+      },
+      {
+        "_path": "lib/libmkl_blacs_intelmpi_lp64.so",
+        "path_type": "softlink",
+        "sha256": "7e1b0f9119dc77e4b551a64fc242f727f9b502b878d515f308749d3dace6425a",
+        "size_in_bytes": 293680
+      },
+      {
+        "_path": "lib/libmkl_blacs_intelmpi_lp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "7e1b0f9119dc77e4b551a64fc242f727f9b502b878d515f308749d3dace6425a",
+        "sha256_in_prefix": "7e1b0f9119dc77e4b551a64fc242f727f9b502b878d515f308749d3dace6425a",
+        "size_in_bytes": 293680
+      },
+      {
+        "_path": "lib/libmkl_blacs_openmpi_ilp64.so",
+        "path_type": "softlink",
+        "sha256": "1926b98b4d923a43c83dc91408cd669f2d5269ddb4ec48d46257a07085f094f1",
+        "size_in_bytes": 570176
+      },
+      {
+        "_path": "lib/libmkl_blacs_openmpi_ilp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "1926b98b4d923a43c83dc91408cd669f2d5269ddb4ec48d46257a07085f094f1",
+        "sha256_in_prefix": "1926b98b4d923a43c83dc91408cd669f2d5269ddb4ec48d46257a07085f094f1",
+        "size_in_bytes": 570176
+      },
+      {
+        "_path": "lib/libmkl_blacs_openmpi_lp64.so",
+        "path_type": "softlink",
+        "sha256": "76aeb5ebd98c8d9d075d5ed4810e45f1cb960d26314c924193e01a7c06be5877",
+        "size_in_bytes": 294024
+      },
+      {
+        "_path": "lib/libmkl_blacs_openmpi_lp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "76aeb5ebd98c8d9d075d5ed4810e45f1cb960d26314c924193e01a7c06be5877",
+        "sha256_in_prefix": "76aeb5ebd98c8d9d075d5ed4810e45f1cb960d26314c924193e01a7c06be5877",
+        "size_in_bytes": 294024
+      },
+      {
+        "_path": "lib/libmkl_cdft_core.so",
+        "path_type": "softlink",
+        "sha256": "fbd05cf8190087e53d505d9ee903843a68de19c46cf0eeb44cd7d2234e15faf3",
+        "size_in_bytes": 195040
+      },
+      {
+        "_path": "lib/libmkl_cdft_core.so.2",
+        "path_type": "hardlink",
+        "sha256": "fbd05cf8190087e53d505d9ee903843a68de19c46cf0eeb44cd7d2234e15faf3",
+        "sha256_in_prefix": "fbd05cf8190087e53d505d9ee903843a68de19c46cf0eeb44cd7d2234e15faf3",
+        "size_in_bytes": 195040
+      },
+      {
+        "_path": "lib/libmkl_core.so",
+        "path_type": "softlink",
+        "sha256": "54e4cb2ab39ddf43e776a9574799aa4c5af447ebc8e2a143d9dbdae143ea309b",
+        "size_in_bytes": 70530616
+      },
+      {
+        "_path": "lib/libmkl_core.so.2",
+        "path_type": "hardlink",
+        "sha256": "54e4cb2ab39ddf43e776a9574799aa4c5af447ebc8e2a143d9dbdae143ea309b",
+        "sha256_in_prefix": "54e4cb2ab39ddf43e776a9574799aa4c5af447ebc8e2a143d9dbdae143ea309b",
+        "size_in_bytes": 70530616
+      },
+      {
+        "_path": "lib/libmkl_def.so.2",
+        "path_type": "hardlink",
+        "sha256": "d22d75e1b9d4029d0c87971dd022d5d975d7f06b5d7ea5df385df5a5bd7f32c4",
+        "sha256_in_prefix": "d22d75e1b9d4029d0c87971dd022d5d975d7f06b5d7ea5df385df5a5bd7f32c4",
+        "size_in_bytes": 39161088
+      },
+      {
+        "_path": "lib/libmkl_gf_ilp64.so",
+        "path_type": "softlink",
+        "sha256": "37e1c946fb5254f951b300db1799dc6997f89e28481185647dc5db64891077fc",
+        "size_in_bytes": 14198344
+      },
+      {
+        "_path": "lib/libmkl_gf_ilp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "37e1c946fb5254f951b300db1799dc6997f89e28481185647dc5db64891077fc",
+        "sha256_in_prefix": "37e1c946fb5254f951b300db1799dc6997f89e28481185647dc5db64891077fc",
+        "size_in_bytes": 14198344
+      },
+      {
+        "_path": "lib/libmkl_gf_lp64.so",
+        "path_type": "softlink",
+        "sha256": "bee4f34a0bda60975fe424715e296ad5617fb9478dc1e797e11165c5bcaec7cb",
+        "size_in_bytes": 15957696
+      },
+      {
+        "_path": "lib/libmkl_gf_lp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "bee4f34a0bda60975fe424715e296ad5617fb9478dc1e797e11165c5bcaec7cb",
+        "sha256_in_prefix": "bee4f34a0bda60975fe424715e296ad5617fb9478dc1e797e11165c5bcaec7cb",
+        "size_in_bytes": 15957696
+      },
+      {
+        "_path": "lib/libmkl_gnu_thread.so",
+        "path_type": "softlink",
+        "sha256": "db14469c3044913828ce3bec1b4bacc9c6c48b128890dd0974b6cda34cc964b5",
+        "size_in_bytes": 27818848
+      },
+      {
+        "_path": "lib/libmkl_gnu_thread.so.2",
+        "path_type": "hardlink",
+        "sha256": "db14469c3044913828ce3bec1b4bacc9c6c48b128890dd0974b6cda34cc964b5",
+        "sha256_in_prefix": "db14469c3044913828ce3bec1b4bacc9c6c48b128890dd0974b6cda34cc964b5",
+        "size_in_bytes": 27818848
+      },
+      {
+        "_path": "lib/libmkl_intel_ilp64.so",
+        "path_type": "softlink",
+        "sha256": "d74050ec1c3739168c1f7754edee93f2bd89d137deed823f42a4a52f461ab8a7",
+        "size_in_bytes": 17049168
+      },
+      {
+        "_path": "lib/libmkl_intel_ilp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "d74050ec1c3739168c1f7754edee93f2bd89d137deed823f42a4a52f461ab8a7",
+        "sha256_in_prefix": "d74050ec1c3739168c1f7754edee93f2bd89d137deed823f42a4a52f461ab8a7",
+        "size_in_bytes": 17049168
+      },
+      {
+        "_path": "lib/libmkl_intel_lp64.so",
+        "path_type": "softlink",
+        "sha256": "55c28f7e530870d238c8b5383d22015de3908767ed8ec13cb5c5a3f0844a56d0",
+        "size_in_bytes": 18820672
+      },
+      {
+        "_path": "lib/libmkl_intel_lp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "55c28f7e530870d238c8b5383d22015de3908767ed8ec13cb5c5a3f0844a56d0",
+        "sha256_in_prefix": "55c28f7e530870d238c8b5383d22015de3908767ed8ec13cb5c5a3f0844a56d0",
+        "size_in_bytes": 18820672
+      },
+      {
+        "_path": "lib/libmkl_intel_thread.so",
+        "path_type": "softlink",
+        "sha256": "20f91d4b0cac345daefb65168d2c997120681f999c4de50cab9b71469023e6fa",
+        "size_in_bytes": 39228032
+      },
+      {
+        "_path": "lib/libmkl_intel_thread.so.2",
+        "path_type": "hardlink",
+        "sha256": "20f91d4b0cac345daefb65168d2c997120681f999c4de50cab9b71469023e6fa",
+        "sha256_in_prefix": "20f91d4b0cac345daefb65168d2c997120681f999c4de50cab9b71469023e6fa",
+        "size_in_bytes": 39228032
+      },
+      {
+        "_path": "lib/libmkl_mc3.so.2",
+        "path_type": "hardlink",
+        "sha256": "6d0484ffbc1b3b1e3067b413de1c2ac291f091bcc88f2534e5654b6490372190",
+        "sha256_in_prefix": "6d0484ffbc1b3b1e3067b413de1c2ac291f091bcc88f2534e5654b6490372190",
+        "size_in_bytes": 46355680
+      },
+      {
+        "_path": "lib/libmkl_pgi_thread.so",
+        "path_type": "softlink",
+        "sha256": "b4a3df323f5a617f5c47cda42dfdf8a0db0a746eac8a5058b55746b0db5de978",
+        "size_in_bytes": 31807264
+      },
+      {
+        "_path": "lib/libmkl_pgi_thread.so.2",
+        "path_type": "hardlink",
+        "sha256": "b4a3df323f5a617f5c47cda42dfdf8a0db0a746eac8a5058b55746b0db5de978",
+        "sha256_in_prefix": "b4a3df323f5a617f5c47cda42dfdf8a0db0a746eac8a5058b55746b0db5de978",
+        "size_in_bytes": 31807264
+      },
+      {
+        "_path": "lib/libmkl_rt.so",
+        "path_type": "softlink",
+        "sha256": "fc2d7d2411e521a3d625703363b50fa816ceef2251d121f7b34f13f52029fb45",
+        "size_in_bytes": 17892160
+      },
+      {
+        "_path": "lib/libmkl_rt.so.2",
+        "path_type": "hardlink",
+        "sha256": "fc2d7d2411e521a3d625703363b50fa816ceef2251d121f7b34f13f52029fb45",
+        "sha256_in_prefix": "fc2d7d2411e521a3d625703363b50fa816ceef2251d121f7b34f13f52029fb45",
+        "size_in_bytes": 17892160
+      },
+      {
+        "_path": "lib/libmkl_scalapack_ilp64.so",
+        "path_type": "softlink",
+        "sha256": "e72eefe8b8402cdfff7b3974f5c728e6e9238557a89124831f6e57857b5bda16",
+        "size_in_bytes": 7663496
+      },
+      {
+        "_path": "lib/libmkl_scalapack_ilp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "e72eefe8b8402cdfff7b3974f5c728e6e9238557a89124831f6e57857b5bda16",
+        "sha256_in_prefix": "e72eefe8b8402cdfff7b3974f5c728e6e9238557a89124831f6e57857b5bda16",
+        "size_in_bytes": 7663496
+      },
+      {
+        "_path": "lib/libmkl_scalapack_lp64.so",
+        "path_type": "softlink",
+        "sha256": "3bea2723687044d231e9e5891060b27e451cfa84c07bcaf604ca16057cee703f",
+        "size_in_bytes": 7650304
+      },
+      {
+        "_path": "lib/libmkl_scalapack_lp64.so.2",
+        "path_type": "hardlink",
+        "sha256": "3bea2723687044d231e9e5891060b27e451cfa84c07bcaf604ca16057cee703f",
+        "sha256_in_prefix": "3bea2723687044d231e9e5891060b27e451cfa84c07bcaf604ca16057cee703f",
+        "size_in_bytes": 7650304
+      },
+      {
+        "_path": "lib/libmkl_sequential.so",
+        "path_type": "softlink",
+        "sha256": "9129d657cd3dad8d25cda2ba904807f120f207eba8f44a066db2cc5b073114e3",
+        "size_in_bytes": 23740152
+      },
+      {
+        "_path": "lib/libmkl_sequential.so.2",
+        "path_type": "hardlink",
+        "sha256": "9129d657cd3dad8d25cda2ba904807f120f207eba8f44a066db2cc5b073114e3",
+        "sha256_in_prefix": "9129d657cd3dad8d25cda2ba904807f120f207eba8f44a066db2cc5b073114e3",
+        "size_in_bytes": 23740152
+      },
+      {
+        "_path": "lib/libmkl_tbb_thread.so",
+        "path_type": "softlink",
+        "sha256": "f77816c12fef55fe59e133c3dfee458720e05ef8d566bd2c91629fb93b0ce5cd",
+        "size_in_bytes": 33782072
+      },
+      {
+        "_path": "lib/libmkl_tbb_thread.so.2",
+        "path_type": "hardlink",
+        "sha256": "f77816c12fef55fe59e133c3dfee458720e05ef8d566bd2c91629fb93b0ce5cd",
+        "sha256_in_prefix": "f77816c12fef55fe59e133c3dfee458720e05ef8d566bd2c91629fb93b0ce5cd",
+        "size_in_bytes": 33782072
+      },
+      {
+        "_path": "lib/libmkl_vml_avx2.so.2",
+        "path_type": "hardlink",
+        "sha256": "3bc967c8e0dd20b745902c6ebb0a08c60c0196c3dad9f9a5f1912457b768562a",
+        "sha256_in_prefix": "3bc967c8e0dd20b745902c6ebb0a08c60c0196c3dad9f9a5f1912457b768562a",
+        "size_in_bytes": 15562328
+      },
+      {
+        "_path": "lib/libmkl_vml_avx512.so.2",
+        "path_type": "hardlink",
+        "sha256": "819a661f92554ffd1608ace8803ca525ba129b2f038245692e230198a18da01e",
+        "sha256_in_prefix": "819a661f92554ffd1608ace8803ca525ba129b2f038245692e230198a18da01e",
+        "size_in_bytes": 16388848
+      },
+      {
+        "_path": "lib/libmkl_vml_cmpt.so.2",
+        "path_type": "hardlink",
+        "sha256": "0808c5917337ebcf5f3429409754a0862ae6d4ef9d20b2563315be0ab1023371",
+        "sha256_in_prefix": "0808c5917337ebcf5f3429409754a0862ae6d4ef9d20b2563315be0ab1023371",
+        "size_in_bytes": 8091560
+      },
+      {
+        "_path": "lib/libmkl_vml_def.so.2",
+        "path_type": "hardlink",
+        "sha256": "3a49503867b342b36aa4a8f3b20e3003500374c52d408a146c53da54c35e077c",
+        "sha256_in_prefix": "3a49503867b342b36aa4a8f3b20e3003500374c52d408a146c53da54c35e077c",
+        "size_in_bytes": 9399440
+      },
+      {
+        "_path": "lib/libmkl_vml_mc3.so.2",
+        "path_type": "hardlink",
+        "sha256": "ccc83d6f177e88081e7b48aa2ec52ec9d36d1e6e552cb22df74e8e0e043c8147",
+        "sha256_in_prefix": "ccc83d6f177e88081e7b48aa2ec52ec9d36d1e6e552cb22df74e8e0e043c8147",
+        "size_in_bytes": 13345472
+      },
+      {
+        "_path": "lib/locale/en_US/mkl_msg.cat",
+        "path_type": "hardlink",
+        "sha256": "a01b97100b0d1b0d7157c8e4de8f31c0731fb77c0859e0a314da4a4e328b1416",
+        "sha256_in_prefix": "a01b97100b0d1b0d7157c8e4de8f31c0731fb77c0859e0a314da4a4e328b1416",
+        "size_in_bytes": 119064
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-IntelMPI.txt",
+        "path_type": "hardlink",
+        "sha256": "82fa46762c37662a52ab9df58781813c1dc6c268ae2b6f9cf2d83183e706aa09",
+        "sha256_in_prefix": "82fa46762c37662a52ab9df58781813c1dc6c268ae2b6f9cf2d83183e706aa09",
+        "size_in_bytes": 77510
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-benchmarks.txt",
+        "path_type": "hardlink",
+        "sha256": "1f1224af12a7d3e51150ce6f762e32472076a31f6e44db41d3b651a7fa20f2f5",
+        "sha256_in_prefix": "1f1224af12a7d3e51150ce6f762e32472076a31f6e44db41d3b651a7fa20f2f5",
+        "size_in_bytes": 5234
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-level-zero.txt",
+        "path_type": "hardlink",
+        "sha256": "cfe7d2ba4b4cd53271c7f91937e906256c0f14ea62ba33ffb556664b8d39aa59",
+        "sha256_in_prefix": "cfe7d2ba4b4cd53271c7f91937e906256c0f14ea62ba33ffb556664b8d39aa59",
+        "size_in_bytes": 1124
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-oneMKL-Interfaces.txt",
+        "path_type": "hardlink",
+        "sha256": "d940d57bb42b3f5c931830f9844a5cdc0b3ea21dc2bc2aa16aa33f15f114c3d9",
+        "sha256_in_prefix": "d940d57bb42b3f5c931830f9844a5cdc0b3ea21dc2bc2aa16aa33f15f114c3d9",
+        "size_in_bytes": 6958
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-oneTBB.txt",
+        "path_type": "hardlink",
+        "sha256": "d507da4fffae647ebc1bbb7e12cc5cca8087d36b0d78cc75caa96cae37688cb1",
+        "sha256_in_prefix": "d507da4fffae647ebc1bbb7e12cc5cca8087d36b0d78cc75caa96cae37688cb1",
+        "size_in_bytes": 19504
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-openmp.txt",
+        "path_type": "hardlink",
+        "sha256": "8fdfbbdfed13bca3641da35182e7ee1bb92a99f302ce8b0deb981ac1f18adee2",
+        "sha256_in_prefix": "8fdfbbdfed13bca3641da35182e7ee1bb92a99f302ce8b0deb981ac1f18adee2",
+        "size_in_bytes": 31028
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs-safestring.txt",
+        "path_type": "hardlink",
+        "sha256": "415000d1887939ffc6826e0ed3f099cebcab6aaeda2da0acb017110a456b3d42",
+        "sha256_in_prefix": "415000d1887939ffc6826e0ed3f099cebcab6aaeda2da0acb017110a456b3d42",
+        "size_in_bytes": 2448
+      },
+      {
+        "_path": "share/doc/mkl/licensing/third-party-programs.txt",
+        "path_type": "hardlink",
+        "sha256": "a58b26fa033800a9b959f11f080c239c0074b9d4ceb13ec64e0ac873c6adc9c7",
+        "sha256_in_prefix": "a58b26fa033800a9b959f11f080c239c0074b9d4ceb13ec64e0ac873c6adc9c7",
+        "size_in_bytes": 65760
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "1e59d0dc811f150d39c2ff2da930d69dcb91cb05966b7df5b7d85133006668ed",
+  "size": 124988693,
+  "subdir": "linux-64",
+  "timestamp": 1753975818000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/mkl-2024.2.2-ha770c72_17.conda",
+  "version": "2024.2.2"
+}

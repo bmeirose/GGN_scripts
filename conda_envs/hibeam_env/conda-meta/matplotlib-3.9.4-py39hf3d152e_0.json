@@ -1,0 +1,35 @@
+{
+  "build": "py39hf3d152e_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "matplotlib-base >=3.9.4,<3.9.5.0a0",
+    "pyside6 >=6.7.2",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "tornado >=5"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/matplotlib-3.9.4-py39hf3d152e_0",
+  "files": [],
+  "fn": "matplotlib-3.9.4-py39hf3d152e_0.conda",
+  "license": "PSF-2.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/matplotlib-3.9.4-py39hf3d152e_0",
+    "type": 1
+  },
+  "md5": "922f2edd2f9ff0a95c83eb781bacad5e",
+  "name": "matplotlib",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/matplotlib-3.9.4-py39hf3d152e_0.conda",
+  "paths_data": {
+    "paths": [],
+    "paths_version": 1
+  },
+  "requested_spec": "matplotlib",
+  "sha256": "e843e373cd016cfc989fb980acb84a3a39c6d6a8cfc389e0958da8acdc7c2baa",
+  "size": 16912,
+  "subdir": "linux-64",
+  "timestamp": 1734120449000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/matplotlib-3.9.4-py39hf3d152e_0.conda",
+  "version": "3.9.4"
+}

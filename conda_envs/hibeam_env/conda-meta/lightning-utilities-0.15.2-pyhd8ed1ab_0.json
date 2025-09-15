@@ -1,0 +1,357 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "constrains": [],
+  "depends": [
+    "packaging >=17.1",
+    "python >=3.9",
+    "setuptools",
+    "typing_extensions"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/lightning-utilities-0.15.2-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/METADATA",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/RECORD",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/WHEEL",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/licenses/LICENSE",
+    "lib/python3.9/site-packages/lightning_utilities-0.15.2.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/lightning_utilities/__about__.py",
+    "lib/python3.9/site-packages/lightning_utilities/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/cli/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/cli/__main__.py",
+    "lib/python3.9/site-packages/lightning_utilities/cli/dependencies.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/apply_func.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/enums.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/imports.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/inheritance.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/overrides.py",
+    "lib/python3.9/site-packages/lightning_utilities/core/rank_zero.py",
+    "lib/python3.9/site-packages/lightning_utilities/docs/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/docs/formatting.py",
+    "lib/python3.9/site-packages/lightning_utilities/docs/retriever.py",
+    "lib/python3.9/site-packages/lightning_utilities/install/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/install/requirements.py",
+    "lib/python3.9/site-packages/lightning_utilities/py.typed",
+    "lib/python3.9/site-packages/lightning_utilities/test/__init__.py",
+    "lib/python3.9/site-packages/lightning_utilities/test/warning.py",
+    "lib/python3.9/site-packages/lightning_utilities/__pycache__/__about__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/__main__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/dependencies.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/apply_func.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/enums.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/imports.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/inheritance.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/overrides.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/rank_zero.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/formatting.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/retriever.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/install/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/install/__pycache__/requirements.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/test/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/lightning_utilities/test/__pycache__/warning.cpython-39.pyc"
+  ],
+  "fn": "lightning-utilities-0.15.2-pyhd8ed1ab_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/lightning-utilities-0.15.2-pyhd8ed1ab_0",
+    "type": 1
+  },
+  "md5": "4784423620116256b7ca344db44d7ab1",
+  "name": "lightning-utilities",
+  "noarch": "python",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/lightning-utilities-0.15.2-pyhd8ed1ab_0.conda",
+  "package_type": "noarch_python",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "9c9b68cff0fe876001ce7a6e29c61fb56970bc1c7021fcdd4b37d9caaf3f0383",
+        "sha256_in_prefix": "9c9b68cff0fe876001ce7a6e29c61fb56970bc1c7021fcdd4b37d9caaf3f0383",
+        "size_in_bytes": 5650
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6888af0f2e8a7b19b592fe28ccb5c8f121021317b26fdf946c00664d618d68c5",
+        "sha256_in_prefix": "6888af0f2e8a7b19b592fe28ccb5c8f121021317b26fdf946c00664d618d68c5",
+        "size_in_bytes": 3867
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "sha256_in_prefix": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "8f7ad3c388fcfe6438337e4808846f2547dbc77972b5c7f0b5fcf1ef54462036",
+        "sha256_in_prefix": "8f7ad3c388fcfe6438337e4808846f2547dbc77972b5c7f0b5fcf1ef54462036",
+        "size_in_bytes": 115
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9",
+        "sha256_in_prefix": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9",
+        "size_in_bytes": 11349
+      },
+      {
+        "_path": "site-packages/lightning_utilities-0.15.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "6efd6380983eafc3ba1ba963bf959b14aef822f5fe4b8e329e7784cd19169b24",
+        "sha256_in_prefix": "6efd6380983eafc3ba1ba963bf959b14aef822f5fe4b8e329e7784cd19169b24",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "site-packages/lightning_utilities/__about__.py",
+        "path_type": "hardlink",
+        "sha256": "eae42d231408dd9d97662462f18048d742f061f9d2a0a36a77e4c8c8594dee26",
+        "sha256_in_prefix": "eae42d231408dd9d97662462f18048d742f061f9d2a0a36a77e4c8c8594dee26",
+        "size_in_bytes": 652
+      },
+      {
+        "_path": "site-packages/lightning_utilities/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bd650375801d2a5c79404ebb66940bc4148271725fa040ceee59579ddbfde159",
+        "sha256_in_prefix": "bd650375801d2a5c79404ebb66940bc4148271725fa040ceee59579ddbfde159",
+        "size_in_bytes": 650
+      },
+      {
+        "_path": "site-packages/lightning_utilities/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "03c62cd8ca52ec38d090ac8abaea0d5b696d0dfb19cf886d0265051b4d006ebf",
+        "sha256_in_prefix": "03c62cd8ca52ec38d090ac8abaea0d5b696d0dfb19cf886d0265051b4d006ebf",
+        "size_in_bytes": 16
+      },
+      {
+        "_path": "site-packages/lightning_utilities/cli/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "dbbbe17b986bd2c4efbd37c8da48f008c46a906c9fdfe0c7e11eb093fba20bd6",
+        "sha256_in_prefix": "dbbbe17b986bd2c4efbd37c8da48f008c46a906c9fdfe0c7e11eb093fba20bd6",
+        "size_in_bytes": 1071
+      },
+      {
+        "_path": "site-packages/lightning_utilities/cli/dependencies.py",
+        "path_type": "hardlink",
+        "sha256": "a252c6a61950d8c561d430cf18534df5ef8979d4016633598a67ed96e57dace6",
+        "sha256_in_prefix": "a252c6a61950d8c561d430cf18534df5ef8979d4016633598a67ed96e57dace6",
+        "size_in_bytes": 5547
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b63f12f6daf47839e175e03a8d7e774c121bc104ba2dd5eeb175a286acb3bb39",
+        "sha256_in_prefix": "b63f12f6daf47839e175e03a8d7e774c121bc104ba2dd5eeb175a286acb3bb39",
+        "size_in_bytes": 487
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/apply_func.py",
+        "path_type": "hardlink",
+        "sha256": "139a578c018415f32a24595ea658575907e0777d2b8121a41026d9fd5d041921",
+        "sha256_in_prefix": "139a578c018415f32a24595ea658575907e0777d2b8121a41026d9fd5d041921",
+        "size_in_bytes": 11812
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/enums.py",
+        "path_type": "hardlink",
+        "sha256": "06e392a2c917511fd941e7d6874aa646832f898f221b88dfaf79a15b779e8d8c",
+        "sha256_in_prefix": "06e392a2c917511fd941e7d6874aa646832f898f221b88dfaf79a15b779e8d8c",
+        "size_in_bytes": 3220
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/imports.py",
+        "path_type": "hardlink",
+        "sha256": "b5be108a74b5a4dbbdfdf9e773b56de02cf8b1fe4899c0aefe015b92e1df188b",
+        "sha256_in_prefix": "b5be108a74b5a4dbbdfdf9e773b56de02cf8b1fe4899c0aefe015b92e1df188b",
+        "size_in_bytes": 12313
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/inheritance.py",
+        "path_type": "hardlink",
+        "sha256": "4c25fecfc411863f87a3c1cc7d8fe2c87ed665e37c7ac379d0af7fd975426b9a",
+        "sha256_in_prefix": "4c25fecfc411863f87a3c1cc7d8fe2c87ed665e37c7ac379d0af7fd975426b9a",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/overrides.py",
+        "path_type": "hardlink",
+        "sha256": "ccaecb38557e5a806936f6b9cbbdc1c80771852ea834e7933ca665c9fe79fb4c",
+        "sha256_in_prefix": "ccaecb38557e5a806936f6b9cbbdc1c80771852ea834e7933ca665c9fe79fb4c",
+        "size_in_bytes": 1273
+      },
+      {
+        "_path": "site-packages/lightning_utilities/core/rank_zero.py",
+        "path_type": "hardlink",
+        "sha256": "96a47917b83bd54dd5815fcb7dde0ed12239ace2036682f3ea5728f87c4559cb",
+        "sha256_in_prefix": "96a47917b83bd54dd5815fcb7dde0ed12239ace2036682f3ea5728f87c4559cb",
+        "size_in_bytes": 3787
+      },
+      {
+        "_path": "site-packages/lightning_utilities/docs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8d20529bc012ddb6512e84b04003d832128b6ad24e29442c8747b70da9396079",
+        "sha256_in_prefix": "8d20529bc012ddb6512e84b04003d832128b6ad24e29442c8747b70da9396079",
+        "size_in_bytes": 244
+      },
+      {
+        "_path": "site-packages/lightning_utilities/docs/formatting.py",
+        "path_type": "hardlink",
+        "sha256": "1bc9cb675fd0666dee860ec95ea2ae01e3eb37185a81c195bde6e5d530716311",
+        "sha256_in_prefix": "1bc9cb675fd0666dee860ec95ea2ae01e3eb37185a81c195bde6e5d530716311",
+        "size_in_bytes": 7073
+      },
+      {
+        "_path": "site-packages/lightning_utilities/docs/retriever.py",
+        "path_type": "hardlink",
+        "sha256": "8c243bf60a9bded0a65db7a426a9925ee134bb2c2524cdaf00abc451a88d1543",
+        "sha256_in_prefix": "8c243bf60a9bded0a65db7a426a9925ee134bb2c2524cdaf00abc451a88d1543",
+        "size_in_bytes": 3740
+      },
+      {
+        "_path": "site-packages/lightning_utilities/install/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "909ca942472ffd038af66948ddcaa137a5bdcc64160a299c5759bfacc74d3055",
+        "sha256_in_prefix": "909ca942472ffd038af66948ddcaa137a5bdcc64160a299c5759bfacc74d3055",
+        "size_in_bytes": 167
+      },
+      {
+        "_path": "site-packages/lightning_utilities/install/requirements.py",
+        "path_type": "hardlink",
+        "sha256": "1537ecfbb4202b7f92ae1eef62cfa9ac00617beebdaaad52996807497728f213",
+        "sha256_in_prefix": "1537ecfbb4202b7f92ae1eef62cfa9ac00617beebdaaad52996807497728f213",
+        "size_in_bytes": 5298
+      },
+      {
+        "_path": "site-packages/lightning_utilities/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "site-packages/lightning_utilities/test/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "68ef991c21f0047d3a98a369ef675cf799dcc23802fcb4127fc8179b726a17b8",
+        "sha256_in_prefix": "68ef991c21f0047d3a98a369ef675cf799dcc23802fcb4127fc8179b726a17b8",
+        "size_in_bytes": 37
+      },
+      {
+        "_path": "site-packages/lightning_utilities/test/warning.py",
+        "path_type": "hardlink",
+        "sha256": "1ab93ede6e6f86b7f4c4c1871341c6c006c61c39dae6ee9958976cd9d0189dca",
+        "sha256_in_prefix": "1ab93ede6e6f86b7f4c4c1871341c6c006c61c39dae6ee9958976cd9d0189dca",
+        "size_in_bytes": 753
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/__pycache__/__about__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/__main__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/cli/__pycache__/dependencies.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/apply_func.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/enums.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/imports.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/inheritance.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/overrides.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/core/__pycache__/rank_zero.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/formatting.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/docs/__pycache__/retriever.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/install/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/install/__pycache__/requirements.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/test/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "pyc_file"
+      },
+      {
+        "_path": "lib/python3.9/site-packages/lightning_utilities/test/__pycache__/warning.cpython-39.pyc",
+        "path_type": "pyc_file"
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "90a59d0478b94a9c1bb8e30f65f4383d275256d91ff53b6d42b24d39205cfba2",
+  "size": 29921,
+  "subdir": "noarch",
+  "timestamp": 1754515603000,
+  "url": "https://conda.anaconda.org/conda-forge/noarch/lightning-utilities-0.15.2-pyhd8ed1ab_0.conda",
+  "version": "0.15.2"
+}

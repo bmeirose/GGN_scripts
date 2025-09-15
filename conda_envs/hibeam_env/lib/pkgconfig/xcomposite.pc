@@ -1,0 +1,12 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Xcomposite
+Description: X Composite Extension Library
+Version: 0.4.6
+Requires: xproto compositeproto >= 0.4
+Requires.private: x11 xfixes
+Cflags: -I${includedir}
+Libs: -L${libdir} -lXcomposite

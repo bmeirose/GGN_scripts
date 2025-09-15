@@ -1,0 +1,44 @@
+{
+  "build": "default_h99862b1_1",
+  "build_number": 1,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=14",
+    "libllvm20 >=20.1.8,<20.2.0a0",
+    "libstdcxx >=14"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/libclang-cpp20.1-20.1.8-default_h99862b1_1",
+  "files": [
+    "lib/libclang-cpp.so.20.1"
+  ],
+  "fn": "libclang-cpp20.1-20.1.8-default_h99862b1_1.conda",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/libclang-cpp20.1-20.1.8-default_h99862b1_1",
+    "type": 1
+  },
+  "md5": "d6ff2e232c817e377856130eaceb7d2d",
+  "name": "libclang-cpp20.1",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/libclang-cpp20.1-20.1.8-default_h99862b1_1.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/libclang-cpp.so.20.1",
+        "path_type": "hardlink",
+        "sha256": "455b7c19a1103d0b9b4bfb8936ec7d083dcd385462c40ab3e15a727163b4acbd",
+        "sha256_in_prefix": "455b7c19a1103d0b9b4bfb8936ec7d083dcd385462c40ab3e15a727163b4acbd",
+        "size_in_bytes": 95425192
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "d2aadd2b6c830256687e4caa945af24d5e8baac0ff25886c06cc9781b047461b",
+  "size": 21250549,
+  "subdir": "linux-64",
+  "timestamp": 1757387452000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libclang-cpp20.1-20.1.8-default_h99862b1_1.conda",
+  "version": "20.1.8"
+}

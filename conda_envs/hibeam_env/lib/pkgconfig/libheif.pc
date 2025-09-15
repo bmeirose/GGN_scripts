@@ -1,0 +1,15 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libheif
+Description: HEIF image codec.
+URL: https://github.com/strukturag/libheif
+Version: 1.19.7
+Requires:
+Requires.private: libde265 x265 aom
+Libs: -L${libdir} -lheif
+Libs.private: -lstdc++
+Cflags: -I${includedir}
+Cflags.private: -DLIBHEIF_STATIC_BUILD

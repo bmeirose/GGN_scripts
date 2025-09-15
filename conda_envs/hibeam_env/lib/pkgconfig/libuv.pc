@@ -1,0 +1,13 @@
+prefix=/projects/hep/fs10/shared/nnbar/bmeirose/Billys_GGN/GGN_scripts/conda_envs/hibeam_env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+LIBUV_STATIC=-L${libdir} -l:libuv.a -ldl  
+
+Name: libuv
+Version: 1.51.0
+Description: multi-platform support library with a focus on asynchronous I/O.
+URL: http://libuv.org/
+
+Libs: -L${libdir} -luv -ldl  
+Cflags: -I${includedir}

@@ -1,0 +1,446 @@
+{
+  "build": "py39h8f7d636_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=14",
+    "libstdcxx >=14",
+    "python >=3.9,<3.10.0a0",
+    "python_abi 3.9.* *_cp39",
+    "typing-extensions >=4.6"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/optree-0.17.0-py39h8f7d636_0",
+  "files": [
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/METADATA",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/RECORD",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/WHEEL",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/licenses/LICENSE",
+    "lib/python3.9/site-packages/optree-0.17.0.dist-info/top_level.txt",
+    "lib/python3.9/site-packages/optree/_C.cpython-39-x86_64-linux-gnu.so",
+    "lib/python3.9/site-packages/optree/_C.pyi",
+    "lib/python3.9/site-packages/optree/__init__.py",
+    "lib/python3.9/site-packages/optree/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/accessor.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/accessors.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/dataclasses.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/functools.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/ops.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/pytree.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/registry.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/treespec.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/typing.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/__pycache__/version.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/accessor.py",
+    "lib/python3.9/site-packages/optree/accessors.py",
+    "lib/python3.9/site-packages/optree/dataclasses.py",
+    "lib/python3.9/site-packages/optree/functools.py",
+    "lib/python3.9/site-packages/optree/integration/__init__.py",
+    "lib/python3.9/site-packages/optree/integration/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integration/__pycache__/jax.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integration/__pycache__/numpy.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integration/__pycache__/torch.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integration/jax.py",
+    "lib/python3.9/site-packages/optree/integration/numpy.py",
+    "lib/python3.9/site-packages/optree/integration/torch.py",
+    "lib/python3.9/site-packages/optree/integrations/__init__.py",
+    "lib/python3.9/site-packages/optree/integrations/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integrations/__pycache__/jax.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integrations/__pycache__/numpy.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integrations/__pycache__/torch.cpython-39.pyc",
+    "lib/python3.9/site-packages/optree/integrations/jax.py",
+    "lib/python3.9/site-packages/optree/integrations/numpy.py",
+    "lib/python3.9/site-packages/optree/integrations/torch.py",
+    "lib/python3.9/site-packages/optree/ops.py",
+    "lib/python3.9/site-packages/optree/py.typed",
+    "lib/python3.9/site-packages/optree/pytree.py",
+    "lib/python3.9/site-packages/optree/registry.py",
+    "lib/python3.9/site-packages/optree/treespec.py",
+    "lib/python3.9/site-packages/optree/typing.py",
+    "lib/python3.9/site-packages/optree/utils.py",
+    "lib/python3.9/site-packages/optree/version.py"
+  ],
+  "fn": "optree-0.17.0-py39h8f7d636_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/optree-0.17.0-py39h8f7d636_0",
+    "type": 1
+  },
+  "md5": "8741716903feeb1bee3886f82c068c9e",
+  "name": "optree",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/optree-0.17.0-py39h8f7d636_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "e37a347db5b3eebd79cf91b32872e28da974addb0288973a073873ad536637a1",
+        "sha256_in_prefix": "e37a347db5b3eebd79cf91b32872e28da974addb0288973a073873ad536637a1",
+        "size_in_bytes": 33261
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "acae6ad1e61f5702db36f98b5fe55dbdad0168e8893a31b7769a5d6b9a2de55a",
+        "sha256_in_prefix": "acae6ad1e61f5702db36f98b5fe55dbdad0168e8893a31b7769a5d6b9a2de55a",
+        "size_in_bytes": 3503
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "c415f8a271c1f6179dc1526668ccc63191af43708f3bb57f2bc4bd87f07a3d59",
+        "sha256_in_prefix": "c415f8a271c1f6179dc1526668ccc63191af43708f3bb57f2bc4bd87f07a3d59",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "4d6e4e078a03dc1e528671a20c4b753371dbb346befd3bf7f71dd89be6619fb0",
+        "sha256_in_prefix": "4d6e4e078a03dc1e528671a20c4b753371dbb346befd3bf7f71dd89be6619fb0",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "fe6481fd2e95e493e06b04224d568fdc08ecdafb79428a7130c229958ad47b2f",
+        "sha256_in_prefix": "fe6481fd2e95e493e06b04224d568fdc08ecdafb79428a7130c229958ad47b2f",
+        "size_in_bytes": 11370
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree-0.17.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c31816b139294a5733ddd5fd7cc25bf1287002515d054a6fae5311604df5fcfa",
+        "sha256_in_prefix": "c31816b139294a5733ddd5fd7cc25bf1287002515d054a6fae5311604df5fcfa",
+        "size_in_bytes": 7
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/_C.cpython-39-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "44764cc4dc78e8c14adce36bdeba39f6cbec3a124eceafb2eda2681297d3349b",
+        "sha256_in_prefix": "44764cc4dc78e8c14adce36bdeba39f6cbec3a124eceafb2eda2681297d3349b",
+        "size_in_bytes": 744152
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/_C.pyi",
+        "path_type": "hardlink",
+        "sha256": "44ce630fdf956dccefb4ffe0f6f9d8df5d144f6c4ee83fff18d51b0666b008fe",
+        "sha256_in_prefix": "44ce630fdf956dccefb4ffe0f6f9d8df5d144f6c4ee83fff18d51b0666b008fe",
+        "size_in_bytes": 6931
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "07712b9cb4104690a86b53275a83b8748ad6d3d8a20d5b4f29566f2feadcb3f1",
+        "sha256_in_prefix": "07712b9cb4104690a86b53275a83b8748ad6d3d8a20d5b4f29566f2feadcb3f1",
+        "size_in_bytes": 6694
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "24b4a34e1be0944dcbf91d82b94c28ccb626a308cf7633a3d6df47e31db74e2d",
+        "sha256_in_prefix": "24b4a34e1be0944dcbf91d82b94c28ccb626a308cf7633a3d6df47e31db74e2d",
+        "size_in_bytes": 4063
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/accessor.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "40eaf42dfdbcfa6149feb78bdf96b0b920840406360efa35bd25affac85fba09",
+        "sha256_in_prefix": "40eaf42dfdbcfa6149feb78bdf96b0b920840406360efa35bd25affac85fba09",
+        "size_in_bytes": 659
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/accessors.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b2881478e7aaa72765a329141fad5d9d2e5fab752bad613f3295b092f62f86b1",
+        "sha256_in_prefix": "b2881478e7aaa72765a329141fad5d9d2e5fab752bad613f3295b092f62f86b1",
+        "size_in_bytes": 14673
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/dataclasses.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bb0825ecfef29dc88944dc3f4a839dfb39092ec6234a6c5274e91bbda462bb3e",
+        "sha256_in_prefix": "bb0825ecfef29dc88944dc3f4a839dfb39092ec6234a6c5274e91bbda462bb3e",
+        "size_in_bytes": 13871
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/functools.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "59f00da7aaddfdec563d97f74b93db198d4d4219d94c90f1cb7472bab5bf9ead",
+        "sha256_in_prefix": "59f00da7aaddfdec563d97f74b93db198d4d4219d94c90f1cb7472bab5bf9ead",
+        "size_in_bytes": 6118
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/ops.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "901ae6dd72bde82a6fe0e7e2056b37d7feb30aeb410ba862099538306aad4b12",
+        "sha256_in_prefix": "901ae6dd72bde82a6fe0e7e2056b37d7feb30aeb410ba862099538306aad4b12",
+        "size_in_bytes": 140314
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/pytree.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b8f4b914406deae523f08b299c5af0a782719eb6cfb80e8d264de6d0fb99913",
+        "sha256_in_prefix": "5b8f4b914406deae523f08b299c5af0a782719eb6cfb80e8d264de6d0fb99913",
+        "size_in_bytes": 11170
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/registry.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "29778e2612acd843dcf5c2e104fb13cc42265a4d523a1255f03c0733d0dc0fd3",
+        "sha256_in_prefix": "29778e2612acd843dcf5c2e104fb13cc42265a4d523a1255f03c0733d0dc0fd3",
+        "size_in_bytes": 26302
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/treespec.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a406df48955d9e258361e0957269d3e32b472244a72db2968c324f8ff2cd659a",
+        "sha256_in_prefix": "a406df48955d9e258361e0957269d3e32b472244a72db2968c324f8ff2cd659a",
+        "size_in_bytes": 1156
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/typing.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9d166127213d1010a3e90611cfe910bc3155339e5226070818efada4daf0cbbe",
+        "sha256_in_prefix": "9d166127213d1010a3e90611cfe910bc3155339e5226070818efada4daf0cbbe",
+        "size_in_bytes": 16611
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8636ee8fdafa78091a0c1717f4752b2276fc9b4b3e09923b171705995c64abd8",
+        "sha256_in_prefix": "8636ee8fdafa78091a0c1717f4752b2276fc9b4b3e09923b171705995c64abd8",
+        "size_in_bytes": 2898
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/__pycache__/version.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ff52ad7e1b8b23752cffebe9fdc2d987409c22715aae4fe19b80c769fdb63c4d",
+        "sha256_in_prefix": "ff52ad7e1b8b23752cffebe9fdc2d987409c22715aae4fe19b80c769fdb63c4d",
+        "size_in_bytes": 961
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/accessor.py",
+        "path_type": "hardlink",
+        "sha256": "581b7c962939466d4a949d8362e387aad742a6c6d521effab52ee682ae322dca",
+        "sha256_in_prefix": "581b7c962939466d4a949d8362e387aad742a6c6d521effab52ee682ae322dca",
+        "size_in_bytes": 1440
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/accessors.py",
+        "path_type": "hardlink",
+        "sha256": "4b48b11fb854f2ba2b359c46328ccc8520226e69d4dd8ee956d8da8d8b7bc411",
+        "sha256_in_prefix": "4b48b11fb854f2ba2b359c46328ccc8520226e69d4dd8ee956d8da8d8b7bc411",
+        "size_in_bytes": 14452
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/dataclasses.py",
+        "path_type": "hardlink",
+        "sha256": "3fd3479f9be96f8c70fee52fd71ba8dca18c970e48a2ce7928900bebcf4b5860",
+        "sha256_in_prefix": "3fd3479f9be96f8c70fee52fd71ba8dca18c970e48a2ce7928900bebcf4b5860",
+        "size_in_bytes": 20143
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/functools.py",
+        "path_type": "hardlink",
+        "sha256": "abccbd1845f7d6241005e77e69d3abeecfc80d3131ed4cc2aa32f9604b76e9ac",
+        "sha256_in_prefix": "abccbd1845f7d6241005e77e69d3abeecfc80d3131ed4cc2aa32f9604b76e9ac",
+        "size_in_bytes": 6416
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7572d2ba87c47a51b6f6f13821dfe76bb54b67f04dbf3d7798ae3233c4e2a06b",
+        "sha256_in_prefix": "7572d2ba87c47a51b6f6f13821dfe76bb54b67f04dbf3d7798ae3233c4e2a06b",
+        "size_in_bytes": 1495
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7ed17f54b0c646a78824b65acd8f3baa113671cf9a0bd1901c06bd2612f15c5f",
+        "sha256_in_prefix": "7ed17f54b0c646a78824b65acd8f3baa113671cf9a0bd1901c06bd2612f15c5f",
+        "size_in_bytes": 848
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/__pycache__/jax.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8956417d4f43dbc70f6cf7af90cd94f61bd6665e3c108d877b77a2d5cdb93f95",
+        "sha256_in_prefix": "8956417d4f43dbc70f6cf7af90cd94f61bd6665e3c108d877b77a2d5cdb93f95",
+        "size_in_bytes": 679
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/__pycache__/numpy.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6fcc268179234269c7db450cf3a589a5fd85008ce180893032d6c8e094689130",
+        "sha256_in_prefix": "6fcc268179234269c7db450cf3a589a5fd85008ce180893032d6c8e094689130",
+        "size_in_bytes": 687
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/__pycache__/torch.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8bc4d9094006ec81eb5a9d17666704e5f8d781b2acea466f6d7f90a4216fff74",
+        "sha256_in_prefix": "8bc4d9094006ec81eb5a9d17666704e5f8d781b2acea466f6d7f90a4216fff74",
+        "size_in_bytes": 689
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/jax.py",
+        "path_type": "hardlink",
+        "sha256": "4c00157882fc0f1b445d3ed7c06b4cbc78e677cd2b7402b519bbc62609262ef0",
+        "sha256_in_prefix": "4c00157882fc0f1b445d3ed7c06b4cbc78e677cd2b7402b519bbc62609262ef0",
+        "size_in_bytes": 1469
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/numpy.py",
+        "path_type": "hardlink",
+        "sha256": "d19649d6a2a5c808df613202bf6c90b574ee2b3c9c2ded0ffbc920081106f135",
+        "sha256_in_prefix": "d19649d6a2a5c808df613202bf6c90b574ee2b3c9c2ded0ffbc920081106f135",
+        "size_in_bytes": 1481
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integration/torch.py",
+        "path_type": "hardlink",
+        "sha256": "a4cc54911156703c62c8bb8236a2fc68dcc3689046183c3733bbb7d22e61fb0e",
+        "sha256_in_prefix": "a4cc54911156703c62c8bb8236a2fc68dcc3689046183c3733bbb7d22e61fb0e",
+        "size_in_bytes": 1483
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "40c0b7c42367a560a895790f20863e4f0b739e9405dc6dbb343c972cd318c6ff",
+        "sha256_in_prefix": "40c0b7c42367a560a895790f20863e4f0b739e9405dc6dbb343c972cd318c6ff",
+        "size_in_bytes": 1587
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5841bb350f24a50cc170ef27b080789f3c6c52a9a4a717cca411083442a05e8c",
+        "sha256_in_prefix": "5841bb350f24a50cc170ef27b080789f3c6c52a9a4a717cca411083442a05e8c",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/__pycache__/jax.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "dd7d05c0f60e84fa54c241e51ce939be0d1af323fbeb2fb36a64b64d50ffd3db",
+        "sha256_in_prefix": "dd7d05c0f60e84fa54c241e51ce939be0d1af323fbeb2fb36a64b64d50ffd3db",
+        "size_in_bytes": 9141
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/__pycache__/numpy.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1501df966bb873b1c33d3dd3d2f1522279d43483bd7e578b20fb84d3e08cc9f0",
+        "sha256_in_prefix": "1501df966bb873b1c33d3dd3d2f1522279d43483bd7e578b20fb84d3e08cc9f0",
+        "size_in_bytes": 7271
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/__pycache__/torch.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "339827848e8620bb39c49e5afd4ac1c7ad9b0825581bebcd9e8d41b4b821a12d",
+        "sha256_in_prefix": "339827848e8620bb39c49e5afd4ac1c7ad9b0825581bebcd9e8d41b4b821a12d",
+        "size_in_bytes": 7539
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/jax.py",
+        "path_type": "hardlink",
+        "sha256": "b4d0b96f930ea04982a7cb5814b52b008d800b22b2b2bea7fcb67d60fd8c15da",
+        "sha256_in_prefix": "b4d0b96f930ea04982a7cb5814b52b008d800b22b2b2bea7fcb67d60fd8c15da",
+        "size_in_bytes": 10824
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/numpy.py",
+        "path_type": "hardlink",
+        "sha256": "d0c1e2874b174d757fe52a630f82fb834541faa6d6f84cf7b659e64cfc1a0e24",
+        "sha256_in_prefix": "d0c1e2874b174d757fe52a630f82fb834541faa6d6f84cf7b659e64cfc1a0e24",
+        "size_in_bytes": 7800
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/integrations/torch.py",
+        "path_type": "hardlink",
+        "sha256": "82790b37b86d1a2754776bdbe90e077733cf66c855c9615a34ca0dd1c17411a5",
+        "sha256_in_prefix": "82790b37b86d1a2754776bdbe90e077733cf66c855c9615a34ca0dd1c17411a5",
+        "size_in_bytes": 8120
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/ops.py",
+        "path_type": "hardlink",
+        "sha256": "b0374efeb5906fe235d5456bb871af150592b32f6321e27c6d057e20a24d25af",
+        "sha256_in_prefix": "b0374efeb5906fe235d5456bb871af150592b32f6321e27c6d057e20a24d25af",
+        "size_in_bytes": 156662
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/pytree.py",
+        "path_type": "hardlink",
+        "sha256": "b44eadec60ce895b9e3b4e84fb9155bea14311e90ff10b4f910e1ae0c333c321",
+        "sha256_in_prefix": "b44eadec60ce895b9e3b4e84fb9155bea14311e90ff10b4f910e1ae0c333c321",
+        "size_in_bytes": 15157
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/registry.py",
+        "path_type": "hardlink",
+        "sha256": "81450ba58221d938c3e2c98fc3a02911b6590ad8223735dacb2fb44076b7a915",
+        "sha256_in_prefix": "81450ba58221d938c3e2c98fc3a02911b6590ad8223735dacb2fb44076b7a915",
+        "size_in_bytes": 30227
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/treespec.py",
+        "path_type": "hardlink",
+        "sha256": "096a45d44d8b09efb8cf5e07a4772b3869301be928926bd13ad2663316c1472b",
+        "sha256_in_prefix": "096a45d44d8b09efb8cf5e07a4772b3869301be928926bd13ad2663316c1472b",
+        "size_in_bytes": 1923
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/typing.py",
+        "path_type": "hardlink",
+        "sha256": "666756250ef094a1d07a581eb6334b36d7af96ed0567fb3d620c202fe112a9c3",
+        "sha256_in_prefix": "666756250ef094a1d07a581eb6334b36d7af96ed0567fb3d620c202fe112a9c3",
+        "size_in_bytes": 19550
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/utils.py",
+        "path_type": "hardlink",
+        "sha256": "eedacfb18990a843ccb04ac50b9fec228e5592f1d64f9ec2fed1eadbead9e388",
+        "sha256_in_prefix": "eedacfb18990a843ccb04ac50b9fec228e5592f1d64f9ec2fed1eadbead9e388",
+        "size_in_bytes": 3498
+      },
+      {
+        "_path": "lib/python3.9/site-packages/optree/version.py",
+        "path_type": "hardlink",
+        "sha256": "1210c15c5c51831916df18c1289d491473ab4008bdc68b34b2d4d594cbba8012",
+        "sha256_in_prefix": "1210c15c5c51831916df18c1289d491473ab4008bdc68b34b2d4d594cbba8012",
+        "size_in_bytes": 2041
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "79218fc3262b3fd37512925765e3d132fe26e497e3d42559171f7fe686d3f3c5",
+  "size": 405804,
+  "subdir": "linux-64",
+  "timestamp": 1753455268000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/optree-0.17.0-py39h8f7d636_0.conda",
+  "version": "0.17.0"
+}

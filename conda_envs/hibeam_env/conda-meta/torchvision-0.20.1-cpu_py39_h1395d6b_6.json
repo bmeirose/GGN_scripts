@@ -1,0 +1,3092 @@
+{
+  "build": "cpu_py39_h1395d6b_6",
+  "build_number": 6,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [],
+  "depends": [
+    "python",
+    "pytorch * cpu*",
+    "pillow >=5.3.0,!=8.3.0,!=8.3.1",
+    "numpy >=1.23.5",
+    "libstdcxx >=13",
+    "libgcc >=13",
+    "__glibc >=2.17,<3.0.a0",
+    "libavif16 >=1.1.1,<2.0a0",
+    "python_abi 3.9.* *_cp39",
+    "giflib >=5.2.2,<5.3.0a0",
+    "libtorch >=2.5.1,<2.6.0a0",
+    "libwebp-base >=1.5.0,<2.0a0",
+    "libpng >=1.6.45,<1.7.0a0",
+    "libjpeg-turbo >=3.0.0,<4.0a0",
+    "pytorch >=2.5.1,<2.6.0a0",
+    "libheif >=1.19.5,<1.20.0a0"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/torchvision-0.20.1-cpu_py39_h1395d6b_6",
+  "files": [
+    "lib/python3.9/site-packages/torchvision/_C.so",
+    "lib/python3.9/site-packages/torchvision/__init__.py",
+    "lib/python3.9/site-packages/torchvision/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/_internally_replaced_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/_meta_registrations.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/extension.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/__pycache__/version.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/_internally_replaced_utils.py",
+    "lib/python3.9/site-packages/torchvision/_meta_registrations.py",
+    "lib/python3.9/site-packages/torchvision/_utils.py",
+    "lib/python3.9/site-packages/torchvision/datasets/__init__.py",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/_optical_flow.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/_stereo_matching.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/caltech.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/celeba.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/cifar.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/cityscapes.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/clevr.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/coco.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/country211.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/dtd.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/eurosat.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fakedata.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fer2013.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fgvc_aircraft.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/flickr.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/flowers102.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/folder.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/food101.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/gtsrb.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/hmdb51.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/imagenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/imagenette.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/inaturalist.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/kinetics.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/kitti.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/lfw.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/lsun.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/mnist.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/moving_mnist.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/omniglot.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/oxford_iiit_pet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/pcam.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/phototour.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/places365.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/rendered_sst2.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sbd.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sbu.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/semeion.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/stanford_cars.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/stl10.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sun397.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/svhn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/ucf101.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/usps.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/video_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/vision.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/voc.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/__pycache__/widerface.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/_optical_flow.py",
+    "lib/python3.9/site-packages/torchvision/datasets/_stereo_matching.py",
+    "lib/python3.9/site-packages/torchvision/datasets/caltech.py",
+    "lib/python3.9/site-packages/torchvision/datasets/celeba.py",
+    "lib/python3.9/site-packages/torchvision/datasets/cifar.py",
+    "lib/python3.9/site-packages/torchvision/datasets/cityscapes.py",
+    "lib/python3.9/site-packages/torchvision/datasets/clevr.py",
+    "lib/python3.9/site-packages/torchvision/datasets/coco.py",
+    "lib/python3.9/site-packages/torchvision/datasets/country211.py",
+    "lib/python3.9/site-packages/torchvision/datasets/dtd.py",
+    "lib/python3.9/site-packages/torchvision/datasets/eurosat.py",
+    "lib/python3.9/site-packages/torchvision/datasets/fakedata.py",
+    "lib/python3.9/site-packages/torchvision/datasets/fer2013.py",
+    "lib/python3.9/site-packages/torchvision/datasets/fgvc_aircraft.py",
+    "lib/python3.9/site-packages/torchvision/datasets/flickr.py",
+    "lib/python3.9/site-packages/torchvision/datasets/flowers102.py",
+    "lib/python3.9/site-packages/torchvision/datasets/folder.py",
+    "lib/python3.9/site-packages/torchvision/datasets/food101.py",
+    "lib/python3.9/site-packages/torchvision/datasets/gtsrb.py",
+    "lib/python3.9/site-packages/torchvision/datasets/hmdb51.py",
+    "lib/python3.9/site-packages/torchvision/datasets/imagenet.py",
+    "lib/python3.9/site-packages/torchvision/datasets/imagenette.py",
+    "lib/python3.9/site-packages/torchvision/datasets/inaturalist.py",
+    "lib/python3.9/site-packages/torchvision/datasets/kinetics.py",
+    "lib/python3.9/site-packages/torchvision/datasets/kitti.py",
+    "lib/python3.9/site-packages/torchvision/datasets/lfw.py",
+    "lib/python3.9/site-packages/torchvision/datasets/lsun.py",
+    "lib/python3.9/site-packages/torchvision/datasets/mnist.py",
+    "lib/python3.9/site-packages/torchvision/datasets/moving_mnist.py",
+    "lib/python3.9/site-packages/torchvision/datasets/omniglot.py",
+    "lib/python3.9/site-packages/torchvision/datasets/oxford_iiit_pet.py",
+    "lib/python3.9/site-packages/torchvision/datasets/pcam.py",
+    "lib/python3.9/site-packages/torchvision/datasets/phototour.py",
+    "lib/python3.9/site-packages/torchvision/datasets/places365.py",
+    "lib/python3.9/site-packages/torchvision/datasets/rendered_sst2.py",
+    "lib/python3.9/site-packages/torchvision/datasets/samplers/__init__.py",
+    "lib/python3.9/site-packages/torchvision/datasets/samplers/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/samplers/__pycache__/clip_sampler.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/datasets/samplers/clip_sampler.py",
+    "lib/python3.9/site-packages/torchvision/datasets/sbd.py",
+    "lib/python3.9/site-packages/torchvision/datasets/sbu.py",
+    "lib/python3.9/site-packages/torchvision/datasets/semeion.py",
+    "lib/python3.9/site-packages/torchvision/datasets/stanford_cars.py",
+    "lib/python3.9/site-packages/torchvision/datasets/stl10.py",
+    "lib/python3.9/site-packages/torchvision/datasets/sun397.py",
+    "lib/python3.9/site-packages/torchvision/datasets/svhn.py",
+    "lib/python3.9/site-packages/torchvision/datasets/ucf101.py",
+    "lib/python3.9/site-packages/torchvision/datasets/usps.py",
+    "lib/python3.9/site-packages/torchvision/datasets/utils.py",
+    "lib/python3.9/site-packages/torchvision/datasets/video_utils.py",
+    "lib/python3.9/site-packages/torchvision/datasets/vision.py",
+    "lib/python3.9/site-packages/torchvision/datasets/voc.py",
+    "lib/python3.9/site-packages/torchvision/datasets/widerface.py",
+    "lib/python3.9/site-packages/torchvision/extension.py",
+    "lib/python3.9/site-packages/torchvision/image.so",
+    "lib/python3.9/site-packages/torchvision/io/__init__.py",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/_load_gpu_decoder.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/_video_opt.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/image.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/video.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/__pycache__/video_reader.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/io/_load_gpu_decoder.py",
+    "lib/python3.9/site-packages/torchvision/io/_video_opt.py",
+    "lib/python3.9/site-packages/torchvision/io/image.py",
+    "lib/python3.9/site-packages/torchvision/io/video.py",
+    "lib/python3.9/site-packages/torchvision/io/video_reader.py",
+    "lib/python3.9/site-packages/torchvision/models/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/_api.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/_meta.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/alexnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/convnext.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/densenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/efficientnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/feature_extraction.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/googlenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/inception.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/maxvit.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/mnasnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenetv2.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenetv3.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/regnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/resnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/shufflenetv2.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/squeezenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/swin_transformer.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/vgg.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/__pycache__/vision_transformer.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/_api.py",
+    "lib/python3.9/site-packages/torchvision/models/_meta.py",
+    "lib/python3.9/site-packages/torchvision/models/_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/alexnet.py",
+    "lib/python3.9/site-packages/torchvision/models/convnext.py",
+    "lib/python3.9/site-packages/torchvision/models/densenet.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/anchor_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/backbone_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/faster_rcnn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/fcos.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/generalized_rcnn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/image_list.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/keypoint_rcnn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/mask_rcnn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/retinanet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/roi_heads.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/rpn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/ssd.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/ssdlite.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/transform.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/detection/_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/anchor_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/backbone_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/faster_rcnn.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/fcos.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/generalized_rcnn.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/image_list.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/keypoint_rcnn.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/mask_rcnn.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/retinanet.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/roi_heads.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/rpn.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/ssd.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/ssdlite.py",
+    "lib/python3.9/site-packages/torchvision/models/detection/transform.py",
+    "lib/python3.9/site-packages/torchvision/models/efficientnet.py",
+    "lib/python3.9/site-packages/torchvision/models/feature_extraction.py",
+    "lib/python3.9/site-packages/torchvision/models/googlenet.py",
+    "lib/python3.9/site-packages/torchvision/models/inception.py",
+    "lib/python3.9/site-packages/torchvision/models/maxvit.py",
+    "lib/python3.9/site-packages/torchvision/models/mnasnet.py",
+    "lib/python3.9/site-packages/torchvision/models/mobilenet.py",
+    "lib/python3.9/site-packages/torchvision/models/mobilenetv2.py",
+    "lib/python3.9/site-packages/torchvision/models/mobilenetv3.py",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/raft.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/optical_flow/raft.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/googlenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/inception.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenetv2.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenetv3.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/resnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/shufflenetv2.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/quantization/googlenet.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/inception.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/mobilenet.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/mobilenetv2.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/mobilenetv3.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/resnet.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/shufflenetv2.py",
+    "lib/python3.9/site-packages/torchvision/models/quantization/utils.py",
+    "lib/python3.9/site-packages/torchvision/models/regnet.py",
+    "lib/python3.9/site-packages/torchvision/models/resnet.py",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/deeplabv3.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/fcn.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/lraspp.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/_utils.py",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/deeplabv3.py",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/fcn.py",
+    "lib/python3.9/site-packages/torchvision/models/segmentation/lraspp.py",
+    "lib/python3.9/site-packages/torchvision/models/shufflenetv2.py",
+    "lib/python3.9/site-packages/torchvision/models/squeezenet.py",
+    "lib/python3.9/site-packages/torchvision/models/swin_transformer.py",
+    "lib/python3.9/site-packages/torchvision/models/vgg.py",
+    "lib/python3.9/site-packages/torchvision/models/video/__init__.py",
+    "lib/python3.9/site-packages/torchvision/models/video/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/video/__pycache__/mvit.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/video/__pycache__/resnet.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/video/__pycache__/s3d.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/video/__pycache__/swin_transformer.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/models/video/mvit.py",
+    "lib/python3.9/site-packages/torchvision/models/video/resnet.py",
+    "lib/python3.9/site-packages/torchvision/models/video/s3d.py",
+    "lib/python3.9/site-packages/torchvision/models/video/swin_transformer.py",
+    "lib/python3.9/site-packages/torchvision/models/vision_transformer.py",
+    "lib/python3.9/site-packages/torchvision/ops/__init__.py",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/_box_convert.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/_register_onnx_ops.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/boxes.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/ciou_loss.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/deform_conv.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/diou_loss.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/drop_block.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/feature_pyramid_network.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/focal_loss.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/giou_loss.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/misc.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/poolers.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/ps_roi_align.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/ps_roi_pool.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/roi_align.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/roi_pool.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/__pycache__/stochastic_depth.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/ops/_box_convert.py",
+    "lib/python3.9/site-packages/torchvision/ops/_register_onnx_ops.py",
+    "lib/python3.9/site-packages/torchvision/ops/_utils.py",
+    "lib/python3.9/site-packages/torchvision/ops/boxes.py",
+    "lib/python3.9/site-packages/torchvision/ops/ciou_loss.py",
+    "lib/python3.9/site-packages/torchvision/ops/deform_conv.py",
+    "lib/python3.9/site-packages/torchvision/ops/diou_loss.py",
+    "lib/python3.9/site-packages/torchvision/ops/drop_block.py",
+    "lib/python3.9/site-packages/torchvision/ops/feature_pyramid_network.py",
+    "lib/python3.9/site-packages/torchvision/ops/focal_loss.py",
+    "lib/python3.9/site-packages/torchvision/ops/giou_loss.py",
+    "lib/python3.9/site-packages/torchvision/ops/misc.py",
+    "lib/python3.9/site-packages/torchvision/ops/poolers.py",
+    "lib/python3.9/site-packages/torchvision/ops/ps_roi_align.py",
+    "lib/python3.9/site-packages/torchvision/ops/ps_roi_pool.py",
+    "lib/python3.9/site-packages/torchvision/ops/roi_align.py",
+    "lib/python3.9/site-packages/torchvision/ops/roi_pool.py",
+    "lib/python3.9/site-packages/torchvision/ops/stochastic_depth.py",
+    "lib/python3.9/site-packages/torchvision/transforms/__init__.py",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_pil.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_tensor.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_video.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_presets.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_transforms_video.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/autoaugment.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/functional.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/__pycache__/transforms.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/_functional_pil.py",
+    "lib/python3.9/site-packages/torchvision/transforms/_functional_tensor.py",
+    "lib/python3.9/site-packages/torchvision/transforms/_functional_video.py",
+    "lib/python3.9/site-packages/torchvision/transforms/_presets.py",
+    "lib/python3.9/site-packages/torchvision/transforms/_transforms_video.py",
+    "lib/python3.9/site-packages/torchvision/transforms/autoaugment.py",
+    "lib/python3.9/site-packages/torchvision/transforms/functional.py",
+    "lib/python3.9/site-packages/torchvision/transforms/transforms.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__init__.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_augment.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_auto_augment.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_color.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_container.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_deprecated.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_geometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_meta.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_misc.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_temporal.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_transform.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_type_conversion.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_augment.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_auto_augment.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_color.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_container.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_geometry.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_meta.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_misc.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_temporal.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_transform.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_type_conversion.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/_utils.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__init__.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_augment.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_color.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_deprecated.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_geometry.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_meta.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_misc.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_temporal.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_type_conversion.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_utils.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_augment.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_color.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_deprecated.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_geometry.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_meta.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_misc.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_temporal.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_type_conversion.py",
+    "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_utils.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__init__.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/__init__.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_bounding_boxes.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_dataset_wrapper.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_image.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_mask.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_torch_function_helpers.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_tv_tensor.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_video.cpython-39.pyc",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_bounding_boxes.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_dataset_wrapper.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_image.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_mask.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_torch_function_helpers.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_tv_tensor.py",
+    "lib/python3.9/site-packages/torchvision/tv_tensors/_video.py",
+    "lib/python3.9/site-packages/torchvision/utils.py",
+    "lib/python3.9/site-packages/torchvision/version.py",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/INSTALLER",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/LICENSE",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/METADATA",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/RECORD",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/REQUESTED",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/WHEEL",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/direct_url.json",
+    "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/top_level.txt"
+  ],
+  "fn": "torchvision-0.20.1-cpu_py39_h1395d6b_6.conda",
+  "license": "BSD-3-Clause",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/torchvision-0.20.1-cpu_py39_h1395d6b_6",
+    "type": 1
+  },
+  "md5": "de149066efb494cbb05dc71224652f9f",
+  "name": "torchvision",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/torchvision-0.20.1-cpu_py39_h1395d6b_6.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/_C.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchvision_1737215452/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "8f8499d5385ee52898a245a8bd15f909fa9c477d94ba0c248144f8c399e871f6",
+        "sha256_in_prefix": "993c7c76c6cb5386d57c006f46ce633dc387c40d0d19a032203e00dce4cbcb42",
+        "size_in_bytes": 1246640
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73",
+        "sha256_in_prefix": "ee2c9f4110cf1203db48c42601607329ac1f19709fa91c152f8d95eb53437a73",
+        "size_in_bytes": 3534
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2557defe9abc7f026372b1033d3cd2688cec7615158862ffe0f4e9d1d1481217",
+        "sha256_in_prefix": "2557defe9abc7f026372b1033d3cd2688cec7615158862ffe0f4e9d1d1481217",
+        "size_in_bytes": 3718
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/_internally_replaced_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9f329373dd26581fd2cb3c33f76bb5cfcec178465a9ff9827469c29af0459995",
+        "sha256_in_prefix": "9f329373dd26581fd2cb3c33f76bb5cfcec178465a9ff9827469c29af0459995",
+        "size_in_bytes": 1749
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/_meta_registrations.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "318a8cbbaf13fa4c3a646a982c797635dfd67a02e17148b6e7d529adb856d26a",
+        "sha256_in_prefix": "318a8cbbaf13fa4c3a646a982c797635dfd67a02e17148b6e7d529adb856d26a",
+        "size_in_bytes": 7304
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1be3006d994562ed4b9e3ae2819b33d7b29aeea3dfe3767215e4e6f5a4d49ddf",
+        "sha256_in_prefix": "1be3006d994562ed4b9e3ae2819b33d7b29aeea3dfe3767215e4e6f5a4d49ddf",
+        "size_in_bytes": 1674
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/extension.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5a278444ba29a70c7b42a7ae161aacc66279c2206d1ccd4784ca8886b6a628de",
+        "sha256_in_prefix": "5a278444ba29a70c7b42a7ae161aacc66279c2206d1ccd4784ca8886b6a628de",
+        "size_in_bytes": 2835
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e7f7ff38ba2c151d27848cb480974d86a6bf9d2866dc9d0310031fc8b1c93306",
+        "sha256_in_prefix": "e7f7ff38ba2c151d27848cb480974d86a6bf9d2866dc9d0310031fc8b1c93306",
+        "size_in_bytes": 22350
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/__pycache__/version.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "54b37a0880c737a2f9f3606697704518544ff50e16f0a2ad9cda0cbd35fde0c2",
+        "sha256_in_prefix": "54b37a0880c737a2f9f3606697704518544ff50e16f0a2ad9cda0cbd35fde0c2",
+        "size_in_bytes": 546
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/_internally_replaced_utils.py",
+        "path_type": "hardlink",
+        "sha256": "ebbcd25073a7e89c1d9cc5107211e0a4d2c2b56410f5d245a55fce527f106ffc",
+        "sha256_in_prefix": "ebbcd25073a7e89c1d9cc5107211e0a4d2c2b56410f5d245a55fce527f106ffc",
+        "size_in_bytes": 1389
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/_meta_registrations.py",
+        "path_type": "hardlink",
+        "sha256": "9641065bad5f294ac64a1d22385b19d591ec908b52d4427d3a8d947ccf8ebd0f",
+        "sha256_in_prefix": "9641065bad5f294ac64a1d22385b19d591ec908b52d4427d3a8d947ccf8ebd0f",
+        "size_in_bytes": 7208
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "e9358ad0919a65542ba1f802029e68c7ad7f350136808c21628b8a40c893689f",
+        "sha256_in_prefix": "e9358ad0919a65542ba1f802029e68c7ad7f350136808c21628b8a40c893689f",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0074a85fc2e4588b7b4469490e693ae290ef996aba18287e0fb5f0136977f360",
+        "sha256_in_prefix": "0074a85fc2e4588b7b4469490e693ae290ef996aba18287e0fb5f0136977f360",
+        "size_in_bytes": 3587
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b3603275c3e52a21830ed4bd7cefe3089802b8188993e9056d932d747c63ba5",
+        "sha256_in_prefix": "3b3603275c3e52a21830ed4bd7cefe3089802b8188993e9056d932d747c63ba5",
+        "size_in_bytes": 3556
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/_optical_flow.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4a816efb0171d02a3824aa8af3a3f0feb9384132f9a6be89876776993abb6853",
+        "sha256_in_prefix": "4a816efb0171d02a3824aa8af3a3f0feb9384132f9a6be89876776993abb6853",
+        "size_in_bytes": 17965
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/_stereo_matching.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a8adfb7c8f0c1626ffb454b392eb2968f93e80efe262dc33c04ef7bb102a1651",
+        "sha256_in_prefix": "a8adfb7c8f0c1626ffb454b392eb2968f93e80efe262dc33c04ef7bb102a1651",
+        "size_in_bytes": 40553
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/caltech.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ef343f7eca2ed29b14d6009b3be2562134cc2d949ed63ae7cf6c2c0cd0da6c1f",
+        "sha256_in_prefix": "ef343f7eca2ed29b14d6009b3be2562134cc2d949ed63ae7cf6c2c0cd0da6c1f",
+        "size_in_bytes": 8527
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/celeba.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cdbc99097573f8ad50d3cc6fd4c7824dc09d39ff7bd4fa837e852400c8d3aff1",
+        "sha256_in_prefix": "cdbc99097573f8ad50d3cc6fd4c7824dc09d39ff7bd4fa837e852400c8d3aff1",
+        "size_in_bytes": 7539
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/cifar.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a8658d22bfab044131bdebe7d47e06620ed81361598c7ca730f842eae8aa1c30",
+        "sha256_in_prefix": "a8658d22bfab044131bdebe7d47e06620ed81361598c7ca730f842eae8aa1c30",
+        "size_in_bytes": 6148
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/cityscapes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d0853f1c16bf46f4022522550059bc7a404c7311b996111e841ccac90c851678",
+        "sha256_in_prefix": "d0853f1c16bf46f4022522550059bc7a404c7311b996111e841ccac90c851678",
+        "size_in_bytes": 8709
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/clevr.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f0d5ceeb08b06ebbbd4c9e53f73b8b2610aee52ffa5975c558e41c77a5f9c377",
+        "sha256_in_prefix": "f0d5ceeb08b06ebbbd4c9e53f73b8b2610aee52ffa5975c558e41c77a5f9c377",
+        "size_in_bytes": 4396
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/coco.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d676634ad8c22e845447011a96bd914f43671cade4949156630774c000cc08f9",
+        "sha256_in_prefix": "d676634ad8c22e845447011a96bd914f43671cade4949156630774c000cc08f9",
+        "size_in_bytes": 5450
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/country211.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cda73e2ea7d764897a014957efe8e1ea3437002a1f791050b3cd29fc6deb7a2b",
+        "sha256_in_prefix": "cda73e2ea7d764897a014957efe8e1ea3437002a1f791050b3cd29fc6deb7a2b",
+        "size_in_bytes": 3054
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/dtd.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2489b64579109338de28c6e27971bf688d5587aa22c1ff1412275a2399b6bd59",
+        "sha256_in_prefix": "2489b64579109338de28c6e27971bf688d5587aa22c1ff1412275a2399b6bd59",
+        "size_in_bytes": 4625
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/eurosat.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8371701b97e0c95b8715e8c70ffd1c98a1ee74778f730fa16a0a2929295be6f6",
+        "sha256_in_prefix": "8371701b97e0c95b8715e8c70ffd1c98a1ee74778f730fa16a0a2929295be6f6",
+        "size_in_bytes": 2960
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fakedata.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "84f316d5708fd1a1dc0f637825c16eea73a7f17e4335b584537e2ff341ad0fb5",
+        "sha256_in_prefix": "84f316d5708fd1a1dc0f637825c16eea73a7f17e4335b584537e2ff341ad0fb5",
+        "size_in_bytes": 2882
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fer2013.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "73f5a438012f8579428a8169a0a6dd27cf31e502cb4ff2084b03e99e9f4af0f8",
+        "sha256_in_prefix": "73f5a438012f8579428a8169a0a6dd27cf31e502cb4ff2084b03e99e9f4af0f8",
+        "size_in_bytes": 5374
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/fgvc_aircraft.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c6c81d2a6803575f7c46e8ba26ddac71c8827d69442d670ea49c3e7db5eb1cb3",
+        "sha256_in_prefix": "c6c81d2a6803575f7c46e8ba26ddac71c8827d69442d670ea49c3e7db5eb1cb3",
+        "size_in_bytes": 5058
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/flickr.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b3cedd47e5ee27f64554092e0613802c926153d74d06bcdb1613ce50d529fa40",
+        "sha256_in_prefix": "b3cedd47e5ee27f64554092e0613802c926153d74d06bcdb1613ce50d529fa40",
+        "size_in_bytes": 5714
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/flowers102.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "dd087ad7be2e678ebdee0f496da85985a3dd809df77f7980c234550fd53e7e06",
+        "sha256_in_prefix": "dd087ad7be2e678ebdee0f496da85985a3dd809df77f7980c234550fd53e7e06",
+        "size_in_bytes": 4872
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/folder.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "aeb9f10d590f1fd4c1c751e353c540386b04e087fc268555cb2a045735e131b6",
+        "sha256_in_prefix": "aeb9f10d590f1fd4c1c751e353c540386b04e087fc268555cb2a045735e131b6",
+        "size_in_bytes": 12453
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/food101.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4d3c7944134c5cc2f6526b7f864af3e32976c1e00518af93f92835d666134586",
+        "sha256_in_prefix": "4d3c7944134c5cc2f6526b7f864af3e32976c1e00518af93f92835d666134586",
+        "size_in_bytes": 4629
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/gtsrb.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d7f46aeed369f936769db4f56f0e24dd87ac41534b73019af3072813c8e59d27",
+        "sha256_in_prefix": "d7f46aeed369f936769db4f56f0e24dd87ac41534b73019af3072813c8e59d27",
+        "size_in_bytes": 4030
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/hmdb51.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f5c0bcbcf63e153eec9854a9f6e633d5e89e0a3f2324f23c7788d0bf33c7ff4f",
+        "sha256_in_prefix": "f5c0bcbcf63e153eec9854a9f6e633d5e89e0a3f2324f23c7788d0bf33c7ff4f",
+        "size_in_bytes": 5958
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/imagenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee444239f2050459ecea7d502c0d1215fca5b3ad0c9d79e376da9b83c4d1d2cf",
+        "sha256_in_prefix": "ee444239f2050459ecea7d502c0d1215fca5b3ad0c9d79e376da9b83c4d1d2cf",
+        "size_in_bytes": 10467
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/imagenette.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8f883e8ae196ef29264c4cde1583d4426b2d91c4b336ec1108ced9c7b3cef5d2",
+        "sha256_in_prefix": "8f883e8ae196ef29264c4cde1583d4426b2d91c4b336ec1108ced9c7b3cef5d2",
+        "size_in_bytes": 5090
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/inaturalist.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "613ae00d0c28f6073e53d974ff4a731ca11eb8decbe05beed4d8886e31e6359d",
+        "sha256_in_prefix": "613ae00d0c28f6073e53d974ff4a731ca11eb8decbe05beed4d8886e31e6359d",
+        "size_in_bytes": 8845
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/kinetics.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6327499909cfa1250a0ca94e39dc38c5d9495bf400696c37a501161648059025",
+        "sha256_in_prefix": "6327499909cfa1250a0ca94e39dc38c5d9495bf400696c37a501161648059025",
+        "size_in_bytes": 9995
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/kitti.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "555d8142940b06f217a5e57e6a6e09a1f4690b1fa9afa59e6694e17701293b7e",
+        "sha256_in_prefix": "555d8142940b06f217a5e57e6a6e09a1f4690b1fa9afa59e6694e17701293b7e",
+        "size_in_bytes": 6210
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/lfw.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ac558ad73ce6afdd287cdc7616579f0797307447cab393f674b106318b635af4",
+        "sha256_in_prefix": "ac558ad73ce6afdd287cdc7616579f0797307447cab393f674b106318b635af4",
+        "size_in_bytes": 10877
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/lsun.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1d046881a5f6fd07a0a3fc71233be18218762d7ee353636d738e240378ab7770",
+        "sha256_in_prefix": "1d046881a5f6fd07a0a3fc71233be18218762d7ee353636d738e240378ab7770",
+        "size_in_bytes": 6130
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/mnist.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9dc2d1471e73c85e05a04c2200da92bb5c64113db511582aa71d74dcc486ae33",
+        "sha256_in_prefix": "9dc2d1471e73c85e05a04c2200da92bb5c64113db511582aa71d74dcc486ae33",
+        "size_in_bytes": 21782
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/moving_mnist.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a864d579270bf00ce7686472c360765a17af3b121ca89e524cb97461c80e6dc7",
+        "sha256_in_prefix": "a864d579270bf00ce7686472c360765a17af3b121ca89e524cb97461c80e6dc7",
+        "size_in_bytes": 4216
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/omniglot.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d49df51cc3e5d67d993e3a8a8bda687912980c402ffc5017aedbf337821259f",
+        "sha256_in_prefix": "8d49df51cc3e5d67d993e3a8a8bda687912980c402ffc5017aedbf337821259f",
+        "size_in_bytes": 4991
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/oxford_iiit_pet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "06af9a3f011a23a339880874d1ca78e83ad5e83417a9eb47a670f5ed46f099fb",
+        "sha256_in_prefix": "06af9a3f011a23a339880874d1ca78e83ad5e83417a9eb47a670f5ed46f099fb",
+        "size_in_bytes": 6163
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/pcam.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3b82c9fee01e55142ae9cca972ef3048426b7976cdc42c216fc6f060053fef53",
+        "sha256_in_prefix": "3b82c9fee01e55142ae9cca972ef3048426b7976cdc42c216fc6f060053fef53",
+        "size_in_bytes": 5211
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/phototour.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "28a465ad2627f02af78386e9a36ba00bc215eba887b61141a7e172877e499679",
+        "sha256_in_prefix": "28a465ad2627f02af78386e9a36ba00bc215eba887b61141a7e172877e499679",
+        "size_in_bytes": 8179
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/places365.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f0f93ab89aee1cad81ec13b93b7d19c14351fed702a126daa84511920f5076a1",
+        "sha256_in_prefix": "f0f93ab89aee1cad81ec13b93b7d19c14351fed702a126daa84511920f5076a1",
+        "size_in_bytes": 8197
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/rendered_sst2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a21409340dcae798b98d4af6f622031eaec86bbe6317360e8857a890bee314bc",
+        "sha256_in_prefix": "a21409340dcae798b98d4af6f622031eaec86bbe6317360e8857a890bee314bc",
+        "size_in_bytes": 4303
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sbd.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a4d26d269024e293490be79a0b6fb205cb514f36e5d9d3d5acfe84bff5c7a856",
+        "sha256_in_prefix": "a4d26d269024e293490be79a0b6fb205cb514f36e5d9d3d5acfe84bff5c7a856",
+        "size_in_bytes": 6323
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sbu.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0d2175e015a2ffa8ee8aac0c734d84da5182725e4cfe409b90bcd4f98f8a0c2f",
+        "sha256_in_prefix": "0d2175e015a2ffa8ee8aac0c734d84da5182725e4cfe409b90bcd4f98f8a0c2f",
+        "size_in_bytes": 4193
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/semeion.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a528f9967bc713605377eacfbe49b243cf30e5f32024f73ba76e7c323f721bf2",
+        "sha256_in_prefix": "a528f9967bc713605377eacfbe49b243cf30e5f32024f73ba76e7c323f721bf2",
+        "size_in_bytes": 3642
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/stanford_cars.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "79a6cc4cb35cb3b53789f72f4ba3b928ef1b1f0bee922f3f0ebc2f719eb0eb7b",
+        "sha256_in_prefix": "79a6cc4cb35cb3b53789f72f4ba3b928ef1b1f0bee922f3f0ebc2f719eb0eb7b",
+        "size_in_bytes": 4977
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/stl10.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "06672f91418bae4285bf18311ce058ee74a6a3bf59250d668de523e421510bc8",
+        "sha256_in_prefix": "06672f91418bae4285bf18311ce058ee74a6a3bf59250d668de523e421510bc8",
+        "size_in_bytes": 6849
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/sun397.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "31f43e939a6c536b70222e350424dd42b9058e8d4190fd345a10809f1cf22931",
+        "sha256_in_prefix": "31f43e939a6c536b70222e350424dd42b9058e8d4190fd345a10809f1cf22931",
+        "size_in_bytes": 3694
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/svhn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "37e200fe3500ec2a3c9c93a8c9f9c7f58e6c2f4609f2b7b236744b89eb06a5e6",
+        "sha256_in_prefix": "37e200fe3500ec2a3c9c93a8c9f9c7f58e6c2f4609f2b7b236744b89eb06a5e6",
+        "size_in_bytes": 4666
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/ucf101.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "66775b5aaccd2c442518282670d8620e991e05124acd5199b978158bb71df04c",
+        "sha256_in_prefix": "66775b5aaccd2c442518282670d8620e991e05124acd5199b978158bb71df04c",
+        "size_in_bytes": 6113
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/usps.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a6e0867e5823e0858844592be8b893c1694f5cb2e0d4c3adec276fd24ee28eb1",
+        "sha256_in_prefix": "a6e0867e5823e0858844592be8b893c1694f5cb2e0d4c3adec276fd24ee28eb1",
+        "size_in_bytes": 4306
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a72d6c2fc6586d2f9f41d479df7e2f9ac7ff97b8ab0c486cb4a6e398996d6081",
+        "sha256_in_prefix": "a72d6c2fc6586d2f9f41d479df7e2f9ac7ff97b8ab0c486cb4a6e398996d6081",
+        "size_in_bytes": 14983
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/video_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fd12bf1c40d28ca5b0b3c1658364a8b4990d31f270dc896d6e5043c3dce478ec",
+        "sha256_in_prefix": "fd12bf1c40d28ca5b0b3c1658364a8b4990d31f270dc896d6e5043c3dce478ec",
+        "size_in_bytes": 14019
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/vision.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d9cf523b6869e7f9e76ae9dfd20eb8cebe78f3c50ca4621eb925c0b016899bca",
+        "sha256_in_prefix": "d9cf523b6869e7f9e76ae9dfd20eb8cebe78f3c50ca4621eb925c0b016899bca",
+        "size_in_bytes": 5294
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/voc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bc1f708a7630bc2a13b7eabcf6faa99534ed7bebe4baef121f69f541529cac18",
+        "sha256_in_prefix": "bc1f708a7630bc2a13b7eabcf6faa99534ed7bebe4baef121f69f541529cac18",
+        "size_in_bytes": 9162
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/__pycache__/widerface.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7c72abc2970b0d7416cf01543644509a5b0de8cb737265914964c24b4a1756b2",
+        "sha256_in_prefix": "7c72abc2970b0d7416cf01543644509a5b0de8cb737265914964c24b4a1756b2",
+        "size_in_bytes": 7194
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/_optical_flow.py",
+        "path_type": "hardlink",
+        "sha256": "a119bfeab941a49ca2f5dd8879389e6c7b2c0c45d00ca10a1b0dd9a8d54332b8",
+        "sha256_in_prefix": "a119bfeab941a49ca2f5dd8879389e6c7b2c0c45d00ca10a1b0dd9a8d54332b8",
+        "size_in_bytes": 19697
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/_stereo_matching.py",
+        "path_type": "hardlink",
+        "sha256": "7f5b00926c8a2a616dcafaf0e28b04964311eefba90fc804a7c636ad0e1bb450",
+        "sha256_in_prefix": "7f5b00926c8a2a616dcafaf0e28b04964311eefba90fc804a7c636ad0e1bb450",
+        "size_in_bytes": 49112
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/caltech.py",
+        "path_type": "hardlink",
+        "sha256": "e96f1aaed6d7021a7b96893c2c3871dbc439f8c92ea64c949a67354535c00a74",
+        "sha256_in_prefix": "e96f1aaed6d7021a7b96893c2c3871dbc439f8c92ea64c949a67354535c00a74",
+        "size_in_bytes": 8933
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/celeba.py",
+        "path_type": "hardlink",
+        "sha256": "05f31fa204390e4cdd6d931717ba82ecf312004638a3e8de1104d829d1accde4",
+        "sha256_in_prefix": "05f31fa204390e4cdd6d931717ba82ecf312004638a3e8de1104d829d1accde4",
+        "size_in_bytes": 8470
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/cifar.py",
+        "path_type": "hardlink",
+        "sha256": "9b030104352ed74144d52b21b5041a43ae634addd7787e38ae491a51437f51c1",
+        "sha256_in_prefix": "9b030104352ed74144d52b21b5041a43ae634addd7787e38ae491a51437f51c1",
+        "size_in_bytes": 5850
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/cityscapes.py",
+        "path_type": "hardlink",
+        "sha256": "87ab97f5df3ce86f3aff39b53a4fcdcfcefac00ee80b9d2a0d67d04e7f04aca0",
+        "sha256_in_prefix": "87ab97f5df3ce86f3aff39b53a4fcdcfcefac00ee80b9d2a0d67d04e7f04aca0",
+        "size_in_bytes": 10321
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/clevr.py",
+        "path_type": "hardlink",
+        "sha256": "630d9d4e57a9f84453cc8b0a1cf18bf5c6e517cf261a545ca06a0119a7355d9d",
+        "sha256_in_prefix": "630d9d4e57a9f84453cc8b0a1cf18bf5c6e517cf261a545ca06a0119a7355d9d",
+        "size_in_bytes": 3460
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/coco.py",
+        "path_type": "hardlink",
+        "sha256": "6667e9eb266059c0f15cb0ec85c4e7c4368a0bac6f62c6ac3dc061fe3f44f66e",
+        "sha256_in_prefix": "6667e9eb266059c0f15cb0ec85c4e7c4368a0bac6f62c6ac3dc061fe3f44f66e",
+        "size_in_bytes": 4180
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/country211.py",
+        "path_type": "hardlink",
+        "sha256": "4ff588b28c7a55ee82c661709f1e9b5f72a42f2d71cc109b00505c1aa1d5602f",
+        "sha256_in_prefix": "4ff588b28c7a55ee82c661709f1e9b5f72a42f2d71cc109b00505c1aa1d5602f",
+        "size_in_bytes": 2436
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/dtd.py",
+        "path_type": "hardlink",
+        "sha256": "73a1ad9cd778c63e01084e7618c6979e7f809d99bbca7f5885af08c1be71842a",
+        "sha256_in_prefix": "73a1ad9cd778c63e01084e7618c6979e7f809d99bbca7f5885af08c1be71842a",
+        "size_in_bytes": 4019
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/eurosat.py",
+        "path_type": "hardlink",
+        "sha256": "9ca043958698ba9c2e82145e0c3ed9fc41ff5954eaa92c864418e72239af5149",
+        "sha256_in_prefix": "9ca043958698ba9c2e82145e0c3ed9fc41ff5954eaa92c864418e72239af5149",
+        "size_in_bytes": 2307
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/fakedata.py",
+        "path_type": "hardlink",
+        "sha256": "80a98de95c90cd68e37843e92cfc5bf62e035b05be32d19525f65ff2ec07832a",
+        "sha256_in_prefix": "80a98de95c90cd68e37843e92cfc5bf62e035b05be32d19525f65ff2ec07832a",
+        "size_in_bytes": 2447
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/fer2013.py",
+        "path_type": "hardlink",
+        "sha256": "7ff663dd07f7db1f1ec39759bbc034deea61dc8e0052f9a665a6da2e14d23275",
+        "sha256_in_prefix": "7ff663dd07f7db1f1ec39759bbc034deea61dc8e0052f9a665a6da2e14d23275",
+        "size_in_bytes": 5118
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/fgvc_aircraft.py",
+        "path_type": "hardlink",
+        "sha256": "6393fb4ac60b7970eec72ed51d54f1f53603287968c6dc65c53e0904381bbd78",
+        "sha256_in_prefix": "6393fb4ac60b7970eec72ed51d54f1f53603287968c6dc65c53e0904381bbd78",
+        "size_in_bytes": 4626
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/flickr.py",
+        "path_type": "hardlink",
+        "sha256": "adc6f246561df9dfef456f6a98e3df5f56ca06016ee0d6c5faa96576ab7699c5",
+        "sha256_in_prefix": "adc6f246561df9dfef456f6a98e3df5f56ca06016ee0d6c5faa96576ab7699c5",
+        "size_in_bytes": 5431
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/flowers102.py",
+        "path_type": "hardlink",
+        "sha256": "49d3d742d1c0799e48a1dd31c8ad97abb9f410d03a608a045057d1aa206ed50d",
+        "sha256_in_prefix": "49d3d742d1c0799e48a1dd31c8ad97abb9f410d03a608a045057d1aa206ed50d",
+        "size_in_bytes": 4641
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/folder.py",
+        "path_type": "hardlink",
+        "sha256": "6e1ec9bf404ea61064298c43f81a205167b113d448ac647414b339311db86863",
+        "sha256_in_prefix": "6e1ec9bf404ea61064298c43f81a205167b113d448ac647414b339311db86863",
+        "size_in_bytes": 12919
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/food101.py",
+        "path_type": "hardlink",
+        "sha256": "d6f6db6da848f8ba7dc724b2e5bb274b9d13795f77a2f7ac488a2d6346acb70d",
+        "sha256_in_prefix": "d6f6db6da848f8ba7dc724b2e5bb274b9d13795f77a2f7ac488a2d6346acb70d",
+        "size_in_bytes": 3752
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/gtsrb.py",
+        "path_type": "hardlink",
+        "sha256": "d27e8640818fb8a53bc80d2d4a9880035524b684a1136bf3780d84aa14192be4",
+        "sha256_in_prefix": "d27e8640818fb8a53bc80d2d4a9880035524b684a1136bf3780d84aa14192be4",
+        "size_in_bytes": 3785
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/hmdb51.py",
+        "path_type": "hardlink",
+        "sha256": "942d7a40d1ef6ca912f107e055d841bd2c0dd9e2d115405434bd36d6792f81d7",
+        "sha256_in_prefix": "942d7a40d1ef6ca912f107e055d841bd2c0dd9e2d115405434bd36d6792f81d7",
+        "size_in_bytes": 5971
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/imagenet.py",
+        "path_type": "hardlink",
+        "sha256": "92596684bb143e09bcf2bc30d23f8e6846be8aecc6832bb8f6aea0a61a572e30",
+        "sha256_in_prefix": "92596684bb143e09bcf2bc30d23f8e6846be8aecc6832bb8f6aea0a61a572e30",
+        "size_in_bytes": 8691
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/imagenette.py",
+        "path_type": "hardlink",
+        "sha256": "cf3831d9c5919030abcd7f77a9b86fe1f39d9e0bbc597a534fa33464283f02c1",
+        "sha256_in_prefix": "cf3831d9c5919030abcd7f77a9b86fe1f39d9e0bbc597a534fa33464283f02c1",
+        "size_in_bytes": 4456
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/inaturalist.py",
+        "path_type": "hardlink",
+        "sha256": "f05e37c889d1c38438c808d66a5c2180321892fcc7b5606243f32d0742729f88",
+        "sha256_in_prefix": "f05e37c889d1c38438c808d66a5c2180321892fcc7b5606243f32d0742729f88",
+        "size_in_bytes": 10161
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/kinetics.py",
+        "path_type": "hardlink",
+        "sha256": "2652c4ace528ece41ffe5a7ebd44b6c8db5f3f9bf13208e5fa89cf2e3dad7dfc",
+        "sha256_in_prefix": "2652c4ace528ece41ffe5a7ebd44b6c8db5f3f9bf13208e5fa89cf2e3dad7dfc",
+        "size_in_bytes": 10416
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/kitti.py",
+        "path_type": "hardlink",
+        "sha256": "f2609271635c7b439d1b76fabd6089191dfbd02c9d6cad88cbc5bde837ec9742",
+        "sha256_in_prefix": "f2609271635c7b439d1b76fabd6089191dfbd02c9d6cad88cbc5bde837ec9742",
+        "size_in_bytes": 5637
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/lfw.py",
+        "path_type": "hardlink",
+        "sha256": "edcc222f43e09e74b6776093b1ef0b2f698ea28fdeade9aaa2cc989871138b02",
+        "sha256_in_prefix": "edcc222f43e09e74b6776093b1ef0b2f698ea28fdeade9aaa2cc989871138b02",
+        "size_in_bytes": 10560
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/lsun.py",
+        "path_type": "hardlink",
+        "sha256": "480c33393bb4710afb4dfa3e893d21213f7cea50b03972ac21061c7123c34c18",
+        "sha256_in_prefix": "480c33393bb4710afb4dfa3e893d21213f7cea50b03972ac21061c7123c34c18",
+        "size_in_bytes": 5728
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/mnist.py",
+        "path_type": "hardlink",
+        "sha256": "ca65c60897e9d15dd82ec306c35e4e7ebcbefcdc266ef6979e9d77789ebb1900",
+        "sha256_in_prefix": "ca65c60897e9d15dd82ec306c35e4e7ebcbefcdc266ef6979e9d77789ebb1900",
+        "size_in_bytes": 21718
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/moving_mnist.py",
+        "path_type": "hardlink",
+        "sha256": "eb2093655808956cb67fd6cd96b023a545abc9e2e885a5ae3746d184c740111c",
+        "sha256_in_prefix": "eb2093655808956cb67fd6cd96b023a545abc9e2e885a5ae3746d184c740111c",
+        "size_in_bytes": 3644
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/omniglot.py",
+        "path_type": "hardlink",
+        "sha256": "6f63131b54d5c6addd93601205d1cbbb9bb12c19d3e25a6049eafc93dbae42ae",
+        "sha256_in_prefix": "6f63131b54d5c6addd93601205d1cbbb9bb12c19d3e25a6049eafc93dbae42ae",
+        "size_in_bytes": 4151
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/oxford_iiit_pet.py",
+        "path_type": "hardlink",
+        "sha256": "b7899ed3a0308c38d24c813b7fcd1516e1b121218714fcfa0784a7dee3ab081c",
+        "sha256_in_prefix": "b7899ed3a0308c38d24c813b7fcd1516e1b121218714fcfa0784a7dee3ab081c",
+        "size_in_bytes": 5519
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/pcam.py",
+        "path_type": "hardlink",
+        "sha256": "51bed45ab02e7c8ccb5cdf29e82ba7b7ba2c9c708d4cbfacc43984306ca9ab64",
+        "sha256_in_prefix": "51bed45ab02e7c8ccb5cdf29e82ba7b7ba2c9c708d4cbfacc43984306ca9ab64",
+        "size_in_bytes": 5285
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/phototour.py",
+        "path_type": "hardlink",
+        "sha256": "e128dd83ed5d1e4e4c7b92aef86ef9cd27a4d2fb340aa9294148061742b323ce",
+        "sha256_in_prefix": "e128dd83ed5d1e4e4c7b92aef86ef9cd27a4d2fb340aa9294148061742b323ce",
+        "size_in_bytes": 8037
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/places365.py",
+        "path_type": "hardlink",
+        "sha256": "add92d81f640416b57c29b4c79736c373de6a9fb6668dec3a8ca961f479389c6",
+        "sha256_in_prefix": "add92d81f640416b57c29b4c79736c373de6a9fb6668dec3a8ca961f479389c6",
+        "size_in_bytes": 7259
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/rendered_sst2.py",
+        "path_type": "hardlink",
+        "sha256": "d8d4622f7235843ace74d965b9b750fa043e52769aa9bda62c05c6e3f24be706",
+        "sha256_in_prefix": "d8d4622f7235843ace74d965b9b750fa043e52769aa9bda62c05c6e3f24be706",
+        "size_in_bytes": 3597
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/samplers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5b566d42918b1ba6a81f2968d6df0f12c1c85685b0b28e5b48593d27329f1fc8",
+        "sha256_in_prefix": "5b566d42918b1ba6a81f2968d6df0f12c1c85685b0b28e5b48593d27329f1fc8",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/samplers/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c1e0f03e33edebafbd9f487f65cb89912ed7a8a8fca2029372661d6b62a752a3",
+        "sha256_in_prefix": "c1e0f03e33edebafbd9f487f65cb89912ed7a8a8fca2029372661d6b62a752a3",
+        "size_in_bytes": 563
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/samplers/__pycache__/clip_sampler.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4753aca7dbb4f7f555375d273445bef24e32c18424510088d5d416b759cb95b5",
+        "sha256_in_prefix": "4753aca7dbb4f7f555375d273445bef24e32c18424510088d5d416b759cb95b5",
+        "size_in_bytes": 6583
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/samplers/clip_sampler.py",
+        "path_type": "hardlink",
+        "sha256": "d7e9376f14e81a9065a82e3e8b2543820b688c0ef4d4d7e55b49c144b2b6eed4",
+        "sha256_in_prefix": "d7e9376f14e81a9065a82e3e8b2543820b688c0ef4d4d7e55b49c144b2b6eed4",
+        "size_in_bytes": 6244
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/sbd.py",
+        "path_type": "hardlink",
+        "sha256": "069a303043b7fc8c498328ebb4437b5d22c02a5ace3558421abda4257b53233b",
+        "sha256_in_prefix": "069a303043b7fc8c498328ebb4437b5d22c02a5ace3558421abda4257b53233b",
+        "size_in_bytes": 5414
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/sbu.py",
+        "path_type": "hardlink",
+        "sha256": "2c530fa047ae7fbc34001a5ebe7200ba8c674cbfa7d45d72cc156d076cfb9b4f",
+        "sha256_in_prefix": "2c530fa047ae7fbc34001a5ebe7200ba8c674cbfa7d45d72cc156d076cfb9b4f",
+        "size_in_bytes": 4143
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/semeion.py",
+        "path_type": "hardlink",
+        "sha256": "e862bd2d6459830385400eb25717b957b22c6cceb8f87e2c9987cf06ab981a16",
+        "sha256_in_prefix": "e862bd2d6459830385400eb25717b957b22c6cceb8f87e2c9987cf06ab981a16",
+        "size_in_bytes": 3148
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/stanford_cars.py",
+        "path_type": "hardlink",
+        "sha256": "5a098fbcc47e64ea70f88579dd477670dbe79c2d6b1d40e5faca02252cc43f56",
+        "sha256_in_prefix": "5a098fbcc47e64ea70f88579dd477670dbe79c2d6b1d40e5faca02252cc43f56",
+        "size_in_bytes": 4517
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/stl10.py",
+        "path_type": "hardlink",
+        "sha256": "d2b511d1ccc981b8a57c9e7b2fcaafc2c49da2312106cc6d5cb37377110924f7",
+        "sha256_in_prefix": "d2b511d1ccc981b8a57c9e7b2fcaafc2c49da2312106cc6d5cb37377110924f7",
+        "size_in_bytes": 7293
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/sun397.py",
+        "path_type": "hardlink",
+        "sha256": "abfa9f6bfaddc7819492547da081c28100b425429731ced4b9d4eaeb251e24f4",
+        "sha256_in_prefix": "abfa9f6bfaddc7819492547da081c28100b425429731ced4b9d4eaeb251e24f4",
+        "size_in_bytes": 2783
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/svhn.py",
+        "path_type": "hardlink",
+        "sha256": "564f153bbe095146991ef7a3be45890519e693ece9987c2392c3026680435837",
+        "sha256_in_prefix": "564f153bbe095146991ef7a3be45890519e693ece9987c2392c3026680435837",
+        "size_in_bytes": 4828
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/ucf101.py",
+        "path_type": "hardlink",
+        "sha256": "b3bac797baa89d8ecf9e611969cfceda0989508545cf237155bbcc63b218fc8a",
+        "sha256_in_prefix": "b3bac797baa89d8ecf9e611969cfceda0989508545cf237155bbcc63b218fc8a",
+        "size_in_bytes": 5533
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/usps.py",
+        "path_type": "hardlink",
+        "sha256": "ec83fec4d6542503626ee6d2a1d2609e9509942bcd7bea6b77c047b2b6f3491d",
+        "sha256_in_prefix": "ec83fec4d6542503626ee6d2a1d2609e9509942bcd7bea6b77c047b2b6f3491d",
+        "size_in_bytes": 3500
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/utils.py",
+        "path_type": "hardlink",
+        "sha256": "3893ff74aa00335831e8e5128cb427c1100de03445331fa20072c3c4145eb2ba",
+        "sha256_in_prefix": "3893ff74aa00335831e8e5128cb427c1100de03445331fa20072c3c4145eb2ba",
+        "size_in_bytes": 16355
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/video_utils.py",
+        "path_type": "hardlink",
+        "sha256": "d781afcc2462eed6df782ab7d4c37d5cfffaf9b7dec114abbf06af3b854115d9",
+        "sha256_in_prefix": "d781afcc2462eed6df782ab7d4c37d5cfffaf9b7dec114abbf06af3b854115d9",
+        "size_in_bytes": 17213
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/vision.py",
+        "path_type": "hardlink",
+        "sha256": "c7c02e4ea101c300681e6924583e88922f28e4b33169cdb286bcc81410e0a1d1",
+        "sha256_in_prefix": "c7c02e4ea101c300681e6924583e88922f28e4b33169cdb286bcc81410e0a1d1",
+        "size_in_bytes": 4249
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/voc.py",
+        "path_type": "hardlink",
+        "sha256": "2e17506af9fbfa7ab5df37fd1c87e3358c4f0dae5269350381ac837bcb8b7d97",
+        "sha256_in_prefix": "2e17506af9fbfa7ab5df37fd1c87e3358c4f0dae5269350381ac837bcb8b7d97",
+        "size_in_bytes": 8835
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/datasets/widerface.py",
+        "path_type": "hardlink",
+        "sha256": "7fbd31b2f0f3f8f18b500d9e5053fac12a9b680ff0b34104ad43c5be39c9ef01",
+        "sha256_in_prefix": "7fbd31b2f0f3f8f18b500d9e5053fac12a9b680ff0b34104ad43c5be39c9ef01",
+        "size_in_bytes": 8323
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/extension.py",
+        "path_type": "hardlink",
+        "sha256": "6160435117c21574a646f5e2da2120d8bd2169f376f919f26e922687d24052d4",
+        "sha256_in_prefix": "6160435117c21574a646f5e2da2120d8bd2169f376f919f26e922687d24052d4",
+        "size_in_bytes": 3141
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/image.so",
+        "file_mode": "binary",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/bld/rattler-build_torchvision_1737215452/host_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl",
+        "sha256": "509e8f2108faa4f6ecd2729cf2095dfc0389a14fde0b043220604c8fd0b8c1c5",
+        "sha256_in_prefix": "fce2828bc12423f536f9069de89bf0d7f2685faf8b2646aa0908789fa923579c",
+        "size_in_bytes": 223856
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "18cc2366e8a0f8b58fb9f6a60a5c25e44a45ab47c4c5aecc5da6e468c12e687b",
+        "sha256_in_prefix": "18cc2366e8a0f8b58fb9f6a60a5c25e44a45ab47c4c5aecc5da6e468c12e687b",
+        "size_in_bytes": 1625
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d4012134648e4f4782b3be4a9602bb4c18549e2e038cce086cb539ccf92624c",
+        "sha256_in_prefix": "8d4012134648e4f4782b3be4a9602bb4c18549e2e038cce086cb539ccf92624c",
+        "size_in_bytes": 1689
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/_load_gpu_decoder.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ef9f9db4e859c11689a28ae742150aea0e63552a881f26ecf4c06cf63e76ce19",
+        "sha256_in_prefix": "ef9f9db4e859c11689a28ae742150aea0e63552a881f26ecf4c06cf63e76ce19",
+        "size_in_bytes": 575
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/_video_opt.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf40fe7ae91bc49f75805014b3344805b47afde950e015337271b6cb61abacb7",
+        "sha256_in_prefix": "bf40fe7ae91bc49f75805014b3344805b47afde950e015337271b6cb61abacb7",
+        "size_in_bytes": 15942
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/image.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "76c6246987a17d951027a788975347194a48568faa6c3ddd239e0bf65fa5e301",
+        "sha256_in_prefix": "76c6246987a17d951027a788975347194a48568faa6c3ddd239e0bf65fa5e301",
+        "size_in_bytes": 17259
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/video.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf28f1ee539b80c797693a3584ec99111a67e422131c71eec522324a942a8df0",
+        "sha256_in_prefix": "bf28f1ee539b80c797693a3584ec99111a67e422131c71eec522324a942a8df0",
+        "size_in_bytes": 13076
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/__pycache__/video_reader.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b72b5f0202a397291d5840dcc315f098703c2b2d5611452ee6118bb00b80ff79",
+        "sha256_in_prefix": "b72b5f0202a397291d5840dcc315f098703c2b2d5611452ee6118bb00b80ff79",
+        "size_in_bytes": 10609
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/_load_gpu_decoder.py",
+        "path_type": "hardlink",
+        "sha256": "09cf1e3fadb4a8f0c5734ab6a9df9562d8f1b6c8053e33a083b674e115d1ce25",
+        "sha256_in_prefix": "09cf1e3fadb4a8f0c5734ab6a9df9562d8f1b6c8053e33a083b674e115d1ce25",
+        "size_in_bytes": 178
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/_video_opt.py",
+        "path_type": "hardlink",
+        "sha256": "a16d95becd777daf67a296f83adde7fd53623940a7e593cb4271fc5dff3ef358",
+        "sha256_in_prefix": "a16d95becd777daf67a296f83adde7fd53623940a7e593cb4271fc5dff3ef358",
+        "size_in_bytes": 20456
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/image.py",
+        "path_type": "hardlink",
+        "sha256": "2a8a31752d8ebf6fe69db20e9d86d2254dd28cf32f634724e8d2886778569de4",
+        "sha256_in_prefix": "2a8a31752d8ebf6fe69db20e9d86d2254dd28cf32f634724e8d2886778569de4",
+        "size_in_bytes": 17714
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/video.py",
+        "path_type": "hardlink",
+        "sha256": "223648a1979b0d65a731da37ec5366ea5f4fb184de6c868e4386ccc44ead37ca",
+        "sha256_in_prefix": "223648a1979b0d65a731da37ec5366ea5f4fb184de6c868e4386ccc44ead37ca",
+        "size_in_bytes": 17128
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/io/video_reader.py",
+        "path_type": "hardlink",
+        "sha256": "788d3dc75bee52c6ed2faae7c9e8aff3de32f0403d6df7496a4575cd663306d4",
+        "sha256_in_prefix": "788d3dc75bee52c6ed2faae7c9e8aff3de32f0403d6df7496a4575cd663306d4",
+        "size_in_bytes": 11689
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "03c1903c4d5b977a141e9b83f4d0f9dc3579e7b20f638e39f4534b5bab155c62",
+        "sha256_in_prefix": "03c1903c4d5b977a141e9b83f4d0f9dc3579e7b20f638e39f4534b5bab155c62",
+        "size_in_bytes": 865
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bc73df128f704037ecb2ac4e81eb3e2e19de4d825c5c449cedb6e4d788c95b07",
+        "sha256_in_prefix": "bc73df128f704037ecb2ac4e81eb3e2e19de4d825c5c449cedb6e4d788c95b07",
+        "size_in_bytes": 1047
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/_api.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d36bca4a0c6ae6f0392fa4b45d439ddcd5693871bff08180c173e5802fdc735b",
+        "sha256_in_prefix": "d36bca4a0c6ae6f0392fa4b45d439ddcd5693871bff08180c173e5802fdc735b",
+        "size_in_bytes": 9785
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/_meta.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4f2c6b4a7e8e4847950e37a499e76ab68897d230c3728fc648fd422a4b77aa1a",
+        "sha256_in_prefix": "4f2c6b4a7e8e4847950e37a499e76ab68897d230c3728fc648fd422a4b77aa1a",
+        "size_in_bytes": 19675
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "55550befcee3f2eae092e00569a16360f9185e9d0046843089d5feb34d359085",
+        "sha256_in_prefix": "55550befcee3f2eae092e00569a16360f9185e9d0046843089d5feb34d359085",
+        "size_in_bytes": 9887
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/alexnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2e098137ca1a7d0d7ff0f4eea896dc844c17eb01d071af2768228c8817c1f31",
+        "sha256_in_prefix": "e2e098137ca1a7d0d7ff0f4eea896dc844c17eb01d071af2768228c8817c1f31",
+        "size_in_bytes": 4617
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/convnext.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0167a0c047fbd476dda36e4ab75a0ce9fc6af9183f0508c970a03f584a8e0b89",
+        "sha256_in_prefix": "0167a0c047fbd476dda36e4ab75a0ce9fc6af9183f0508c970a03f584a8e0b89",
+        "size_in_bytes": 13273
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/densenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "90a3e662eab03629c6150e464bc3d7562e14a2c1a63f87b2d2fde087388552cc",
+        "sha256_in_prefix": "90a3e662eab03629c6150e464bc3d7562e14a2c1a63f87b2d2fde087388552cc",
+        "size_in_bytes": 14746
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/efficientnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d86f75ad4449025d355d4993277d96f20d8368f6dcfd34ef3d5adec9e623b8a2",
+        "sha256_in_prefix": "d86f75ad4449025d355d4993277d96f20d8368f6dcfd34ef3d5adec9e623b8a2",
+        "size_in_bytes": 30566
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/feature_extraction.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e1d6d418fae3f5cf7b115793ea100446c28f1f04f2d9d63bd6da31e126763fdd",
+        "sha256_in_prefix": "e1d6d418fae3f5cf7b115793ea100446c28f1f04f2d9d63bd6da31e126763fdd",
+        "size_in_bytes": 21746
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/googlenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a9c1dd960ab2864385eed5b3849bc517843ec496452262cc1dbc2e025b320078",
+        "sha256_in_prefix": "a9c1dd960ab2864385eed5b3849bc517843ec496452262cc1dbc2e025b320078",
+        "size_in_bytes": 10397
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/inception.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "04f0260a16fedfdb687a2148c159ae25b53e973d7db709e4bd381f6ddbb133d4",
+        "sha256_in_prefix": "04f0260a16fedfdb687a2148c159ae25b53e973d7db709e4bd381f6ddbb133d4",
+        "size_in_bytes": 14893
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/maxvit.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "892c064e6091f7cdc7f395ce2f012e0016d52fde5c6607a80932d27d4b5ab746",
+        "sha256_in_prefix": "892c064e6091f7cdc7f395ce2f012e0016d52fde5c6607a80932d27d4b5ab746",
+        "size_in_bytes": 24505
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/mnasnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5538dc29147c43df0e17bf038766133749da88b95e48e56161e4be8055a5f4d8",
+        "sha256_in_prefix": "5538dc29147c43df0e17bf038766133749da88b95e48e56161e4be8055a5f4d8",
+        "size_in_bytes": 14165
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1d5e72de8a4c4a8cd56124b719cd39d67e6803488e3cd1ceac612f0ffac01210",
+        "sha256_in_prefix": "1d5e72de8a4c4a8cd56124b719cd39d67e6803488e3cd1ceac612f0ffac01210",
+        "size_in_bytes": 532
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenetv2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "15f292232ef40913e1fba5c7c5719b5645a99aee00d7089d6cb4132bc6a36127",
+        "sha256_in_prefix": "15f292232ef40913e1fba5c7c5719b5645a99aee00d7089d6cb4132bc6a36127",
+        "size_in_bytes": 7926
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/mobilenetv3.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bdc061784ab5d867e278b90eb3b5887207d55ac60799d3c5d96df60fece91478",
+        "sha256_in_prefix": "bdc061784ab5d867e278b90eb3b5887207d55ac60799d3c5d96df60fece91478",
+        "size_in_bytes": 12199
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/regnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d741030ecc7db752f7d2d76a7dccf0a1d1522726e02713025bb72f32d1f204ad",
+        "sha256_in_prefix": "d741030ecc7db752f7d2d76a7dccf0a1d1522726e02713025bb72f32d1f204ad",
+        "size_in_bytes": 40372
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/resnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "90d8b3670c56281991c98dc8c91a31f285b1d580247c7a60134320a5003c8da1",
+        "sha256_in_prefix": "90d8b3670c56281991c98dc8c91a31f285b1d580247c7a60134320a5003c8da1",
+        "size_in_bytes": 26914
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/shufflenetv2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5b6dad9b21e3c985823c0c12f4bbe4019edaa625c3cf0b0671caab8f2338da1a",
+        "sha256_in_prefix": "5b6dad9b21e3c985823c0c12f4bbe4019edaa625c3cf0b0671caab8f2338da1a",
+        "size_in_bytes": 12840
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/squeezenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "13b2327f01462bebf4e3ed9297e71164e9f3e00f55802817182df2e66e5b2f69",
+        "sha256_in_prefix": "13b2327f01462bebf4e3ed9297e71164e9f3e00f55802817182df2e66e5b2f69",
+        "size_in_bytes": 7697
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/swin_transformer.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "a861f6776c2adbd6b0f9894f65826d484f5aa232effc8e82c903b4f721e7ea36",
+        "sha256_in_prefix": "a861f6776c2adbd6b0f9894f65826d484f5aa232effc8e82c903b4f721e7ea36",
+        "size_in_bytes": 29958
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/vgg.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f881ca7ea65cf6810fc6a75a585bb03cc133c75b7bb1feaff88c8e0f848d5482",
+        "sha256_in_prefix": "f881ca7ea65cf6810fc6a75a585bb03cc133c75b7bb1feaff88c8e0f848d5482",
+        "size_in_bytes": 16449
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/__pycache__/vision_transformer.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "55c3bf42d8381117833aafe87ebbdc4cac12b47ffb8fa531518b0ce4aa06bad5",
+        "sha256_in_prefix": "55c3bf42d8381117833aafe87ebbdc4cac12b47ffb8fa531518b0ce4aa06bad5",
+        "size_in_bytes": 21466
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/_api.py",
+        "path_type": "hardlink",
+        "sha256": "b882099f15f5cd830da5dbc9d21692ab5e7f5e547542d78564161501db4485e8",
+        "sha256_in_prefix": "b882099f15f5cd830da5dbc9d21692ab5e7f5e547542d78564161501db4485e8",
+        "size_in_bytes": 10054
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/_meta.py",
+        "path_type": "hardlink",
+        "sha256": "7eaa5e401b1ff441186e602943c4342cac8cf7f505c238ab7882399b00dbc096",
+        "sha256_in_prefix": "7eaa5e401b1ff441186e602943c4342cac8cf7f505c238ab7882399b00dbc096",
+        "size_in_bytes": 28875
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "4bcb830fb99a35e7f2f9f116ea6a73f1d154ebc69c2b51f137492dd6aa64903a",
+        "sha256_in_prefix": "4bcb830fb99a35e7f2f9f116ea6a73f1d154ebc69c2b51f137492dd6aa64903a",
+        "size_in_bytes": 10893
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/alexnet.py",
+        "path_type": "hardlink",
+        "sha256": "76f0592d51fad133931c234d9168344c52edb89e46861ff15cdef7af7572ab9f",
+        "sha256_in_prefix": "76f0592d51fad133931c234d9168344c52edb89e46861ff15cdef7af7572ab9f",
+        "size_in_bytes": 4488
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/convnext.py",
+        "path_type": "hardlink",
+        "sha256": "b4fef7b47faeb3a87629275570fca9117f48ce4e65b2bf362ac193d799a3e0d1",
+        "sha256_in_prefix": "b4fef7b47faeb3a87629275570fca9117f48ce4e65b2bf362ac193d799a3e0d1",
+        "size_in_bytes": 15326
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/densenet.py",
+        "path_type": "hardlink",
+        "sha256": "39912c1c9c3bea4392446e132a12f2ee53c6b06122c72ea59479290bcb2748ea",
+        "sha256_in_prefix": "39912c1c9c3bea4392446e132a12f2ee53c6b06122c72ea59479290bcb2748ea",
+        "size_in_bytes": 16825
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "270626fdf4c63bf15e460e1e4ce40bc103d9f650bd8e1799f90128260a8a4e38",
+        "sha256_in_prefix": "270626fdf4c63bf15e460e1e4ce40bc103d9f650bd8e1799f90128260a8a4e38",
+        "size_in_bytes": 168
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f1498534c15a215f4329450bcf0e45480611e7bd3059cf12c129f80c88b4b507",
+        "sha256_in_prefix": "f1498534c15a215f4329450bcf0e45480611e7bd3059cf12c129f80c88b4b507",
+        "size_in_bytes": 563
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9c0dee20e5307d63fa4c59d9a899b7b671ccd726dc8acd3855f5bf11e26d1bd9",
+        "sha256_in_prefix": "9c0dee20e5307d63fa4c59d9a899b7b671ccd726dc8acd3855f5bf11e26d1bd9",
+        "size_in_bytes": 18530
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/anchor_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b56dc412b0d21847712eac60bb569669bc65719a86632f10ab49d6cb2cc34d7b",
+        "sha256_in_prefix": "b56dc412b0d21847712eac60bb569669bc65719a86632f10ab49d6cb2cc34d7b",
+        "size_in_bytes": 10817
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/backbone_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e9fc97d66ca9b1b3964899335d72fc81e51ed019e09d0b3f2e4f95bed1e1c5e8",
+        "sha256_in_prefix": "e9fc97d66ca9b1b3964899335d72fc81e51ed019e09d0b3f2e4f95bed1e1c5e8",
+        "size_in_bytes": 9545
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/faster_rcnn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2b9b7bc00b37c3744dfb3a51755285c6765eaead6546aff2d13205bb6579745c",
+        "sha256_in_prefix": "2b9b7bc00b37c3744dfb3a51755285c6765eaead6546aff2d13205bb6579745c",
+        "size_in_bytes": 30787
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/fcos.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1525e75a52163ea480758d547b195f03320f360046d38e076fe80d81df3522f6",
+        "sha256_in_prefix": "1525e75a52163ea480758d547b195f03320f360046d38e076fe80d81df3522f6",
+        "size_in_bytes": 26135
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/generalized_rcnn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "75def109203e523911346370c0cf70c88faeee483c099fa15bcfaa38bed30798",
+        "sha256_in_prefix": "75def109203e523911346370c0cf70c88faeee483c099fa15bcfaa38bed30798",
+        "size_in_bytes": 4020
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/image_list.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b896416c9acee6269eeefc9f3c04680da174195a74e7e581a803be7a87c07387",
+        "sha256_in_prefix": "b896416c9acee6269eeefc9f3c04680da174195a74e7e581a803be7a87c07387",
+        "size_in_bytes": 1488
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/keypoint_rcnn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b0fa7ccf74891c15ac49aae54858cc1a3e17c695d4e52d39e054c61b6b1a0f49",
+        "sha256_in_prefix": "b0fa7ccf74891c15ac49aae54858cc1a3e17c695d4e52d39e054c61b6b1a0f49",
+        "size_in_bytes": 19853
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/mask_rcnn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ac43004c9b219af90e3f17a6c8739978653bcd17ac79830e0653642273f45f4a",
+        "sha256_in_prefix": "ac43004c9b219af90e3f17a6c8739978653bcd17ac79830e0653642273f45f4a",
+        "size_in_bytes": 23063
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/retinanet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "322ff0a25c4d4102ae404bbae743ff43aaca156277f1828c5586ec57a239ea2a",
+        "sha256_in_prefix": "322ff0a25c4d4102ae404bbae743ff43aaca156277f1828c5586ec57a239ea2a",
+        "size_in_bytes": 28256
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/roi_heads.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1f2c8031430a68747e8ffc50b98533cb9ca565142ee65f43634bfa1f62bb738a",
+        "sha256_in_prefix": "1f2c8031430a68747e8ffc50b98533cb9ca565142ee65f43634bfa1f62bb738a",
+        "size_in_bytes": 22603
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/rpn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6877dc0206182209efb02f5d23742d4b63e5313dc69a2d37ee187f2b993dbdfd",
+        "sha256_in_prefix": "6877dc0206182209efb02f5d23742d4b63e5313dc69a2d37ee187f2b993dbdfd",
+        "size_in_bytes": 12042
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/ssd.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4feefcb6c6a662b0e7add46b842ce7bc92b254afb34f408200d443442efab47b",
+        "sha256_in_prefix": "4feefcb6c6a662b0e7add46b842ce7bc92b254afb34f408200d443442efab47b",
+        "size_in_bytes": 22210
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/ssdlite.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "45b43691ac2e286a68c2cdd773059840fdf4adfaa0cb0156e248b13b3b3ac881",
+        "sha256_in_prefix": "45b43691ac2e286a68c2cdd773059840fdf4adfaa0cb0156e248b13b3b3ac881",
+        "size_in_bytes": 11488
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/__pycache__/transform.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "12506c25c0b01b5507b3b13a7cb21553a0ab345258a4ea281bf8873e200ae74b",
+        "sha256_in_prefix": "12506c25c0b01b5507b3b13a7cb21553a0ab345258a4ea281bf8873e200ae74b",
+        "size_in_bytes": 10265
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "db2dc5438179c9784533b5485a6bbfef41692a0663c5d4ffb9c7f36308b76544",
+        "sha256_in_prefix": "db2dc5438179c9784533b5485a6bbfef41692a0663c5d4ffb9c7f36308b76544",
+        "size_in_bytes": 22127
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/anchor_utils.py",
+        "path_type": "hardlink",
+        "sha256": "f08c75569de2da48091abe9eb227b7af0d3fc808edad44af2d754a3daa19790a",
+        "sha256_in_prefix": "f08c75569de2da48091abe9eb227b7af0d3fc808edad44af2d754a3daa19790a",
+        "size_in_bytes": 11859
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/backbone_utils.py",
+        "path_type": "hardlink",
+        "sha256": "e05cb3a1c47a612edc1b92094cc4700b8e2dba96d740303f46effcaaa6a3bb62",
+        "sha256_in_prefix": "e05cb3a1c47a612edc1b92094cc4700b8e2dba96d740303f46effcaaa6a3bb62",
+        "size_in_bytes": 10548
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/faster_rcnn.py",
+        "path_type": "hardlink",
+        "sha256": "f039de80b2999ebf10fb3af3193effa5e21cfe4fd1d6ad628c31f99f53f78101",
+        "sha256_in_prefix": "f039de80b2999ebf10fb3af3193effa5e21cfe4fd1d6ad628c31f99f53f78101",
+        "size_in_bytes": 36979
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/fcos.py",
+        "path_type": "hardlink",
+        "sha256": "f2bf0c6b2bd431e4ca7c3a336b81f2ebb0a18118252f3046e984b9a8d7bce2c3",
+        "sha256_in_prefix": "f2bf0c6b2bd431e4ca7c3a336b81f2ebb0a18118252f3046e984b9a8d7bce2c3",
+        "size_in_bytes": 34235
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/generalized_rcnn.py",
+        "path_type": "hardlink",
+        "sha256": "e3e0e9f15c7e4a30c3499ed3b19d75ae692f107df7e9a2ee48e944457890edfb",
+        "sha256_in_prefix": "e3e0e9f15c7e4a30c3499ed3b19d75ae692f107df7e9a2ee48e944457890edfb",
+        "size_in_bytes": 4743
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/image_list.py",
+        "path_type": "hardlink",
+        "sha256": "494277c4c9fed7173a8af61950d21d581877447f710fc12d09da6c5e73c8fe23",
+        "sha256_in_prefix": "494277c4c9fed7173a8af61950d21d581877447f710fc12d09da6c5e73c8fe23",
+        "size_in_bytes": 783
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/keypoint_rcnn.py",
+        "path_type": "hardlink",
+        "sha256": "e07c7046ba7c9497ddca2f0adde06ae2fb2d6d1acbf1b65cd87861fa95478ec2",
+        "sha256_in_prefix": "e07c7046ba7c9497ddca2f0adde06ae2fb2d6d1acbf1b65cd87861fa95478ec2",
+        "size_in_bytes": 21947
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/mask_rcnn.py",
+        "path_type": "hardlink",
+        "sha256": "5f51904b7d78a8ecb8b820a9ecc3df1fa5b5d88c9d4705beb430a60a70751468",
+        "sha256_in_prefix": "5f51904b7d78a8ecb8b820a9ecc3df1fa5b5d88c9d4705beb430a60a70751468",
+        "size_in_bytes": 26713
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/retinanet.py",
+        "path_type": "hardlink",
+        "sha256": "d7b43445daaaba00121150c625fafc9420fad738c4a83e57c70419026654676e",
+        "sha256_in_prefix": "d7b43445daaaba00121150c625fafc9420fad738c4a83e57c70419026654676e",
+        "size_in_bytes": 37300
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/roi_heads.py",
+        "path_type": "hardlink",
+        "sha256": "521f7de74c5950499e8f00f6a514612afa8d5746d8fc6d8e9bcc860b611d0c38",
+        "sha256_in_prefix": "521f7de74c5950499e8f00f6a514612afa8d5746d8fc6d8e9bcc860b611d0c38",
+        "size_in_bytes": 33822
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/rpn.py",
+        "path_type": "hardlink",
+        "sha256": "ee36ea3e92de9671826f9167fa6b945de645f444369e1139af668d02e47d5743",
+        "sha256_in_prefix": "ee36ea3e92de9671826f9167fa6b945de645f444369e1139af668d02e47d5743",
+        "size_in_bytes": 15838
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/ssd.py",
+        "path_type": "hardlink",
+        "sha256": "b5bb2055b443dfa5ab8e4644078c62d5fbce5d3eb6af2d29f06fd277e8f90ab6",
+        "sha256_in_prefix": "b5bb2055b443dfa5ab8e4644078c62d5fbce5d3eb6af2d29f06fd277e8f90ab6",
+        "size_in_bytes": 28979
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/ssdlite.py",
+        "path_type": "hardlink",
+        "sha256": "f27c8451838d5187b7d7d26981ebca11f8ebfc5c42803354f203b27ee6772f77",
+        "sha256_in_prefix": "f27c8451838d5187b7d7d26981ebca11f8ebfc5c42803354f203b27ee6772f77",
+        "size_in_bytes": 13219
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/detection/transform.py",
+        "path_type": "hardlink",
+        "sha256": "31ad020ef2c23259373314b76ac5dc0f1ad2a2c44b69c68ba62f93df82d79b50",
+        "sha256_in_prefix": "31ad020ef2c23259373314b76ac5dc0f1ad2a2c44b69c68ba62f93df82d79b50",
+        "size_in_bytes": 12189
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/efficientnet.py",
+        "path_type": "hardlink",
+        "sha256": "e2ac9ea17918185c94b010edf13ca00d8c9c30cb75ce11b007f9783e6a0fbf88",
+        "sha256_in_prefix": "e2ac9ea17918185c94b010edf13ca00d8c9c30cb75ce11b007f9783e6a0fbf88",
+        "size_in_bytes": 43090
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/feature_extraction.py",
+        "path_type": "hardlink",
+        "sha256": "443e016bfe853ca455059b35228dde6c0d4ffa2652ed3edf9716393163cf96fe",
+        "sha256_in_prefix": "443e016bfe853ca455059b35228dde6c0d4ffa2652ed3edf9716393163cf96fe",
+        "size_in_bytes": 26339
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/googlenet.py",
+        "path_type": "hardlink",
+        "sha256": "9e2ed5952256dbfcc6d00771c79e9fb8de6de3223abd138102e02ed3af95e1fd",
+        "sha256_in_prefix": "9e2ed5952256dbfcc6d00771c79e9fb8de6de3223abd138102e02ed3af95e1fd",
+        "size_in_bytes": 12806
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/inception.py",
+        "path_type": "hardlink",
+        "sha256": "89facb12bcce546faf97040e3172d7e723207291f1090435ecbed669c9f94214",
+        "sha256_in_prefix": "89facb12bcce546faf97040e3172d7e723207291f1090435ecbed669c9f94214",
+        "size_in_bytes": 18851
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/maxvit.py",
+        "path_type": "hardlink",
+        "sha256": "ffc2fc806e686f60c26496e29f2f353f57c100c98e70e29b4e781c90fcbcc531",
+        "sha256_in_prefix": "ffc2fc806e686f60c26496e29f2f353f57c100c98e70e29b4e781c90fcbcc531",
+        "size_in_bytes": 32053
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/mnasnet.py",
+        "path_type": "hardlink",
+        "sha256": "87d8d8d53ba96828598fd9219d7c9afe5e0ed5ec545a158e3829a124208898a7",
+        "sha256_in_prefix": "87d8d8d53ba96828598fd9219d7c9afe5e0ed5ec545a158e3829a124208898a7",
+        "size_in_bytes": 17574
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/mobilenet.py",
+        "path_type": "hardlink",
+        "sha256": "952455c70d932f72c507009a76fcaf1fa9f71b3a944e72b6fab857dcc3a04abb",
+        "sha256_in_prefix": "952455c70d932f72c507009a76fcaf1fa9f71b3a944e72b6fab857dcc3a04abb",
+        "size_in_bytes": 211
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/mobilenetv2.py",
+        "path_type": "hardlink",
+        "sha256": "bfd711040a7bfc2ff9d091648c667496ebee878e680988189f7ee9706d942fca",
+        "sha256_in_prefix": "bfd711040a7bfc2ff9d091648c667496ebee878e680988189f7ee9706d942fca",
+        "size_in_bytes": 9710
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/mobilenetv3.py",
+        "path_type": "hardlink",
+        "sha256": "f97937da6fd6767f9aa7cc022f84e5ef08e244e2300f085ab089d84ccc303ab1",
+        "sha256_in_prefix": "f97937da6fd6767f9aa7cc022f84e5ef08e244e2300f085ab089d84ccc303ab1",
+        "size_in_bytes": 16279
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d334653164090a316aa1469f5175603bcf7ecfb7a6eed002a3d13c8474aaf514",
+        "sha256_in_prefix": "d334653164090a316aa1469f5175603bcf7ecfb7a6eed002a3d13c8474aaf514",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "59ee91b9d48124c8dfc79e76e4197aff779f21ba6a537e878ef6d759d6393e08",
+        "sha256_in_prefix": "59ee91b9d48124c8dfc79e76e4197aff779f21ba6a537e878ef6d759d6393e08",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ed2176cf2f0c79ffc5242a3bfda1720acbd7107e887fd9d9cc073e62fe15e477",
+        "sha256_in_prefix": "ed2176cf2f0c79ffc5242a3bfda1720acbd7107e887fd9d9cc073e62fe15e477",
+        "size_in_bytes": 2390
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/__pycache__/raft.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "232c13d4a702aba697d999d4550431cb643922139e2451954d7ba6014e5da698",
+        "sha256_in_prefix": "232c13d4a702aba697d999d4550431cb643922139e2451954d7ba6014e5da698",
+        "size_in_bytes": 28387
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "bfeb5027362662e92b0f5b10004fb98f98f1caf0a89b017551d1a4cf9b554cbc",
+        "sha256_in_prefix": "bfeb5027362662e92b0f5b10004fb98f98f1caf0a89b017551d1a4cf9b554cbc",
+        "size_in_bytes": 2077
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/optical_flow/raft.py",
+        "path_type": "hardlink",
+        "sha256": "16948b3d78acba0bb9473a7f0f95c2af4dfbb2705aa4c2747433ebc3d73708d9",
+        "sha256_in_prefix": "16948b3d78acba0bb9473a7f0f95c2af4dfbb2705aa4c2747433ebc3d73708d9",
+        "size_in_bytes": 39995
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "82a14cef32385141ca2810c902e9a8cce9fbc4f2f426dbf2352f048f3e905e9d",
+        "sha256_in_prefix": "82a14cef32385141ca2810c902e9a8cce9fbc4f2f426dbf2352f048f3e905e9d",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "792503aaa267bb28fb6c003e6c70ceb06cda06143f37575727b6e0cdfa18c34b",
+        "sha256_in_prefix": "792503aaa267bb28fb6c003e6c70ceb06cda06143f37575727b6e0cdfa18c34b",
+        "size_in_bytes": 531
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/googlenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "53af30846b2c72edac2d802c7851b9113a5268b0dc64b76ba55eb9249d167248",
+        "sha256_in_prefix": "53af30846b2c72edac2d802c7851b9113a5268b0dc64b76ba55eb9249d167248",
+        "size_in_bytes": 8286
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/inception.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "efdc09914753a910c290468de79fb0c2db44a4696f8309fe753ea66a4ae27ce8",
+        "sha256_in_prefix": "efdc09914753a910c290468de79fb0c2db44a4696f8309fe753ea66a4ae27ce8",
+        "size_in_bytes": 10937
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d3a960e53d711601796c08b06e5ac6ca1e53f66de94344c2ff02dec8aaf25a1a",
+        "sha256_in_prefix": "d3a960e53d711601796c08b06e5ac6ca1e53f66de94344c2ff02dec8aaf25a1a",
+        "size_in_bytes": 545
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenetv2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "84cebfc9e2ba56c9fdd949f8eb6ebadb7e4f68785bde1df4a018dd8a0836bde0",
+        "sha256_in_prefix": "84cebfc9e2ba56c9fdd949f8eb6ebadb7e4f68785bde1df4a018dd8a0836bde0",
+        "size_in_bytes": 6467
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/mobilenetv3.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "04f8282094c11bfdb8f3527febb3f01709b16f0020bb8d0afe9341208fb34f7c",
+        "sha256_in_prefix": "04f8282094c11bfdb8f3527febb3f01709b16f0020bb8d0afe9341208fb34f7c",
+        "size_in_bytes": 8773
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/resnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "df46d0a05ba5a58a14dddfe43e2a64c8fe95a310289de3339e3cc85808f5ee32",
+        "sha256_in_prefix": "df46d0a05ba5a58a14dddfe43e2a64c8fe95a310289de3339e3cc85808f5ee32",
+        "size_in_bytes": 15772
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/shufflenetv2.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b78a6ae4e9bb8ac956639f70ac7d605b897f1cb2a44bd56444d5132c5c2fb05",
+        "sha256_in_prefix": "7b78a6ae4e9bb8ac956639f70ac7d605b897f1cb2a44bd56444d5132c5c2fb05",
+        "size_in_bytes": 15165
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/__pycache__/utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d1e19a4309c5c9b8edb887010ea5f9bf857a4c8566e89257ee267c07980b30c",
+        "sha256_in_prefix": "8d1e19a4309c5c9b8edb887010ea5f9bf857a4c8566e89257ee267c07980b30c",
+        "size_in_bytes": 1954
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/googlenet.py",
+        "path_type": "hardlink",
+        "sha256": "0bef259bd4e78e412ec2eeb368fa74af999bd10318bd33063adcf6fbeb35205a",
+        "sha256_in_prefix": "0bef259bd4e78e412ec2eeb368fa74af999bd10318bd33063adcf6fbeb35205a",
+        "size_in_bytes": 8080
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/inception.py",
+        "path_type": "hardlink",
+        "sha256": "860f0ad50364ed3f90a37cce078edeba94b74e1bbf463548ea61b61f3004c7c3",
+        "sha256_in_prefix": "860f0ad50364ed3f90a37cce078edeba94b74e1bbf463548ea61b61f3004c7c3",
+        "size_in_bytes": 10815
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/mobilenet.py",
+        "path_type": "hardlink",
+        "sha256": "952455c70d932f72c507009a76fcaf1fa9f71b3a944e72b6fab857dcc3a04abb",
+        "sha256_in_prefix": "952455c70d932f72c507009a76fcaf1fa9f71b3a944e72b6fab857dcc3a04abb",
+        "size_in_bytes": 211
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/mobilenetv2.py",
+        "path_type": "hardlink",
+        "sha256": "820a4d2d4e3f264c8c9fc20f4e08f5a74c71fd6beca5c8a2d967772128f9b411",
+        "sha256_in_prefix": "820a4d2d4e3f264c8c9fc20f4e08f5a74c71fd6beca5c8a2d967772128f9b411",
+        "size_in_bytes": 5883
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/mobilenetv3.py",
+        "path_type": "hardlink",
+        "sha256": "3d55a648feb63e7f2142477af3697ab9814b429d67c5996d30e13e16184ef4e5",
+        "sha256_in_prefix": "3d55a648feb63e7f2142477af3697ab9814b429d67c5996d30e13e16184ef4e5",
+        "size_in_bytes": 9230
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/resnet.py",
+        "path_type": "hardlink",
+        "sha256": "f476fa2b23efdf7263d40e897225ef197d3aab4464c303f5d2ef06c457e6a2b3",
+        "sha256_in_prefix": "f476fa2b23efdf7263d40e897225ef197d3aab4464c303f5d2ef06c457e6a2b3",
+        "size_in_bytes": 17939
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/shufflenetv2.py",
+        "path_type": "hardlink",
+        "sha256": "792db2df86531b4ddd34982d549daa497416676d8f1c858161e0bc71bbc8d722",
+        "sha256_in_prefix": "792db2df86531b4ddd34982d549daa497416676d8f1c858161e0bc71bbc8d722",
+        "size_in_bytes": 16884
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/quantization/utils.py",
+        "path_type": "hardlink",
+        "sha256": "9fc996b0af7f124fccd80a8628f2e82e570a698187d8fac5da5e7f5bce2804c9",
+        "sha256_in_prefix": "9fc996b0af7f124fccd80a8628f2e82e570a698187d8fac5da5e7f5bce2804c9",
+        "size_in_bytes": 2058
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/regnet.py",
+        "path_type": "hardlink",
+        "sha256": "fbbb399f4ab35d93d1f478333a4f5a8f5b2ff5d599dc0c673fb0a66517547992",
+        "sha256_in_prefix": "fbbb399f4ab35d93d1f478333a4f5a8f5b2ff5d599dc0c673fb0a66517547992",
+        "size_in_bytes": 63553
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/resnet.py",
+        "path_type": "hardlink",
+        "sha256": "7499a5059ad7b1a1f8f7543c04b4a13795140fad837c38530b48ff5d9610bf6e",
+        "sha256_in_prefix": "7499a5059ad7b1a1f8f7543c04b4a13795140fad837c38530b48ff5d9610bf6e",
+        "size_in_bytes": 38932
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4c693a51d55700cb7006961a96bbdd5d99e64b0ab34c3393d6580aadfce11eb4",
+        "sha256_in_prefix": "4c693a51d55700cb7006961a96bbdd5d99e64b0ab34c3393d6580aadfce11eb4",
+        "size_in_bytes": 66
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d60191021e0a552a18f622372931b39c8d36699adb086d975da05365576f919b",
+        "sha256_in_prefix": "d60191021e0a552a18f622372931b39c8d36699adb086d975da05365576f919b",
+        "size_in_bytes": 480
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "21a19d95a4a6428c0dfc609fd8dc4a96dcd17896140aa80e3446090e45c3efd3",
+        "sha256_in_prefix": "21a19d95a4a6428c0dfc609fd8dc4a96dcd17896140aa80e3446090e45c3efd3",
+        "size_in_bytes": 1682
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/deeplabv3.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "468ac3b78a317f16a905007ce3260addb58c2424eebf35d3a7e5ebc8031053b9",
+        "sha256_in_prefix": "468ac3b78a317f16a905007ce3260addb58c2424eebf35d3a7e5ebc8031053b9",
+        "size_in_bytes": 12802
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/fcn.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5a89a90464740b6eed7c1bf8052572a940d9451eaa01b9016c5c7f23df875dc9",
+        "sha256_in_prefix": "5a89a90464740b6eed7c1bf8052572a940d9451eaa01b9016c5c7f23df875dc9",
+        "size_in_bytes": 8105
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/__pycache__/lraspp.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ea855029a98bda3fbfb0fc1503ffe032e9397fa7c91f0f3f61898061735776b",
+        "sha256_in_prefix": "0ea855029a98bda3fbfb0fc1503ffe032e9397fa7c91f0f3f61898061735776b",
+        "size_in_bytes": 7488
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "41fcaa0ad1ff3099c890a5b99bef7c1990f6323b4f60bb4f4c38bbf697081a1b",
+        "sha256_in_prefix": "41fcaa0ad1ff3099c890a5b99bef7c1990f6323b4f60bb4f4c38bbf697081a1b",
+        "size_in_bytes": 1197
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/deeplabv3.py",
+        "path_type": "hardlink",
+        "sha256": "c15817cf6d6cba049c93629b1bb583fb080cc02016d3077c8c11a182e7b7d34b",
+        "sha256_in_prefix": "c15817cf6d6cba049c93629b1bb583fb080cc02016d3077c8c11a182e7b7d34b",
+        "size_in_bytes": 15015
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/fcn.py",
+        "path_type": "hardlink",
+        "sha256": "23516a6996553dcdc56e0ffb1362f9aa9ba69eea7105873b298b16d37106fc2b",
+        "sha256_in_prefix": "23516a6996553dcdc56e0ffb1362f9aa9ba69eea7105873b298b16d37106fc2b",
+        "size_in_bytes": 8973
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/segmentation/lraspp.py",
+        "path_type": "hardlink",
+        "sha256": "76de4327fa9b0d9944334488b8df3b254e372477d595bf0e7a9a7be8a0efe6dc",
+        "sha256_in_prefix": "76de4327fa9b0d9944334488b8df3b254e372477d595bf0e7a9a7be8a0efe6dc",
+        "size_in_bytes": 7643
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/shufflenetv2.py",
+        "path_type": "hardlink",
+        "sha256": "f381623df9212694b0e90f4999aba0e4c5b9aa65823b756100f17ad4488c9fb4",
+        "sha256_in_prefix": "f381623df9212694b0e90f4999aba0e4c5b9aa65823b756100f17ad4488c9fb4",
+        "size_in_bytes": 15444
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/squeezenet.py",
+        "path_type": "hardlink",
+        "sha256": "6a98c53c42399ebff8f776c042c476e39128af368c6175504aa75cbdec807f2d",
+        "sha256_in_prefix": "6a98c53c42399ebff8f776c042c476e39128af368c6175504aa75cbdec807f2d",
+        "size_in_bytes": 8763
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/swin_transformer.py",
+        "path_type": "hardlink",
+        "sha256": "570be722659c8db95ab218f438e372703267224cfecd10e99b7eb9bff6b4fb3a",
+        "sha256_in_prefix": "570be722659c8db95ab218f438e372703267224cfecd10e99b7eb9bff6b4fb3a",
+        "size_in_bytes": 39337
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/vgg.py",
+        "path_type": "hardlink",
+        "sha256": "8d88c8a18da3b4a01cf9a511090b2f6e0071ba9d468787d5652b7637314b9596",
+        "sha256_in_prefix": "8d88c8a18da3b4a01cf9a511090b2f6e0071ba9d468787d5652b7637314b9596",
+        "size_in_bytes": 19225
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3b81c1f91697802b67be930302e30168878a22260490dc6b6bf7e60072d42093",
+        "sha256_in_prefix": "3b81c1f91697802b67be930302e30168878a22260490dc6b6bf7e60072d42093",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "58fd86314d806bd0a861fe736a226cb3e6a9f105ee46244dd9a02ea446d3231d",
+        "sha256_in_prefix": "58fd86314d806bd0a861fe736a226cb3e6a9f105ee46244dd9a02ea446d3231d",
+        "size_in_bytes": 496
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__pycache__/mvit.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "44e4396f811cf9ff2840466335c3a28cdae06d7306bd9b9ebd50f40cbd788568",
+        "sha256_in_prefix": "44e4396f811cf9ff2840466335c3a28cdae06d7306bd9b9ebd50f40cbd788568",
+        "size_in_bytes": 22348
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__pycache__/resnet.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "bf5561822920043539a6dcee4f38fd95f6cef239ac6951dbc5e155505a1a25a4",
+        "sha256_in_prefix": "bf5561822920043539a6dcee4f38fd95f6cef239ac6951dbc5e155505a1a25a4",
+        "size_in_bytes": 14739
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__pycache__/s3d.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "24634e452cc685eafd916b9d302c59534a6adacd00e5f3e2d9b714968c1d1236",
+        "sha256_in_prefix": "24634e452cc685eafd916b9d302c59534a6adacd00e5f3e2d9b714968c1d1236",
+        "size_in_bytes": 6839
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/__pycache__/swin_transformer.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fdf40e3eea07682020837b233d235cf0ddd5fb7c7bdb92b2076a7cb5ff0c0301",
+        "sha256_in_prefix": "fdf40e3eea07682020837b233d235cf0ddd5fb7c7bdb92b2076a7cb5ff0c0301",
+        "size_in_bytes": 20503
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/mvit.py",
+        "path_type": "hardlink",
+        "sha256": "d00677d4ae5071405665450f4c8d450823361666bde5b3ecd68f36cf3a70da2d",
+        "sha256_in_prefix": "d00677d4ae5071405665450f4c8d450823361666bde5b3ecd68f36cf3a70da2d",
+        "size_in_bytes": 32998
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/resnet.py",
+        "path_type": "hardlink",
+        "sha256": "4549db517166a16368fd76c428b99548cf0b503732bfa8c6649f061a9662ffa5",
+        "sha256_in_prefix": "4549db517166a16368fd76c428b99548cf0b503732bfa8c6649f061a9662ffa5",
+        "size_in_bytes": 16771
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/s3d.py",
+        "path_type": "hardlink",
+        "sha256": "8f1f6030fd7c0736fb50edef8de8d504796b0ab24f7561437d39fb5de53990c8",
+        "sha256_in_prefix": "8f1f6030fd7c0736fb50edef8de8d504796b0ab24f7561437d39fb5de53990c8",
+        "size_in_bytes": 7815
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/video/swin_transformer.py",
+        "path_type": "hardlink",
+        "sha256": "dc63323c63de31cc09d69f531a245ba4894ff86ed0bff8d635b666a88c0c3720",
+        "sha256_in_prefix": "dc63323c63de31cc09d69f531a245ba4894ff86ed0bff8d635b666a88c0c3720",
+        "size_in_bytes": 27688
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/models/vision_transformer.py",
+        "path_type": "hardlink",
+        "sha256": "3b899d063605b29f874d903d6d77eec7fc09cc83d1bf5b92e373e3b8d879db37",
+        "sha256_in_prefix": "3b899d063605b29f874d903d6d77eec7fc09cc83d1bf5b92e373e3b8d879db37",
+        "size_in_bytes": 32136
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "795bf5e90481c2029aa233941cc3c2cb8a2ef5978587e1e8095e03a6aad91b85",
+        "sha256_in_prefix": "795bf5e90481c2029aa233941cc3c2cb8a2ef5978587e1e8095e03a6aad91b85",
+        "size_in_bytes": 1928
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f3884158fa82bd2ad0696fb224f5f2ff4eea5ec070aef0375263be7b272d19c1",
+        "sha256_in_prefix": "f3884158fa82bd2ad0696fb224f5f2ff4eea5ec070aef0375263be7b272d19c1",
+        "size_in_bytes": 1942
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/_box_convert.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "262af623337846fba2ba018b10f2508e151970d6f3977a4853ce94b8bc4ce313",
+        "sha256_in_prefix": "262af623337846fba2ba018b10f2508e151970d6f3977a4853ce94b8bc4ce313",
+        "size_in_bytes": 2886
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/_register_onnx_ops.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8cf416d6bd3d412dc48d3649903e836bc6b4ae6a5371557922e049b449d0682c",
+        "sha256_in_prefix": "8cf416d6bd3d412dc48d3649903e836bc6b4ae6a5371557922e049b449d0682c",
+        "size_in_bytes": 3684
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "c5237215f3edfa6cd88edfbab7c55d1f892c38b5fe4945efd2761e8a22d4c886",
+        "sha256_in_prefix": "c5237215f3edfa6cd88edfbab7c55d1f892c38b5fe4945efd2761e8a22d4c886",
+        "size_in_bytes": 3976
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/boxes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7be28bbe4728de0fafbc3989e96bbb80f5d17cd373d2cf7e7bae63c8dac86bed",
+        "sha256_in_prefix": "7be28bbe4728de0fafbc3989e96bbb80f5d17cd373d2cf7e7bae63c8dac86bed",
+        "size_in_bytes": 14554
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/ciou_loss.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "cc76882d272a1f7b9f1a9fdc209e797d46093f10f472c4fdeca3c23815278cfc",
+        "sha256_in_prefix": "cc76882d272a1f7b9f1a9fdc209e797d46093f10f472c4fdeca3c23815278cfc",
+        "size_in_bytes": 2840
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/deform_conv.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "267f352d2147e8e874e5c976f2d4a968a5e84db8ef3b671dfe2166e27eb5a287",
+        "sha256_in_prefix": "267f352d2147e8e874e5c976f2d4a968a5e84db8ef3b671dfe2166e27eb5a287",
+        "size_in_bytes": 6769
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/diou_loss.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "60c2c2ad911ad3611d66b37b9277dfdbbe67148cffe09d8ad7a5aba5201f7bec",
+        "sha256_in_prefix": "60c2c2ad911ad3611d66b37b9277dfdbbe67148cffe09d8ad7a5aba5201f7bec",
+        "size_in_bytes": 3108
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/drop_block.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "6954a57f9c2433665decf7f9773a87c105fc24005acf94d4bd42c6c28340f953",
+        "sha256_in_prefix": "6954a57f9c2433665decf7f9773a87c105fc24005acf94d4bd42c6c28340f953",
+        "size_in_bytes": 5857
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/feature_pyramid_network.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9fd13ec35463367358984910e56ecb0483bd2c84386d6962da52aea46c1c39ff",
+        "sha256_in_prefix": "9fd13ec35463367358984910e56ecb0483bd2c84386d6962da52aea46c1c39ff",
+        "size_in_bytes": 8582
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/focal_loss.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "584370d01de187be94cd76865ac9f4effe9479dfd80393a4faaf936b9e4adb10",
+        "sha256_in_prefix": "584370d01de187be94cd76865ac9f4effe9479dfd80393a4faaf936b9e4adb10",
+        "size_in_bytes": 2379
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/giou_loss.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "577e9ae3409b6ec15edeace1db478642fbafeff5f0f3e31be8c059076200368d",
+        "sha256_in_prefix": "577e9ae3409b6ec15edeace1db478642fbafeff5f0f3e31be8c059076200368d",
+        "size_in_bytes": 2725
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/misc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "18f68ae94d5449932b05c1703abcd46dcf8f91032345b975f8fbce08a52e94ca",
+        "sha256_in_prefix": "18f68ae94d5449932b05c1703abcd46dcf8f91032345b975f8fbce08a52e94ca",
+        "size_in_bytes": 12970
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/poolers.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0664c07b7befa57420cc712846aace08c35f060baf9edb8bd0ceb11bb119fd7e",
+        "sha256_in_prefix": "0664c07b7befa57420cc712846aace08c35f060baf9edb8bd0ceb11bb119fd7e",
+        "size_in_bytes": 10366
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/ps_roi_align.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fb7ffe77fced5594a20bb5d068f3fadfd8740ffd952026a40808b12bc796f99c",
+        "sha256_in_prefix": "fb7ffe77fced5594a20bb5d068f3fadfd8740ffd952026a40808b12bc796f99c",
+        "size_in_bytes": 4151
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/ps_roi_pool.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f7c11fcfd8427e606ba41d090e0a86d52c7277e9e24aa55cc0e3928d3ec0c926",
+        "sha256_in_prefix": "f7c11fcfd8427e606ba41d090e0a86d52c7277e9e24aa55cc0e3928d3ec0c926",
+        "size_in_bytes": 3578
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/roi_align.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fc6f67d45ee64178640e5881c4d44adbeea48b30a194b2846ba0a69e5b3ce414",
+        "sha256_in_prefix": "fc6f67d45ee64178640e5881c4d44adbeea48b30a194b2846ba0a69e5b3ce414",
+        "size_in_bytes": 8848
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/roi_pool.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "be6670526a1895132d220b9824a70dd5258fbf30242dd9214bde5ebcf0fe3121",
+        "sha256_in_prefix": "be6670526a1895132d220b9824a70dd5258fbf30242dd9214bde5ebcf0fe3121",
+        "size_in_bytes": 3648
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/__pycache__/stochastic_depth.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4cef296a3564988303a4e650f0f4ea0e58f39ffe3f0dec099077c26100f86cd4",
+        "sha256_in_prefix": "4cef296a3564988303a4e650f0f4ea0e58f39ffe3f0dec099077c26100f86cd4",
+        "size_in_bytes": 2961
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/_box_convert.py",
+        "path_type": "hardlink",
+        "sha256": "fdb451a44af0934deb70fbac70ed6d088f6fde5f3ca0d9430439768f33e56caa",
+        "sha256_in_prefix": "fdb451a44af0934deb70fbac70ed6d088f6fde5f3ca0d9430439768f33e56caa",
+        "size_in_bytes": 2409
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/_register_onnx_ops.py",
+        "path_type": "hardlink",
+        "sha256": "1726f5902da6d8ea9975f5bf33cea9b7df92eba7b5a8d5215cdbb511045ad37e",
+        "sha256_in_prefix": "1726f5902da6d8ea9975f5bf33cea9b7df92eba7b5a8d5215cdbb511045ad37e",
+        "size_in_bytes": 4181
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "a551cfa6c9b1e9771f1a351593e5c012777c409064af0fdc4fa7cefc8c08084e",
+        "sha256_in_prefix": "a551cfa6c9b1e9771f1a351593e5c012777c409064af0fdc4fa7cefc8c08084e",
+        "size_in_bytes": 3630
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/boxes.py",
+        "path_type": "hardlink",
+        "sha256": "9f568192191060ec1876391032fe52f7f1b5361a5a0619b1de2c2e240ab79c2f",
+        "sha256_in_prefix": "9f568192191060ec1876391032fe52f7f1b5361a5a0619b1de2c2e240ab79c2f",
+        "size_in_bytes": 16363
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/ciou_loss.py",
+        "path_type": "hardlink",
+        "sha256": "dc70a5acc30a389ddb9dd2148a7369ddca7a0a29b8f999a67ee2e7d7e34f0d4a",
+        "sha256_in_prefix": "dc70a5acc30a389ddb9dd2148a7369ddca7a0a29b8f999a67ee2e7d7e34f0d4a",
+        "size_in_bytes": 2756
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/deform_conv.py",
+        "path_type": "hardlink",
+        "sha256": "7c9c64551fe9fce40cccc8dae1f96f99382a0cfbeb38e730cc31bc6d5ed0ee91",
+        "sha256_in_prefix": "7c9c64551fe9fce40cccc8dae1f96f99382a0cfbeb38e730cc31bc6d5ed0ee91",
+        "size_in_bytes": 6990
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/diou_loss.py",
+        "path_type": "hardlink",
+        "sha256": "b6cb0d261208e164fec2689d152f2014db5e408009cfe35dd50ed3af3d418c86",
+        "sha256_in_prefix": "b6cb0d261208e164fec2689d152f2014db5e408009cfe35dd50ed3af3d418c86",
+        "size_in_bytes": 3362
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/drop_block.py",
+        "path_type": "hardlink",
+        "sha256": "038106225eedc6b53f426908d4dd16f617ddf2dabccb1eb3ab7da861769d74b4",
+        "sha256_in_prefix": "038106225eedc6b53f426908d4dd16f617ddf2dabccb1eb3ab7da861769d74b4",
+        "size_in_bytes": 5855
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/feature_pyramid_network.py",
+        "path_type": "hardlink",
+        "sha256": "99f91aca0c51cfed1301d4ccab67c200bf84d16c654674df75bfacfc9e6a3c4e",
+        "sha256_in_prefix": "99f91aca0c51cfed1301d4ccab67c200bf84d16c654674df75bfacfc9e6a3c4e",
+        "size_in_bytes": 8702
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/focal_loss.py",
+        "path_type": "hardlink",
+        "sha256": "f6416a1b2034fa1a1d470f40bbbe24f85b92d783a1b00bdb1710c6be9c74f128",
+        "sha256_in_prefix": "f6416a1b2034fa1a1d470f40bbbe24f85b92d783a1b00bdb1710c6be9c74f128",
+        "size_in_bytes": 2261
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/giou_loss.py",
+        "path_type": "hardlink",
+        "sha256": "39749a3190d9d2acbb8e0690f5ec41fc33105f37004c10058888f34a5395f9b4",
+        "sha256_in_prefix": "39749a3190d9d2acbb8e0690f5ec41fc33105f37004c10058888f34a5395f9b4",
+        "size_in_bytes": 2696
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/misc.py",
+        "path_type": "hardlink",
+        "sha256": "c859caec64fd38231f0eb9f836d41729d8796eba22d71a1c2fde12a32aa15aec",
+        "sha256_in_prefix": "c859caec64fd38231f0eb9f836d41729d8796eba22d71a1c2fde12a32aa15aec",
+        "size_in_bytes": 13572
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/poolers.py",
+        "path_type": "hardlink",
+        "sha256": "cf36211fba683301a56310ef02f09a2fd7a683d5fbb0ce316452c4cb4cefbf9b",
+        "sha256_in_prefix": "cf36211fba683301a56310ef02f09a2fd7a683d5fbb0ce316452c4cb4cefbf9b",
+        "size_in_bytes": 11920
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/ps_roi_align.py",
+        "path_type": "hardlink",
+        "sha256": "e2201b7945537acb00731bc986e01137f6851944d90bd4782ab282fe6047dcc4",
+        "sha256_in_prefix": "e2201b7945537acb00731bc986e01137f6851944d90bd4782ab282fe6047dcc4",
+        "size_in_bytes": 3625
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/ps_roi_pool.py",
+        "path_type": "hardlink",
+        "sha256": "8cebfeda901974b16fbede2be0dc2245fc54e5600ecbfbe2ea0c598ccbe5bacc",
+        "sha256_in_prefix": "8cebfeda901974b16fbede2be0dc2245fc54e5600ecbfbe2ea0c598ccbe5bacc",
+        "size_in_bytes": 2870
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/roi_align.py",
+        "path_type": "hardlink",
+        "sha256": "220f632ee97dd3004cde4699b9812eb6c2445df682a370f4b3f3f160cafd8d07",
+        "sha256_in_prefix": "220f632ee97dd3004cde4699b9812eb6c2445df682a370f4b3f3f160cafd8d07",
+        "size_in_bytes": 11292
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/roi_pool.py",
+        "path_type": "hardlink",
+        "sha256": "ef4a2ee9773ba89c4a7b7482e784085b72fdf4fa12d202e5c06a1c6980db0f6c",
+        "sha256_in_prefix": "ef4a2ee9773ba89c4a7b7482e784085b72fdf4fa12d202e5c06a1c6980db0f6c",
+        "size_in_bytes": 2943
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/ops/stochastic_depth.py",
+        "path_type": "hardlink",
+        "sha256": "21267d9e827264bc694c6fb06b65663ecebaaa3855b0fed9c561efba65923f75",
+        "sha256_in_prefix": "21267d9e827264bc694c6fb06b65663ecebaaa3855b0fed9c561efba65923f75",
+        "size_in_bytes": 2236
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "10c7ede36075240894d75275af120de199e2b3a1093dba7e6ec1a30331fedb83",
+        "sha256_in_prefix": "10c7ede36075240894d75275af120de199e2b3a1093dba7e6ec1a30331fedb83",
+        "size_in_bytes": 53
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "fd0913643b896780956be5eb933cb5a01b89aff9e7c424c99071fba68efa59e7",
+        "sha256_in_prefix": "fd0913643b896780956be5eb933cb5a01b89aff9e7c424c99071fba68efa59e7",
+        "size_in_bytes": 462
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_pil.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "04e0a9bea8dd3e32982989e1a75dec3e421a60cc3b96f4d4779ca97940080263",
+        "sha256_in_prefix": "04e0a9bea8dd3e32982989e1a75dec3e421a60cc3b96f4d4779ca97940080263",
+        "size_in_bytes": 10299
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_tensor.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "990a00de7c762374b89a83ef944a6ab4d0767441fd450215c7febbcdbf98a4d7",
+        "sha256_in_prefix": "990a00de7c762374b89a83ef944a6ab4d0767441fd450215c7febbcdbf98a4d7",
+        "size_in_bytes": 25319
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_functional_video.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee9574d7d52f794946d47e6869655a160969f43749e26b39ca5552556fed1a67",
+        "sha256_in_prefix": "ee9574d7d52f794946d47e6869655a160969f43749e26b39ca5552556fed1a67",
+        "size_in_bytes": 4290
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_presets.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "83dd7b837a2c3e150cc385011f9b24c424b1717b356aa627a1007f92f4ed137f",
+        "sha256_in_prefix": "83dd7b837a2c3e150cc385011f9b24c424b1717b356aa627a1007f92f4ed137f",
+        "size_in_bytes": 8103
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/_transforms_video.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5ed273d3e1502d3dd1401fad6245c1e8380625c87d298b4de609230d82a2efab",
+        "sha256_in_prefix": "5ed273d3e1502d3dd1401fad6245c1e8380625c87d298b4de609230d82a2efab",
+        "size_in_bytes": 6846
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/autoaugment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a3f1343455b5657f84ea708bd424df519a457121e2219b1f0477c3129a2f652",
+        "sha256_in_prefix": "9a3f1343455b5657f84ea708bd424df519a457121e2219b1f0477c3129a2f652",
+        "size_in_bytes": 20333
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/functional.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "813b420d36b707f111e4cb78e962c5a36f14c0487ff07fdb577cf4041a8416cf",
+        "sha256_in_prefix": "813b420d36b707f111e4cb78e962c5a36f14c0487ff07fdb577cf4041a8416cf",
+        "size_in_bytes": 57023
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/__pycache__/transforms.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b98f92a9308190f1174ac9b5fc5c2331c4fd1707ab22db29987b9fed24aa316a",
+        "sha256_in_prefix": "b98f92a9308190f1174ac9b5fc5c2331c4fd1707ab22db29987b9fed24aa316a",
+        "size_in_bytes": 85191
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/_functional_pil.py",
+        "path_type": "hardlink",
+        "sha256": "4d764add8d21b851e15d418f8a7e844f94e836809b81d346cbae5ff0c3d2a4cd",
+        "sha256_in_prefix": "4d764add8d21b851e15d418f8a7e844f94e836809b81d346cbae5ff0c3d2a4cd",
+        "size_in_bytes": 12070
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/_functional_tensor.py",
+        "path_type": "hardlink",
+        "sha256": "ddc12cf0861f44d4327dfe48ae2bfef9c65358e21fbf0d9e696887535fbde001",
+        "sha256_in_prefix": "ddc12cf0861f44d4327dfe48ae2bfef9c65358e21fbf0d9e696887535fbde001",
+        "size_in_bytes": 33939
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/_functional_video.py",
+        "path_type": "hardlink",
+        "sha256": "61c579e7b62095b26cabd4911891c5a116edc5ac222d2275a0ce6b57be4ecaa4",
+        "sha256_in_prefix": "61c579e7b62095b26cabd4911891c5a116edc5ac222d2275a0ce6b57be4ecaa4",
+        "size_in_bytes": 3857
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/_presets.py",
+        "path_type": "hardlink",
+        "sha256": "4408c3e8382953842737157431f677b87833b8045ff9c7710f7568fca28861e6",
+        "sha256_in_prefix": "4408c3e8382953842737157431f677b87833b8045ff9c7710f7568fca28861e6",
+        "size_in_bytes": 8510
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/_transforms_video.py",
+        "path_type": "hardlink",
+        "sha256": "06ecf92c25953c6884a271c4f9c5c85df6e406135cd2ac55adac6435dc4aa7ca",
+        "sha256_in_prefix": "06ecf92c25953c6884a271c4f9c5c85df6e406135cd2ac55adac6435dc4aa7ca",
+        "size_in_bytes": 4950
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/autoaugment.py",
+        "path_type": "hardlink",
+        "sha256": "25c6dd1036d1d3e3aa4c4e1cc24855481e39c2815943f16ae719a316eff76e38",
+        "sha256_in_prefix": "25c6dd1036d1d3e3aa4c4e1cc24855481e39c2815943f16ae719a316eff76e38",
+        "size_in_bytes": 28243
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/functional.py",
+        "path_type": "hardlink",
+        "sha256": "afd0e88c4afed28a8238bb92307d01e245ad2375046d8ff88d2ed10560d92aa3",
+        "sha256_in_prefix": "afd0e88c4afed28a8238bb92307d01e245ad2375046d8ff88d2ed10560d92aa3",
+        "size_in_bytes": 67855
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/transforms.py",
+        "path_type": "hardlink",
+        "sha256": "791214af42358bb04caab5e6e31b012506181a9bc8903aff54cb1cb50388d0ce",
+        "sha256_in_prefix": "791214af42358bb04caab5e6e31b012506181a9bc8903aff54cb1cb50388d0ce",
+        "size_in_bytes": 85547
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "514260cd982e34f97b077dd9b7781ec4eee0480a52b961d3a7313b7cd5d0a40d",
+        "sha256_in_prefix": "514260cd982e34f97b077dd9b7781ec4eee0480a52b961d3a7313b7cd5d0a40d",
+        "size_in_bytes": 1545
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ae6258d70fb765d2a52950f20a803b3786227811f7c62d3a70ee30d1162fc80",
+        "sha256_in_prefix": "0ae6258d70fb765d2a52950f20a803b3786227811f7c62d3a70ee30d1162fc80",
+        "size_in_bytes": 2366
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_augment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "18d9799f0873e604bc8f967b9fdb39a9bd9f7e66ea128019079e0c626ddb4a7c",
+        "sha256_in_prefix": "18d9799f0873e604bc8f967b9fdb39a9bd9f7e66ea128019079e0c626ddb4a7c",
+        "size_in_bytes": 15764
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_auto_augment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5339dba9c2a3d80052fd14046de8a99e1b358ff65c31fa866c7c4d9b7cf8a9f4",
+        "sha256_in_prefix": "5339dba9c2a3d80052fd14046de8a99e1b358ff65c31fa866c7c4d9b7cf8a9f4",
+        "size_in_bytes": 24917
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_color.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "88550e8cbfb5f4e2a8e44fd799511253133a31a03d935773dcf93f5cf134b205",
+        "sha256_in_prefix": "88550e8cbfb5f4e2a8e44fd799511253133a31a03d935773dcf93f5cf134b205",
+        "size_in_bytes": 18808
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_container.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d917a87304ae3845f8dd6f505099d8ac0816940d1c99bb7e355151bda497a638",
+        "sha256_in_prefix": "d917a87304ae3845f8dd6f505099d8ac0816940d1c99bb7e355151bda497a638",
+        "size_in_bytes": 7072
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_deprecated.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "34c9496f28278d6873c42124334203e0a0052be0d06ed2438782e48ebe4490bd",
+        "sha256_in_prefix": "34c9496f28278d6873c42124334203e0a0052be0d06ed2438782e48ebe4490bd",
+        "size_in_bytes": 2746
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_geometry.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4c006e41b6631d7b49a90af7e0aef7f26072ae06102f56e22501798654e49d85",
+        "sha256_in_prefix": "4c006e41b6631d7b49a90af7e0aef7f26072ae06102f56e22501798654e49d85",
+        "size_in_bytes": 62631
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_meta.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "2f40cf66e5118f6375283c79f6ecc7e410f5a26848567ab23c1538c5e6858825",
+        "sha256_in_prefix": "2f40cf66e5118f6375283c79f6ecc7e410f5a26848567ab23c1538c5e6858825",
+        "size_in_bytes": 2264
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_misc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "74e85993b1315af76003a8e7c1e3f55f301868b27994284a0d9e71d6fef846a7",
+        "sha256_in_prefix": "74e85993b1315af76003a8e7c1e3f55f301868b27994284a0d9e71d6fef846a7",
+        "size_in_bytes": 19577
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_temporal.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "578525c86592dea6c0ab7516e5d6deb2991e41b326b5bdf142afa40682fdaa8b",
+        "sha256_in_prefix": "578525c86592dea6c0ab7516e5d6deb2991e41b326b5bdf142afa40682fdaa8b",
+        "size_in_bytes": 1734
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_transform.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4dede2dc7fe376b96085c8b061177b88f8bae899293bc6f672d6f29671ba716e",
+        "sha256_in_prefix": "4dede2dc7fe376b96085c8b061177b88f8bae899293bc6f672d6f29671ba716e",
+        "size_in_bytes": 6133
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_type_conversion.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "3f14c60626cba0c8c2febda1554158d7155dcfa4db5be2e8a5fc17a1c59020cc",
+        "sha256_in_prefix": "3f14c60626cba0c8c2febda1554158d7155dcfa4db5be2e8a5fc17a1c59020cc",
+        "size_in_bytes": 4148
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "f2a34071853c23c0b39bc5fc7d82216160aa568ec6feb2f9afb655e5903338a9",
+        "sha256_in_prefix": "f2a34071853c23c0b39bc5fc7d82216160aa568ec6feb2f9afb655e5903338a9",
+        "size_in_bytes": 8866
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_augment.py",
+        "path_type": "hardlink",
+        "sha256": "36d6f1587ac3d6d6c127d2d519c62c12fd6d947aa943260d136dda1f4359f3af",
+        "sha256_in_prefix": "36d6f1587ac3d6d6c127d2d519c62c12fd6d947aa943260d136dda1f4359f3af",
+        "size_in_bytes": 16159
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_auto_augment.py",
+        "path_type": "hardlink",
+        "sha256": "b105a4105d4dd7b5d4e05ea7046bdaee452e8ae18d10e0801876069fca1ad00f",
+        "sha256_in_prefix": "b105a4105d4dd7b5d4e05ea7046bdaee452e8ae18d10e0801876069fca1ad00f",
+        "size_in_bytes": 32025
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_color.py",
+        "path_type": "hardlink",
+        "sha256": "60773bbe1bf85d1d027d29845281900dec5b10d8d5ff08481e2f5cf8980fae9a",
+        "sha256_in_prefix": "60773bbe1bf85d1d027d29845281900dec5b10d8d5ff08481e2f5cf8980fae9a",
+        "size_in_bytes": 16990
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_container.py",
+        "path_type": "hardlink",
+        "sha256": "48587e154f1c7a2afddf88714bf5646d542ad12c7319250b3da629a2e24984fb",
+        "sha256_in_prefix": "48587e154f1c7a2afddf88714bf5646d542ad12c7319250b3da629a2e24984fb",
+        "size_in_bytes": 6055
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_deprecated.py",
+        "path_type": "hardlink",
+        "sha256": "d245d05a8eb1d43d8683df29274c1a8620c7b8904636fb1a759c1d16d38ce581",
+        "sha256_in_prefix": "d245d05a8eb1d43d8683df29274c1a8620c7b8904636fb1a759c1d16d38ce581",
+        "size_in_bytes": 1947
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "531e6084c084570a5860a078b016a625421f45bcfc12eb637c8fdcb246cd9e19",
+        "sha256_in_prefix": "531e6084c084570a5860a078b016a625421f45bcfc12eb637c8fdcb246cd9e19",
+        "size_in_bytes": 67606
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_meta.py",
+        "path_type": "hardlink",
+        "sha256": "3dcae1d1d28c8307e91d3761a3cb9771861f2ad6c7cb7e95572cf8a36ba695dd",
+        "sha256_in_prefix": "3dcae1d1d28c8307e91d3761a3cb9771861f2ad6c7cb7e95572cf8a36ba695dd",
+        "size_in_bytes": 1405
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_misc.py",
+        "path_type": "hardlink",
+        "sha256": "63e42392329818c25842f44fd5e941ff9812c2cbc947e236bc21217812c2c2ea",
+        "sha256_in_prefix": "63e42392329818c25842f44fd5e941ff9812c2cbc947e236bc21217812c2c2ea",
+        "size_in_bytes": 19114
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_temporal.py",
+        "path_type": "hardlink",
+        "sha256": "0721ea62acb528ed5177e0a0f9eca71d0127178cbb39a30621e3b8e2497c409c",
+        "sha256_in_prefix": "0721ea62acb528ed5177e0a0f9eca71d0127178cbb39a30621e3b8e2497c409c",
+        "size_in_bytes": 906
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_transform.py",
+        "path_type": "hardlink",
+        "sha256": "d34f0f04cb3041621cedd126856aa6efbdbf3b87220d8debc9c1aed3c9e170c1",
+        "sha256_in_prefix": "d34f0f04cb3041621cedd126856aa6efbdbf3b87220d8debc9c1aed3c9e170c1",
+        "size_in_bytes": 8476
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_type_conversion.py",
+        "path_type": "hardlink",
+        "sha256": "7f7275c18781ff34da17c9b1223a2e7432828a58e65aa2c6b33492f4337912c4",
+        "sha256_in_prefix": "7f7275c18781ff34da17c9b1223a2e7432828a58e65aa2c6b33492f4337912c4",
+        "size_in_bytes": 2860
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "02318a5a89979435f62358c277844e909afc9d1b6bde87e6dcc757447dd84d3a",
+        "sha256_in_prefix": "02318a5a89979435f62358c277844e909afc9d1b6bde87e6dcc757447dd84d3a",
+        "size_in_bytes": 8652
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e120e3ce08fd7b8a0ce0850acbd6090305c59c1a0ba7281df2c48cffbb0cbcad",
+        "sha256_in_prefix": "e120e3ce08fd7b8a0ce0850acbd6090305c59c1a0ba7281df2c48cffbb0cbcad",
+        "size_in_bytes": 3546
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b0f5ec384996031197279430263061cb1690e8f789b4dbd146eb6e6854442d2b",
+        "sha256_in_prefix": "b0f5ec384996031197279430263061cb1690e8f789b4dbd146eb6e6854442d2b",
+        "size_in_bytes": 4647
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_augment.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1671e22600a33bfdd68435116e9521388d012ce7ebbf7318118eb8a850b95489",
+        "sha256_in_prefix": "1671e22600a33bfdd68435116e9521388d012ce7ebbf7318118eb8a850b95489",
+        "size_in_bytes": 3434
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_color.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2b802e3ef77e4b9c6550b0e3a5ea779fc3c1e687f059f8460de1cc3aed32c0f",
+        "sha256_in_prefix": "e2b802e3ef77e4b9c6550b0e3a5ea779fc3c1e687f059f8460de1cc3aed32c0f",
+        "size_in_bytes": 19164
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_deprecated.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "d62847ff32fe5f66847a0ae246b1383fd73ddd1ce7e73cb695a6c11ac57657bd",
+        "sha256_in_prefix": "d62847ff32fe5f66847a0ae246b1383fd73ddd1ce7e73cb695a6c11ac57657bd",
+        "size_in_bytes": 1353
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_geometry.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "ee8a2df3be99231f5d6ba9a650a960b2f78b551293fbadf0b752e3101177b541",
+        "sha256_in_prefix": "ee8a2df3be99231f5d6ba9a650a960b2f78b551293fbadf0b752e3101177b541",
+        "size_in_bytes": 51963
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_meta.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "43aef66c5b77a9164227dc8320a2c45cd165adf166e6fdceedb1af211d190e05",
+        "sha256_in_prefix": "43aef66c5b77a9164227dc8320a2c45cd165adf166e6fdceedb1af211d190e05",
+        "size_in_bytes": 7764
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_misc.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "4727ac7df8c9cfe4d501f4a2bb2dc34696e83364bd78c7db9a96b246b9de5810",
+        "sha256_in_prefix": "4727ac7df8c9cfe4d501f4a2bb2dc34696e83364bd78c7db9a96b246b9de5810",
+        "size_in_bytes": 13089
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_temporal.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1e11a08c77aff2d79122c46e5574ffc3b6215dd98859e78a6c59a9a27f9005a4",
+        "sha256_in_prefix": "1e11a08c77aff2d79122c46e5574ffc3b6215dd98859e78a6c59a9a27f9005a4",
+        "size_in_bytes": 1357
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_type_conversion.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "5a9958d65aabf38dc5c38c6fc0b048e58bf670581f6c257fadfeeeafd02d8749",
+        "sha256_in_prefix": "5a9958d65aabf38dc5c38c6fc0b048e58bf670581f6c257fadfeeeafd02d8749",
+        "size_in_bytes": 1292
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/__pycache__/_utils.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "56b469f165d1e75338470e8906b703b4e203d4384f821a0e92b4627b380effc5",
+        "sha256_in_prefix": "56b469f165d1e75338470e8906b703b4e203d4384f821a0e92b4627b380effc5",
+        "size_in_bytes": 5166
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_augment.py",
+        "path_type": "hardlink",
+        "sha256": "31133c137fe029f4d30b4a85b7770a2385314f142db8623d31e636981b2b8f4e",
+        "sha256_in_prefix": "31133c137fe029f4d30b4a85b7770a2385314f142db8623d31e636981b2b8f4e",
+        "size_in_bytes": 3473
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_color.py",
+        "path_type": "hardlink",
+        "sha256": "9d40128356d31e6b1fd804ffd50ec22cd5e139bad13db075c367c3bb3f64e5ef",
+        "sha256_in_prefix": "9d40128356d31e6b1fd804ffd50ec22cd5e139bad13db075c367c3bb3f64e5ef",
+        "size_in_bytes": 30244
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_deprecated.py",
+        "path_type": "hardlink",
+        "sha256": "c9c6192c3c03c9deb5d9a3db4ca215de0aa10912cc745d3731010b72de0b786b",
+        "sha256_in_prefix": "c9c6192c3c03c9deb5d9a3db4ca215de0aa10912cc745d3731010b72de0b786b",
+        "size_in_bytes": 801
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_geometry.py",
+        "path_type": "hardlink",
+        "sha256": "e502f821d415ef63e4257eb573803933858babad22853401ea0d4f13db4caa63",
+        "sha256_in_prefix": "e502f821d415ef63e4257eb573803933858babad22853401ea0d4f13db4caa63",
+        "size_in_bytes": 87520
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_meta.py",
+        "path_type": "hardlink",
+        "sha256": "0314c417a99dc9b016d650bf0dc8df2a5c6f4ae895ba99ea6c926ba92e71e257",
+        "sha256_in_prefix": "0314c417a99dc9b016d650bf0dc8df2a5c6f4ae895ba99ea6c926ba92e71e257",
+        "size_in_bytes": 10547
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_misc.py",
+        "path_type": "hardlink",
+        "sha256": "397bb8193085f62ff5973ed3eb680a704b3de1f6813bbc32626a543829e45046",
+        "sha256_in_prefix": "397bb8193085f62ff5973ed3eb680a704b3de1f6813bbc32626a543829e45046",
+        "size_in_bytes": 17517
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_temporal.py",
+        "path_type": "hardlink",
+        "sha256": "db80900975ced764e75bb69489441dae4e43452a533ce3638c2e23686877947e",
+        "sha256_in_prefix": "db80900975ced764e75bb69489441dae4e43452a533ce3638c2e23686877947e",
+        "size_in_bytes": 1136
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_type_conversion.py",
+        "path_type": "hardlink",
+        "sha256": "efcc25d1d34fc17d3c8ce096e8a719486cbc44042acb132d76b4d44154255133",
+        "sha256_in_prefix": "efcc25d1d34fc17d3c8ce096e8a719486cbc44042acb132d76b4d44154255133",
+        "size_in_bytes": 869
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/transforms/v2/functional/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "b6c9b0205dfb67d4273fdc77c78840b3584badcbcbefc18b92e3ba46ad445139",
+        "sha256_in_prefix": "b6c9b0205dfb67d4273fdc77c78840b3584badcbcbefc18b92e3ba46ad445139",
+        "size_in_bytes": 5479
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0ba37ca796ae9697a1b0e041987d5c3c8635c6239201265505f9e55e01af47fb",
+        "sha256_in_prefix": "0ba37ca796ae9697a1b0e041987d5c3c8635c6239201265505f9e55e01af47fb",
+        "size_in_bytes": 1509
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/__init__.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9e287902b02143b40698b7e698ad59b72dcde4c3c82b9a809e1fed281f4ed30b",
+        "sha256_in_prefix": "9e287902b02143b40698b7e698ad59b72dcde4c3c82b9a809e1fed281f4ed30b",
+        "size_in_bytes": 1717
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_bounding_boxes.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "8d2b0a5ab55d21638da68562b7035840853868c38f597c20351964ef13642399",
+        "sha256_in_prefix": "8d2b0a5ab55d21638da68562b7035840853868c38f597c20351964ef13642399",
+        "size_in_bytes": 4570
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_dataset_wrapper.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "b87a466e01bc585a46e4ba2fa1d3c36621d7d516053a9e7e38faa923775a6532",
+        "sha256_in_prefix": "b87a466e01bc585a46e4ba2fa1d3c36621d7d516053a9e7e38faa923775a6532",
+        "size_in_bytes": 19739
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_image.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "907136ca7e04490f13f97083e9429d03a2f5d1c6fbf324e69bcfefde74aed6d4",
+        "sha256_in_prefix": "907136ca7e04490f13f97083e9429d03a2f5d1c6fbf324e69bcfefde74aed6d4",
+        "size_in_bytes": 2540
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_mask.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "9ec3e8bfa47f42dd84d65454f94f53fab0a1b5c7940120a93cd945c8bc8d136e",
+        "sha256_in_prefix": "9ec3e8bfa47f42dd84d65454f94f53fab0a1b5c7940120a93cd945c8bc8d136e",
+        "size_in_bytes": 2075
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_torch_function_helpers.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "71ab3d84e92a1942fbc9550a9f3409eba22a787f18ea9e675649aad13791ae34",
+        "sha256_in_prefix": "71ab3d84e92a1942fbc9550a9f3409eba22a787f18ea9e675649aad13791ae34",
+        "size_in_bytes": 2898
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_tv_tensor.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "1664b41dc517438845a0ea6c7e833a10f4a8947cbf276436d27d10aebc1722de",
+        "sha256_in_prefix": "1664b41dc517438845a0ea6c7e833a10f4a8947cbf276436d27d10aebc1722de",
+        "size_in_bytes": 5478
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/__pycache__/_video.cpython-39.pyc",
+        "path_type": "hardlink",
+        "sha256": "7fee1de7dd8be34aa8b22661252913b928b1e3350a220a0a45ca830ab2962964",
+        "sha256_in_prefix": "7fee1de7dd8be34aa8b22661252913b928b1e3350a220a0a45ca830ab2962964",
+        "size_in_bytes": 2073
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_bounding_boxes.py",
+        "path_type": "hardlink",
+        "sha256": "ffe6c3c0dd609c7a5f9c75c42b43ba6d0adc10ebfae7a54e9621ce82836cb69c",
+        "sha256_in_prefix": "ffe6c3c0dd609c7a5f9c75c42b43ba6d0adc10ebfae7a54e9621ce82836cb69c",
+        "size_in_bytes": 4493
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_dataset_wrapper.py",
+        "path_type": "hardlink",
+        "sha256": "7cd9e4dc24978a904d16c9a7b0fa5ad740d137423f2f2e1789bd98e599e0f51a",
+        "sha256_in_prefix": "7cd9e4dc24978a904d16c9a7b0fa5ad740d137423f2f2e1789bd98e599e0f51a",
+        "size_in_bytes": 24505
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_image.py",
+        "path_type": "hardlink",
+        "sha256": "6f0c789fca8e6eb927137c4420324eb34bd62730a0e172128ed5d1ee4b094e0b",
+        "sha256_in_prefix": "6f0c789fca8e6eb927137c4420324eb34bd62730a0e172128ed5d1ee4b094e0b",
+        "size_in_bytes": 1934
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_mask.py",
+        "path_type": "hardlink",
+        "sha256": "b3ce4375814ae9ccab2f4fcc9e1002da34c9c59ccbecc27c0d3c7df3924f5614",
+        "sha256_in_prefix": "b3ce4375814ae9ccab2f4fcc9e1002da34c9c59ccbecc27c0d3c7df3924f5614",
+        "size_in_bytes": 1478
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_torch_function_helpers.py",
+        "path_type": "hardlink",
+        "sha256": "f35a8366a83351e4a07d279686caf0d5493096dbdff7b59bc262961e6ed7f17d",
+        "sha256_in_prefix": "f35a8366a83351e4a07d279686caf0d5493096dbdff7b59bc262961e6ed7f17d",
+        "size_in_bytes": 2276
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_tv_tensor.py",
+        "path_type": "hardlink",
+        "sha256": "74640986f3954e36f52d54f9a8f64b271a31df4b83326383076e88cfa4e355b7",
+        "sha256_in_prefix": "74640986f3954e36f52d54f9a8f64b271a31df4b83326383076e88cfa4e355b7",
+        "size_in_bytes": 6248
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/tv_tensors/_video.py",
+        "path_type": "hardlink",
+        "sha256": "e1d439461ff48213ed68b5523b15565c9bf5b968bc64a5e57db46c059deba31c",
+        "sha256_in_prefix": "e1d439461ff48213ed68b5523b15565c9bf5b968bc64a5e57db46c059deba31c",
+        "size_in_bytes": 1416
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/utils.py",
+        "path_type": "hardlink",
+        "sha256": "706056ac089cc6bc756040ac4c69bb9bf24bd466865e9fd498003dae6210dedf",
+        "sha256_in_prefix": "706056ac089cc6bc756040ac4c69bb9bf24bd466865e9fd498003dae6210dedf",
+        "size_in_bytes": 26734
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision/version.py",
+        "path_type": "hardlink",
+        "sha256": "beaef5852ccc697d8a6f09add6c310058378fc24aa18d7f0649e911fb5875b41",
+        "sha256_in_prefix": "beaef5852ccc697d8a6f09add6c310058378fc24aa18d7f0649e911fb5875b41",
+        "size_in_bytes": 164
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+        "sha256_in_prefix": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a7f6c453673db78d26b699b7d44c51670b6ecea8f9be9af29e27b6ccbb4a35c8",
+        "sha256_in_prefix": "a7f6c453673db78d26b699b7d44c51670b6ecea8f9be9af29e27b6ccbb4a35c8",
+        "size_in_bytes": 6268
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6096a0e8bc8c51b9058890ac3fa5dae31ce2127ea5b7628d1dee68b2fee5d1bf",
+        "sha256_in_prefix": "6096a0e8bc8c51b9058890ac3fa5dae31ce2127ea5b7628d1dee68b2fee5d1bf",
+        "size_in_bytes": 29740
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "0b438036cf83553f3190bb4ef4d55de19102a965fe1bcb8b54707681dac46d18",
+        "sha256_in_prefix": "0b438036cf83553f3190bb4ef4d55de19102a965fe1bcb8b54707681dac46d18",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "76767130ebb7cb9a067131384fd99115c495269dd3d18b8e9589029dd8b42851",
+        "sha256_in_prefix": "76767130ebb7cb9a067131384fd99115c495269dd3d18b8e9589029dd8b42851",
+        "size_in_bytes": 122
+      },
+      {
+        "_path": "lib/python3.9/site-packages/torchvision-0.20.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b9c259a1a96e056f411984f84ee084eb3a1963f26e48fdf4c1b0e1f88469c545",
+        "sha256_in_prefix": "b9c259a1a96e056f411984f84ee084eb3a1963f26e48fdf4c1b0e1f88469c545",
+        "size_in_bytes": 12
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "torchvision",
+  "sha256": "4c6b694401ce3ae962e0bd0e784ec9c7a6efabc8686d3f2cc0478cd5e0be33d4",
+  "size": 1191414,
+  "subdir": "linux-64",
+  "timestamp": 1737215452000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/torchvision-0.20.1-cpu_py39_h1395d6b_6.conda",
+  "version": "0.20.1"
+}

@@ -1,0 +1,76 @@
+{
+  "build": "h8fae777_3",
+  "build_number": 3,
+  "channel": "https://conda.anaconda.org/conda-forge/linux-64",
+  "constrains": [
+    "__glibc >=2.17"
+  ],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13"
+  ],
+  "extracted_package_dir": "/home/bmeirose42/.conda/pkgs/rav1e-0.7.1-h8fae777_3",
+  "files": [
+    "include/rav1e/rav1e.h",
+    "lib/librav1e.so",
+    "lib/librav1e.so.0.7",
+    "lib/librav1e.so.0.7.1",
+    "lib/pkgconfig/rav1e.pc"
+  ],
+  "fn": "rav1e-0.7.1-h8fae777_3.conda",
+  "license": "BSD-2-Clause",
+  "link": {
+    "source": "/home/bmeirose42/.conda/pkgs/rav1e-0.7.1-h8fae777_3",
+    "type": 1
+  },
+  "md5": "2c42649888aac645608191ffdc80d13a",
+  "name": "rav1e",
+  "package_tarball_full_path": "/home/bmeirose42/.conda/pkgs/rav1e-0.7.1-h8fae777_3.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "include/rav1e/rav1e.h",
+        "path_type": "hardlink",
+        "sha256": "4cf636289cb434282493dfc6a8d62e296a34a253b56fce1737ff0eee24e8988f",
+        "sha256_in_prefix": "4cf636289cb434282493dfc6a8d62e296a34a253b56fce1737ff0eee24e8988f",
+        "size_in_bytes": 47418
+      },
+      {
+        "_path": "lib/librav1e.so",
+        "path_type": "softlink",
+        "sha256": "8864aa6d9b74d11f36b9b82a53f9ee0fa38d1644685b918819235a31242ecb21",
+        "size_in_bytes": 31522072
+      },
+      {
+        "_path": "lib/librav1e.so.0.7",
+        "path_type": "softlink",
+        "sha256": "8864aa6d9b74d11f36b9b82a53f9ee0fa38d1644685b918819235a31242ecb21",
+        "size_in_bytes": 31522072
+      },
+      {
+        "_path": "lib/librav1e.so.0.7.1",
+        "path_type": "hardlink",
+        "sha256": "8864aa6d9b74d11f36b9b82a53f9ee0fa38d1644685b918819235a31242ecb21",
+        "sha256_in_prefix": "8864aa6d9b74d11f36b9b82a53f9ee0fa38d1644685b918819235a31242ecb21",
+        "size_in_bytes": 31522072
+      },
+      {
+        "_path": "lib/pkgconfig/rav1e.pc",
+        "file_mode": "text",
+        "path_type": "hardlink",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/rav1e_1746621588406/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place",
+        "sha256": "5c4ad797a3f52ab2bae06d88e10edecebec571628ec74f0947d67339bfb8ade0",
+        "sha256_in_prefix": "9d9e411da5a1dce48867735b245e0892183ac02c35c2c5f857f7ac140dbf3324",
+        "size_in_bytes": 482
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "6e5e704c1c21f820d760e56082b276deaf2b53cf9b751772761c3088a365f6f4",
+  "size": 5176669,
+  "subdir": "linux-64",
+  "timestamp": 1746622023000,
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.7.1-h8fae777_3.conda",
+  "version": "0.7.1"
+}

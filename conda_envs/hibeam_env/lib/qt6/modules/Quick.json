@@ -1,0 +1,21 @@
+{
+    "schema_version": 2,
+    "name": "Quick",
+    "repository": "qtdeclarative",
+    "version": "6.9.1",
+    "plugin_types": ["scenegraph"],
+    "platforms": [
+        {
+            "name": "Linux",
+            "version": "6.11.0-1018-azure",
+            "compiler_id": "GNU",
+            "compiler_version": "14.3.0",
+            "targets": [
+                {
+                    "architecture": "x86_64",
+                    "abi": "x86_64-little_endian-lp64"
+                }
+            ]
+        }
+    ]
+}
